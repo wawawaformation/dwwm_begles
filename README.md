@@ -4,11 +4,11 @@ Ce dépôt contient l'ensemble des ressources, démonstrations, TPs et projets u
 
 ## 🗂 Structure du dépôt 
 
-/
-├── demos/ → Démonstrations faites en cours (HTML, CSS, JS, PHP…)
-├── tps/ → Travaux pratiques
-├── projets/ → Projets guidés ou libres
-└── fil-rouge/ → Projet principal : "Citations"
+- /
+- ├── demos/ → Démonstrations faites en cours (HTML, CSS, JS, PHP…)
+- ├── tps/ → Travaux pratiques
+- ├── projets/ → Projets guidés ou libres
+- └── fil-rouge/ → Projet principal : "Citations"
 
 ## 📌 Projet fil rouge – Citations
 
