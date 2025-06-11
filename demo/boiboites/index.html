@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            box-sizing: border-box;
+            height: 100vh
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        /*====================================
+        GENRAL
+        ====================================*/
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .menu li.active a {
+            text-decoration: underline;
+        }
+
+
+
+        /*====================================
+        HEADER
+        ====================================*/
+        #header {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+
+
+
+
+        /*====================================
+        MAIN
+        ====================================*/
+
+        #main {
+            flex-grow: 1;
+        }
+
+
+        /*====================================
+        cartes
+        ====================================*/
+
+        section.cartes {
+            width: 1140px;
+            margin: auto;
+        }
+
+        div.cartes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .carte {
+            width: 360px;
+            box-sizing: border-box;
+            background-color: #eee;
+            border-radius: 8px;
+        }
+
+        .titre-carte {
+            text-align: center;
+        }
+
+        .content-carte {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header id="header">
+        <a href="">logo</a>
+        <nav>
+            <ul class="menu main-menu">
+                <li class="item active"><a href="">un lien</a></li>
+                <li class="item"><a href="">un lien</a></li>
+                <li class="item"><a href="">un lien</a></li>
+            </ul>
+
+            <ul class="menu perso-menu">
+                <li class="item"><a href="">Mon profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1 class="titre-page">Titre de la page</h1>
+        <p>Contenu de la page</p>
+
+        <section class="cartes">
+            <h2 class="titre-section">Les cartes</h2>
+            <div class="cartes">
+                <div class="carte">
+                    <h3 class="titre-carte">
+                        Titre de la carte
+                    </h3>
+                    <div class="content-carte">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti tempora ad, molestiae
+                        voluptate assumenda?
+                    </div>
+                </div>
+                <div class="carte">
+                    <h3 class="titre-carte">
+                        Titre de la carte
+                    </h3>
+                    <div class="content-carte">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti tempora ad, molestiae
+                        voluptate assumenda?
+                    </div>
+                </div>
+                <div class="carte">
+                    <h3 class="titre-carte">
+                        Titre de la carte
+                    </h3>
+                    <div class="content-carte">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti tempora ad, molestiae
+                        voluptate assumenda?
+                    </div>
+                </div>
+                <div class="carte">
+                    <h3 class="titre-carte">
+                        Titre de la carte
+                    </h3>
+                    <div class="content-carte">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti tempora ad, molestiae
+                        voluptate assumenda?
+                    </div>
+                </div>
+                <div class="carte">
+                    <h3 class="titre-carte">
+                        Titre de la carte
+                    </h3>
+                    <div class="content-carte">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti tempora ad, molestiae
+                        voluptate assumenda?
+                    </div>
+                </div>
+                <div class="carte">
+                    <h3 class="titre-carte">
+                        Titre de la carte
+                    </h3>
+                    <div class="content-carte">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti tempora ad, molestiae
+                        voluptate assumenda?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer">
+        Mon super footer
+    </footer>
+
+
+
+
+</body>
+
+</html>
