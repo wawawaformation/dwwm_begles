@@ -1,0 +1,78 @@
+body, html{
+    min-height: 98vh;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#main{
+    flex-grow: 1;
+}
+
+
+.menu{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu li.active a, .menu a:hover{
+    text-decoration: underline;
+}
+
+
+/*===========================
+header
+============================*/
+
+#header{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+/*===========================
+cartes
+============================*/
+
+.wrapper{
+    width: 1200px;
+    margin: auto;
+}
+
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.carte{
+    width: 360px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+.titre-carte{
+    text-align: center;
+}
+
+
