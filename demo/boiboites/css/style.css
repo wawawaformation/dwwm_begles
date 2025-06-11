@@ -1,20 +1,10 @@
-body, html{
-    min-height: 98vh;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-#main{
-    flex-grow: 1;
-}
-
+/*==============================================================
+GENERAL
+===============================================================*/
 
 .menu{
-    padding: 0;
     list-style-type: none;
+    padding: 0;
     display: flex;
     gap: 1rem;
 }
@@ -23,56 +13,78 @@ body{
     text-decoration: none;
 }
 
-.menu li.active a, .menu a:hover{
+.menu a:hover, .menu li.active a{
     text-decoration: underline;
 }
 
 
-/*===========================
-header
-============================*/
+html,body{
+    height: 98vh;
+}
 
-#header{
+body{
     display: flex;
-    align-items: center;
-    gap:2rem;
+    flex-direction: column;
 }
 
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#main{
     flex-grow: 1;
 }
-
-
-
-/*===========================
-cartes
-============================*/
 
 .wrapper{
     width: 1200px;
     margin: auto;
 }
 
+
+
+
+
+/*=====================================================================
+HEADER
+===================================================================*/
+
+#header{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*=====================================================================
+CARTES
+===================================================================*/
 .cartes{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.2rem;
 }
+
 
 .carte{
-    width: 360px;
+    width: 20rem;
     box-sizing: border-box;
-    background-color: #f0f0f0;
+    background-color: bisque;
     padding: 1rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    box-shadow: 0 0 .2rem black;
 }
 
-.titre-carte{
+
+.carte:hover{
+     box-shadow: 0 0 .4rem black;
+}
+
+.carte-titre{
+    margin-top: 0;
     text-align: center;
 }
-
-
