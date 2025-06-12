@@ -1,0 +1,39 @@
+body{
+    background: #F0F0F0;
+}
+
+.field{
+    margin-top: .8rem;
+    display: flex;
+    /*direction, flex-wrap, justify-content, align-items, gap*/
+    flex-direction: column;
+
+}
+
+input{
+    padding: .4rem 1rem;
+    border: unset;
+    background: unset;
+
+    background-color: #FFF;
+    box-shadow: 0 0 .1rem #666666EE;
+    border-radius: 12px;
+}
+
+[type="submit"]{
+    width: 100%;
+    background: unset;
+    border: unset;
+    background-color: #333;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: 0 0 .1rem #000;
+}
+
+[type="submit"]:hover{
+    color: #333;
+    background-color: #FFF;
+    border: 1px solid #333;
+    box-shadow: 0 0 .3rem #000;
+    transform: translate(2px, 2px);
+}

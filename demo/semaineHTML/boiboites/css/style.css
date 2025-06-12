@@ -1,6 +1,10 @@
 /*==============================================================
 GENERAL
 ===============================================================*/
+:root{
+    font-size: 16px;
+}
+
 @font-face {
     font-family: 'Titre';
     src: url(fonts/InriaSerif-Regular.ttf);
@@ -117,3 +121,38 @@ CARTES
 }
 
 
+
+@media screen and (max-width: 1200px){
+    :root{
+        font-size: 14px;
+    }
+
+    .wrapper{
+        width: auto;
+        margin: unset;
+        padding: 0 2rem;
+    }
+}
+
+
+@media screen and (max-width: 476px){
+
+    #header{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    nav{
+        align-self: stretch;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+}
+
+@media print{
+    #header{
+        display: none;
+    }
+}
