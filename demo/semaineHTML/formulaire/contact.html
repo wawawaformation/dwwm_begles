@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous contacter</title>
+</head>
+
+<body>
+    <h1>Nous contacter</h1>
+    <form action="" method="post">
+        <div class="field">
+            <label for="prenom">Prénom (obligatoire)</label><br>
+            <input type="text" name="" id="prenom" placeholder="John" required>
+        </div>
+        <div class="field">
+            <label for="nom">Nom  (obligatoire)</label><br>
+            <input type="text" name="" id="nom" placeholder="doe" required>
+        </div>
+
+        <div class="field">
+           <label for="mail">Email (obligatoire)</label><br>
+           <input type="email" name="" id="mail" required>
+        </div>
+
+        <div class="field">
+            <label for="tel">Téléphone</label><br>
+            <input type="tel" name="" id="tel">
+         </div>
+
+
+        <div class="field">
+            <label for="message">Message</label><br>
+            <textarea name="" id="message"></textarea>
+        </div>
+
+        <div class="field">
+            <label for="choix_connaissance">Comment nous connaissez-vous ?</label><br>
+            <select name="" id="choix_connaissance">
+                <option value="non-definie">Faites votre choix</option>
+                <option value="choix-1">choix 1</option>
+                <option value="choix-2">choix 2</option>
+                <option value="choix-3">choix 3</option>
+                <option value="choix-4">choix 4</option>
+                <option value="choix-5">choix 5</option>
+            </select>
+        </div>
+
+        <div class="submit">
+            <input type="checkbox" id="accept" required > <label for="accept">J'accepte ...</label>
+            <br><input type="submit" value="Envoyer">
+        </div>
+    </form>
+
+</body>
+
+</html>

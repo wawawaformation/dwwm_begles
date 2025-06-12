@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+</head>
+<body>
+    <h1>Votre profil</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>État civil</legend>
+
+            <div class="field">
+                <label for="nom">Nom</label><br>
+                <input type="text" name="" id="nom" value="David">
+            </div>
+            <div class="field">
+                <label for="prenom">Prenom</label><br>
+                <input type="text" name="" id="prenom" value="LEGRAND">
+            </div>
+
+            <div class="field age">
+                <label for="age">Age</label><br>
+                <input type="date" name="" id="age">
+            </div>
+            <div class="field photo">
+                <label for="photo">Photo de profil (De face)</label><br>
+                <input type="file" name="" id="photo">
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Loisirs</legend>
+            <field>
+                <h3>Êtes-vous télévision ?</h3>
+                <input type="radio" name="is_tele" id="oui" checked><label for="oui">Oui</label><br>
+                <input type="radio" name="is_tele" id="non"><label for="non">Non</label>
+            </field>
+
+            <field>
+                <h3>Quels animaux avez-vous?</h3>
+                <input type="checkbox" name="pet" id="chiens"><label for="chiens">Chiens</label><br>
+
+                <input type="checkbox" name="pet" id="chats"><label for="chats">Chats</label><br>
+
+                <input type="checkbox" name="pet" id="chevaux"><label for="chevaux">Chevaux</label><br>
+            
+            </field>
+        </fieldset>
+
+        <div class="submit">
+            <input type="submit" value="Modifier mon profil">
+        </div>
+    </form>
+</body>
+</html>
