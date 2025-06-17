@@ -141,3 +141,61 @@ Cartes
     background-color: var(--color-fond-carte-salee );
     box-shadow: 0 0 .2rem var(--color-salee);
 }
+
+
+
+/*=============================================================================
+Cartes
+=============================================================================*/
+
+.row {
+    display: flex;
+    justify-content: space-between
+}
+
+.col{
+    width: 48%;
+}
+
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+.field:not(:first-child){
+    margin-top: 1.2rem;
+}
+
+form .col input{
+    width: 100%;
+}
+
+form .col textarea{
+    height: 8rem;
+}
+
+
+@media screen and (max-width: 1140px){
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+}
+
+
+/*=============================================================================
+Footer
+=============================================================================*/
+#footer{
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+    #footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

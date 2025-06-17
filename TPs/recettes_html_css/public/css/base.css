@@ -27,7 +27,7 @@ a:hover {
     text-decoration: none;
 }
 
-input{
+input, textarea{
     background: unset;
     border:unset;
 
@@ -40,6 +40,10 @@ input{
 .container{
     width: var(--size-container);
     margin: auto;
+}
+
+#main{
+    padding: 6rem 0;
 }
 
 @media screen and (max-width: 1200px) {
