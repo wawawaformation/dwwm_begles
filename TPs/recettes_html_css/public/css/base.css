@@ -1,0 +1,62 @@
+@import url(fonts/fonts.css);
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Labeur', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-background-page);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Titre', 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--color-text);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input{
+    background: unset;
+    border:unset;
+
+    box-shadow: 0 0 .1rem var(--color-text);
+    padding: .2rem;
+    border-radius: .3rem;
+}
+
+
+.container{
+    width: var(--size-container);
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .container{
+        width: auto;
+        padding: var(--size-margin-normal);
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .no-sm {
+        display: none;
+    }
+
+}

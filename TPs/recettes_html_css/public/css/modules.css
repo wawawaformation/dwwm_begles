@@ -1,0 +1,143 @@
+/*=============================================================================
+Header Footer
+=============================================================================*/
+
+#header, #footer{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: var(--size-margin-large);
+    background-color: var(--color-background-header-footer);
+    box-shadow: 0 0 .2rem var(--color-text);
+    
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    text-decoration: none;
+}
+
+.logo .signature{
+    font-size: var(--typo-logo);
+    line-height: 1.2;
+}
+
+.menu{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: var(--typo-lien-de-menu);
+}
+
+#header li.sucree a{
+    color: var(--color-sucree)
+}
+
+#header li.salee a{
+    color: var(--color-salee)
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+#header nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[type="search"]{
+    background-image: url(img/search.svg);
+    background-repeat: no-repeat;
+    background-position-x: right .3rem;
+    background-position-y: center ;
+
+}
+
+
+@media screen and (max-width: 780px){
+    #header{
+       
+        flex-direction: column;
+        gap: .6rem;
+    }
+
+    #header nav{
+        align-self: stretch;
+    }
+}
+
+@media screen and (max-width: 620px){
+
+    #header nav{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #header .menu{
+        justify-content: space-between;
+       
+    }
+
+    [type="search"]{
+        width: 100%;
+    }
+
+}
+
+
+
+/*=============================================================================
+Cartes
+=============================================================================*/
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.carte{
+
+    width: 21.25rem;
+    box-sizing: border-box;
+    border-radius: .3rem;
+}
+
+.titre-carte{
+    text-align: center;
+}
+
+.contenu-carte{
+    padding: 1rem;
+}
+
+.image-carte img{
+    width: 21.25rem;
+    height: 186px;
+    object-fit: cover;
+}
+.carte.sucree{
+    background-color: var(--color-fond-carte-sucree );
+    box-shadow: 0 0 .2rem var(--color-sucree);
+}
+
+
+
+.carte.salee{
+    background-color: var(--color-fond-carte-salee );
+    box-shadow: 0 0 .2rem var(--color-salee);
+}

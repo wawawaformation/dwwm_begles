@@ -1,0 +1,49 @@
+/*
+
+# Quelques propriétés
+## les couleurs
+- text : #3E4751;
+- background-page : #FDF7F2;
+- background-header-footer : #FFF;
+- sucree : #D42816;
+- salee: #637F43;
+- fond-carte-sucree : #FCE4EC;
+- fond-carte-salee : #EEF7E8;
+## Les typos
+### En desktop
+- corps-de-text : inter 16px
+- lien-de-menu : inter 18px
+- logo : inter bold 20px
+- titre-page : poppins medium 32px
+- titre-section : poppins medium 26px
+- titre-carte : poppins regular 20px
+### En responsive :
+- root à 14/16
+- héritage de ce rapport pour le reste
+
+## Quelques tailles
+- colonne centrée (wrapper) : 1140px
+- marges : 20px ou 16 px
+*/
+
+:root{
+--color-text : #3E4751;
+--color-background-page : #FDF7F2;
+--color-background-header-footer : #FFF;
+--color-sucree : #D42816;
+--color-salee: #637F43;
+--color-fond-carte-sucree : #FCE4EC;
+--color-fond-carte-salee : #EEF7E8;
+
+
+--typo-lien-de-menu : 1.125rem;
+--typo-logo : 1.25rem;
+--typo-titre-page : 2rem;
+--typo-titre-section: 1.625rem;
+--typo-titre-carte: 1.25rem;
+
+--size-container: 1140px;
+--size-margin-normal: 1rem;
+--size-margin-large: 1.25rem;
+
+}
