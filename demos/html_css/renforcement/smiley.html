@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley</title>
+
+    <style>
+        #smiley{
+            width: 200px;
+            height: 200px;
+            scale: 1;
+            rotate: 0;
+            transition: all 2s;
+        }
+
+        #smiley:hover{
+            rotate: 360deg;
+            scale: 1.4;
+
+        }
+
+        #smiley:hover .tete{
+            fill: lime;
+        }
+    </style>
+</head>
+<body>
+    <svg id="smiley" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+       
+        <circle class="tete" cx="200" cy="200" r="200" fill="yellow"></circle>
+        <g class="yeux">
+            <circle class="oeil oeil-droit" cx="120" cy="130" r="30" fill="white" />
+            <circle class="oeil oeil-droit" cx="270" cy="130" r="30" fill="white" />
+        </g>
+
+        <ellipse class="bouche" cx="200" cy="280" rx="100" ry="50" fill="red" />
+        
+    </svg>
+</body>
+</html>
