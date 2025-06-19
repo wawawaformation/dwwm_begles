@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Simple</title>
+
+    <style>
+        ul.menu{
+            display: flex;
+            gap: 2rem;
+            padding: 0;
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                color: #666;
+        
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+
+        @media screen and (max-width: 786px) {
+            ul.menu{
+                flex-direction: column;
+                gap:.1rem;
+
+                a{
+                    display: block;
+                    background: red;
+                    color: #fff;
+                    text-align: center;
+                    padding: .3rem;
+                }
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="item"><a href="">Accueil</a></li>
+                <li class="item"><a href="">Titres porfessionnelles</a></li>
+                <li class="item"><a href="">Formations en entreprise</a></li>
+                <li class="item"><a href="">Témoignages</a></li>
+                <li class="item"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

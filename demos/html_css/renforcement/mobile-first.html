@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile-</title>
+    <style>
+        #logo {
+            width: 150px;
+            height: 52px;
+            background-color: red;
+            align-self: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            gap: .4rem;
+            align-items: stretch;
+        }
+
+
+        .menu a {
+            display: block;
+            text-align: center;
+
+            padding: .2rem;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 1rem;
+        }
+
+        [type="search"] {
+            width: 100%;
+        }
+
+        #header form {
+            margin-top: 1rem;
+        }
+
+
+        @media screen and (min-width: 600px) {
+            .menu {
+
+                flex-direction: row;
+                list-style-type: none;
+                gap: .2rem;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+
+            .menu a {
+                display: inline;
+                text-align: center;
+
+                padding: .2rem;
+            }
+        }
+
+        @media screen and (min-width: 1200px){
+            #header{
+                flex-direction: row;
+                align-items: center;
+            }
+
+            #header nav{
+                flex-grow: 1;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+
+
+        </div>
+        <nav>
+            <ul class="menu menu-principal">
+                <li class="item only-md"><a href="">Accueil</a></li>
+                <li class="item sucree"><a href="">sucree</a></li>
+                <li class="item salee"><a href="">Salee</a></li>
+                <li class="item"><a href="">À propos</a></li>
+                <li class="item"><a href="">À Contact</a></li>
+            </ul>
+            <form action="search.php" method="get role=" search">
+                <input type="search" name="search" id="search">
+            </form>
+        </nav>
+    </header>
+
+</body>
+
+</html>
