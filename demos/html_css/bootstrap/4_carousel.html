@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        #carouselExample {
+            width: 30vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+        }
+
+        .carousel-item{
+            position: relative;
+        }
+        .carousel-caption{
+            position: absolute;
+            background-color: rgba(100,100,100,.9);
+            bottom: 0;
+            left: 0;
+            width: 100%
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div id="carouselExample" class="carousel slide container bg-dark ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="img/beagle.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="fs-3">Le beagle</p>
+                    <p>Chien utilisé pour la chasse. Je ne connais pas le caractère</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/bouledog.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="fs-3">Le beagle</p>
+                    <p>Chien utilisé pour la chasse. Je ne connais pas le caractère</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/labrador.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="fs-3">Le beagle</p>
+                    <p>Chien utilisé pour la chasse. Je ne connais pas le caractère</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
