@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter un auteur | Les citations</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Citations - Backoffice</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Les citations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Les auteurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Les pages</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link href=" #">Les utilisateurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link href=" #">Mon profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" title="Se déconnecter"><i class="bi bi-box-arrow-right"></i></a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="my-5">
+    <div class="container">
+      <h1 class="title mb-4">Ajouter un auteur</h1>
+      <div class="annuler mb-3">
+        <a href="" class="btn btn-secondary">Revenir à la liste</a>
+      </div>
+      <form action="ajouter.php" method="post">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="auteur" class="form-label">Nom de l'auteur (Obligatoire)</label>
+              <input type="text" class="form-control" id="auteur" required>
+            </div>
+            <div class="mb-3">
+              <label for="naissance" class="form-label">Date de naissance (Obligatoire)</label>
+              <input type="date" class="form-control" id="naissance" required>
+            </div>
+            <div class="mb-3">
+              <label for="deces" class="form-label">Date de décès (Non obligatoire)</label>
+              <input type="date" class="form-control" id="deces">
+            </div>
+            <div class="mb-3">
+              <label for="photo" class="form-label">Photo de l'auteur (Obligatoire)</label>
+              <input type="file" class="form-control" id="photo" required>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="bio" class="form-label">Biographie</label>
+             <textarea  class="form-control" name="bio" id="bio" rows="12"></textarea>
+            </div>
+          </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+      </form>
+    </div>
+
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
