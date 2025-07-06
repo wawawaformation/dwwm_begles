@@ -1,10 +1,10 @@
 
-# 🎓 Fil rouge – DWWM Bègles 2025–2026  
+# Fil rouge – DWWM Bègles 2025–2026  
 ## Plateforme de gestion de citations
 
 ---
 
-## 🧾 Quelques mots sur le projet
+## Quelques mots sur le projet
 
 Ce projet fil rouge accompagne la montée en compétences des apprenants du titre professionnel **Développeur Web et Web Mobile (DWWM)**.  
 Il s'agit de concevoir, développer et maintenir une application web complète de **gestion de citations**, avec une interface publique (lecture des contenus) et un espace privé (gestion et administration).
@@ -17,9 +17,9 @@ Le projet est mené dans une **démarche agile inspirée de Scrum et Kanban** :
 
 ---
 
-## 🧩 User Stories
+## User Stories
 
-### 👤 Visiteur (non connecté)
+### Visiteur (non connecté)
 - Je veux consulter la liste des citations.
 - Je veux cliquer sur une citation pour voir son contenu complet avec explication et auteur.
 - Je veux consulter la liste des auteurs.
@@ -27,27 +27,27 @@ Le projet est mené dans une **démarche agile inspirée de Scrum et Kanban** :
 - Je veux lire les pages statiques : "À propos", "Mentions légales", etc.
 - Je veux envoyer un message via un formulaire de contact.
 
-### 👥 Utilisateur inscrit
+### Utilisateur inscrit
 - Je veux me connecter avec email et mot de passe.
 - Je veux réinitialiser mon mot de passe.
 - Je veux modifier mes informations personnelles (nom, email, mot de passe).
 
-### ✍️ Éditeur
+### Éditeur
 - Je veux créer, modifier et supprimer des auteurs.
 - Je veux créer, modifier et supprimer des citations.
 
-### 📝 Rédacteur
+### Rédacteur
 - Je veux modifier les pages statiques comme "À propos".
 
-### 🛠️ Administrateur
+### Administrateur
 - Je veux ajouter, modifier, désactiver ou supprimer des comptes.
 - Je veux attribuer ou modifier les rôles des utilisateurs.
 
 ---
 
-## 📋 Charges fonctionnelles et techniques
+## Charges fonctionnelles et techniques
 
-### ✅ Fonctionnelles
+### Fonctionnelles
 - Interface publique (consultation sans compte) : citations, auteurs, pages fixes, contact
 - Espace personnel pour les inscrits : connexion, profil, réinitialisation mot de passe
 - Interface de gestion (Back Office) :
@@ -55,7 +55,7 @@ Le projet est mené dans une **démarche agile inspirée de Scrum et Kanban** :
   - Édition des pages statiques (rédacteur)
   - Gestion des utilisateurs et des rôles (admin)
 
-### ⚙️ Techniques
+### Techniques
 - Architecture MVC
 - API REST pour l’accès aux données
 - Authentification sécurisée
@@ -67,7 +67,7 @@ Le projet est mené dans une **démarche agile inspirée de Scrum et Kanban** :
 
 ---
 
-## 🛠️ Outils utilisés
+## Outils utilisés
 
 | Usage               | Outil / technologie                                   |
 |---------------------|------------------------------------------------------|
@@ -83,7 +83,7 @@ Le projet est mené dans une **démarche agile inspirée de Scrum et Kanban** :
 
 ---
 
-## 📅 Agenda pédagogique du projet
+## Agenda pédagogique du projet
 
 | 📆 Période               | 💡 Objectif principal                            |
 |--------------------------|--------------------------------------------------|
