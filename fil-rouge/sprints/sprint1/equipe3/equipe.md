@@ -1,3 +1,4 @@
+Equipe 3 :
 Axelle
 Raoul
 Esteban
