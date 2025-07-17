@@ -1,21 +1,6 @@
-body{
-    background-color: orange;
+@media screen and (max-width: 840px) {
+    input.recherche{
+        min-width: 500px !important;
+    }
 }
 
-
-/* STYLE POUR LE HEADER BACK */
-
-img{
-    margin-right: 20px;
-}
-
-.form-control{
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    margin-left: 70px;
-}
-
-#navbarSupportedContent2{
-    margin-left: 200px;
-}
