@@ -1,0 +1,21 @@
+body{
+    background-color: orange;
+}
+
+
+/* STYLE POUR LE HEADER BACK */
+
+img{
+    margin-right: 20px;
+}
+
+.form-control{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin-left: 70px;
+}
+
+#navbarSupportedContent2{
+    margin-left: 200px;
+}
