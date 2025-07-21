@@ -33,6 +33,9 @@
 
 #header .menu-secondaire {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     gap: 50px;
     margin: 0;
@@ -54,7 +57,7 @@
 #header form {
     display: flex;
     align-items: center;
-    margin: 0 20px;
+    margin:0;
 }
 
 .icon-recherche {
@@ -72,21 +75,19 @@
 
 .icon-recherche .bi-search {
     position: absolute;
-    right: 10px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     color: #5B3C11;
-    font-size: 1rem;
-    pointer-events: none;
 }
 
-#header nav > a {
+#header nav>a {
     margin-left: 20px;
     color: #5B3C11;
     text-decoration: none;
 }
 
-#header nav > a:hover {
+#header nav>a:hover {
     text-decoration: underline;
 }
 
@@ -129,9 +130,55 @@
 
 #footer .menu-social .item a {
     color: inherit;
-    opacity: 1;                    
+    opacity: 1;
 }
 
 #footer .menu-social .item a:hover {
-    opacity: 0.5;  
+    opacity: 0.5;
+}
+
+/*************************************************TABLETTE*****************************************************************/
+
+@media (max-width: 1024px) {
+
+  
+    #footer {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer .menu.legal,
+    #footer .menu-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/*************************************************MOBILE*****************************************************************/
+
+@media (max-width: 500px) {
+
+
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #footer .menu.legal {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    #footer .menu-social {
+        justify-content: center;
+        gap: 15px;
+        font-size: 1.5rem;
+    }
 }
