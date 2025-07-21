@@ -1,11 +1,238 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Les auteurs | Citation backoffice</title>
+
+    <!--Bootstrap & Boostrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        .card-img {
+            height: 340px;
+            object-fit: cover
+        }
+    </style>
 </head>
+
 <body>
+
+    <!--TODO : transformer le header en include avec php-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="m-1 mt-1" href="index.html"><img src="public/img/logo.svg" alt="logo-site" width="72px"
+                        height="61px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-menu m-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-2 p-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark active" aria-current="page" href="#">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Les auteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Pages statiques</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav mb-lg-2 p-2 users-menu">
+                        <li class="nav-item">
+                            <a class="nav-link  text-dark" href="#">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-dark" href="#">Mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Voir le site">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Quitter">
+                                <i class="bi bi-box-arrow-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="container my-5">
+        <h1 class="title mb-4">Liste des auteurs</h1>
+
+        <div class="add">
+            <a href="ajout_auteur.html" class="btn btn-primary">
+                Ajouter un auteur</a>
+        </div>
+
+        <div class="cards row my-4 gy-2">
+
+            <div class="card col-12 col-md-6 col-lg-4 px-0">
+                <img src="../public/img/auteurs/audiard.webp" class="card-img card-img-top rounded-top rounded-bottom-0"
+                    alt="">
+                <div class="card-body px-2">
+                    <h5 class="card-title">Michel Audiard</h5>
+                    <p class="card-text">Michel Audiard était un dialoguiste, scénariste et réalisateur français,
+                        célèbre
+                        pour son style inimitable mêlant argot, verve et ironie
+                        mordante. Il a collaboré avec les plus grands noms du cinéma français, comme Jean Gabin, Lino
+                        Ventura ou encore Georges Lautner. Ses dialogues sont devenus
+                        cultes dans des films tels que 'Les Tontons Flingueurs', 'Les Barbouzes' ou 'Un singe en hiver'.
+                    </p>
+                </div>
+                <div class="actions d-flex justify-content-between p-2">
+                    <a href="" class="btn btn-link text-decoration-none text-primary" role="button"><i
+                            class="bi bi-eye"></i>&nbsp;Voir</a>
+                    <a href="" class="btn btn-link text-decoration-none text-primary"><i
+                            class="bi bi-pencil"></i>&nbsp;Modifier</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger" role="button"
+                        data-bs-toggle="modal" data-bs-target="#modal_delete"><i
+                            class="bi bi-trash3"></i>&nbsp;Supprimer</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-4 px-0">
+                <img src="../public/img/auteurs/martin-lugand.webp"
+                    class="card-img card-img-top rounded-top rounded-bottom-0" alt="">
+                <div class="card-body px-2">
+                    <h5 class="card-title">Agnès Martin-Lugand</h5>
+                    <p class="card-text">Agnès Martin-Lugand est une écrivaine française contemporaine, connue pour ses
+                        romans à succès mêlant psychologie, émotions et reconstruction personnelle. Ancienne psychologue
+                        clinicienne, elle a connu un immense succès dès son premier roman 'Les gens heureux lisent et
+                        boivent du café'.</p>
+                </div>
+                <div class="actions d-flex justify-content-between p-2">
+                    <a href="" class="btn btn-link text-decoration-none text-primary" role="button"><i
+                            class="bi bi-eye"></i>&nbsp;Voir</a>
+                    <a href="" class="btn btn-link text-decoration-none text-primary"><i
+                            class="bi bi-pencil"></i>&nbsp;Modifier</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger" role="button"
+                        data-bs-toggle="modal" data-bs-target="#modal_delete"><i
+                            class="bi bi-trash3"></i>&nbsp;Supprimer</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-4 px-0">
+                <img src="../public/img/auteurs/sartre.webp" class="card-img card-img-top rounded-top rounded-bottom-0"
+                    alt="">
+                <div class="card-body px-2">
+                    <h5 class="card-title">Jean-Paul Sartre</h5>
+                    <p class="card-text">Jean-Paul Sartre était un philosophe, écrivain et essayiste français, figure
+                        majeure de l'existentialisme. Il a profondément marqué la philosophie du XXe siècle par ses
+                        réflexions sur la liberté, la responsabilité et la condition humaine.</p>
+                </div>
+                <div class="actions d-flex justify-content-between p-2">
+                    <a href="" class="btn btn-link text-decoration-none text-primary" role="button"><i
+                            class="bi bi-eye"></i>&nbsp;Voir</a>
+                    <a href="" class="btn btn-link text-decoration-none text-primary"><i
+                            class="bi bi-pencil"></i>&nbsp;Modifier</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger" role="button"
+                        data-bs-toggle="modal" data-bs-target="#modal_delete"><i
+                            class="bi bi-trash3"></i>&nbsp;Supprimer</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-4 px-0">
+                <img src="../public/img/auteurs/woolf.webp" class="card-img card-img-top rounded-top rounded-bottom-0"
+                    alt="">
+                <div class="card-body px-2">
+                    <h5 class="card-title">Virginia Woolf</h5>
+                    <p class="card-text">Virginia Woolf était une romancière et essayiste britannique, figure majeure du
+                        modernisme littéraire du XXe siècle. Elle est célèbre pour ses œuvres introspectives, féministes
+                        et novatrices comme 'Mrs Dalloway' ou 'Une chambre à soi'.</p>
+                </div>
+                <div class="actions d-flex justify-content-between p-2">
+                    <a href="" class="btn btn-link text-decoration-none text-primary" role="button"><i
+                            class="bi bi-eye"></i>&nbsp;Voir</a>
+                    <a href="" class="btn btn-link text-decoration-none text-primary"><i
+                            class="bi bi-pencil"></i>&nbsp;Modifier</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger" role="button"
+                        data-bs-toggle="modal" data-bs-target="#modal_delete"><i
+                            class="bi bi-trash3"></i>&nbsp;Supprimer</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-4 px-0">
+                <img src="../public/img/auteurs/gardin.webp" class="card-img card-img-top rounded-top rounded-bottom-0"
+                    alt="">
+                <div class="card-body px-2">
+                    <h5 class="card-title">Blanche Gardin</h5>
+                    <p class="card-text">Blanche Gardin est une humoriste, comédienne et scénariste française connue
+                        pour son humour noir, incisif et sans tabou. Elle aborde des sujets personnels et sociétaux avec
+                        une grande liberté de ton.</p>
+                </div>
+                <div class="actions d-flex justify-content-between p-2">
+                    <a href="" class="btn btn-link text-decoration-none text-primary" role="button"><i
+                            class="bi bi-eye"></i>&nbsp;Voir</a>
+                    <a href="" class="btn btn-link text-decoration-none text-primary"><i
+                            class="bi bi-pencil"></i>&nbsp;Modifier</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger" role="button"
+                        data-bs-toggle="modal" data-bs-target="#modal_delete"><i
+                            class="bi bi-trash3"></i>&nbsp;Supprimer</a>
+                </div>
+            </div>
+
+            <div class="card col-12 col-md-6 col-lg-4 px-0">
+                <img src="../public/img/auteurs/ciceron.webp" class="card-img card-img-top rounded-top rounded-bottom-0"
+                    alt="">
+                <div class="card-body px-2">
+                    <h5 class="card-title">Cicéron</h5>
+                    <p class="card-text">Cicéron, né à la fin du 2e siècle avant J-C, était un homme d'État romain,
+                        avocat, philosophe et orateur. Considéré comme un maître de la rhétorique, ses écrits ont
+                        influencé durablement la pensée occidentale, notamment sur la justice, la morale et la
+                        politique.</p>
+                </div>
+                <div class="actions d-flex justify-content-between p-2">
+                    <a href="" class="btn btn-link text-decoration-none text-primary" role="button"><i
+                            class="bi bi-eye"></i>&nbsp;Voir</a>
+                    <a href="" class="btn btn-link text-decoration-none text-primary"><i
+                            class="bi bi-pencil"></i>&nbsp;Modifier</a>
+                    <a href="" class="btn btn-link text-decoration-none text-danger" role="button"
+                        data-bs-toggle="modal" data-bs-target="#modal_delete"><i
+                            class="bi bi-trash3"></i>&nbsp;Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal_delete" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" aria-labelledby="titre de la modal">Supprimer un auteur</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body" aria-describedby="content">
+                    <span>Voulez-vous vraiment supprimer l'auteur ?</span>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <button class="btn btn-danger">Supprimer</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <!-- Scripts JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
