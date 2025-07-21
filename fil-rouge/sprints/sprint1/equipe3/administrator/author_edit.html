@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,19 +53,19 @@
 
                     <ul class="navbar-nav mb-lg-2 p-2 users-menu">
                         <li class="nav-item">
-                            <a class="nav-link  text-dark" href="#">Les utilisateurs</a>
+                            <a class="nav-link" href="#">Les utilisateurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-dark" href="#">Mon profil</a>
+                            <a class="nav-link" href="#">Mon profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Voir le site">
                                 <i class="bi bi-eye"></i>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 title="Quitter">
                                 <i class="bi bi-box-arrow-right"></i></a>
                         </li>
@@ -75,6 +76,11 @@
             </div>
         </nav>
     </header>
+
+    <!--Bandeau de validation-->
+    <div class=" d-none alert-success d-flex justify-content-center" role="alert">
+        Auteur ajouté avec succès !
+    </div>
 
     <div id="main">
         <div class="container my-5">
@@ -91,7 +97,7 @@
                     <div class="col-12 col-md-6">
                         <div class="mt-2">
                             <label for="auteur" class="form-label">Nom de l'auteur (obligatoire)</label> <br>
-                            <input type="text" class="form-control id=" auteur"" required>
+                            <input type="text" class="form-control" id="auteur" required>
                         </div>
                         <div class="mt-1">
                             <label for="naissance" class="form-label">Date de naissance (obligatoire)</label>
@@ -103,7 +109,7 @@
                         </div>
                         <div class="mt-1">
                             <label for="photo" class="form-label">Photo de l'auteur (obligatoire)</label>
-                            <input type="file" class="form-control" id="photo" required>
+                            <input type="file" class="form-control" id="photo" accept="image/*" required>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -117,6 +123,7 @@
             </form>
 
         </div>
+
     </div>
 
     <!-- Scripts JS-->
