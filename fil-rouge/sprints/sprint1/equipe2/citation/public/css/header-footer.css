@@ -1,0 +1,138 @@
+/*************************************************HEADER*****************************************************************/
+#header {
+    background-color: #FAF2E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+#header .logo {
+    display: flex;
+    align-items: center;
+}
+
+#header .logo img {
+    height: 50px;
+    margin-right: 100px;
+}
+
+#header nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#header .menu-principal {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+}
+
+#header .menu-secondaire {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#header .menu-principal .item a,
+#header .menu-secondaire .item a {
+    color: #5B3C11;
+    text-decoration: none;
+}
+
+#header .menu-principal .item a:hover,
+#header .menu-secondaire .item a:hover {
+    text-decoration: underline;
+}
+
+
+#header form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.icon-recherche {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-recherche input[type="search"] {
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #5B3C11;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 180px;
+}
+
+.icon-recherche .bi-search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5B3C11;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+#header nav > a {
+    margin-left: 20px;
+    color: #5B3C11;
+    text-decoration: none;
+}
+
+#header nav > a:hover {
+    text-decoration: underline;
+}
+
+/*************************************************FOOTER*****************************************************************/
+
+#footer {
+    background-color: #FAF2E6;
+    padding: 30px 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .menu.legal {
+    gap: 30px;
+}
+
+#footer .menu-social {
+    gap: 20px;
+    font-size: 1.5rem;
+    color: #5B3C11;
+}
+
+#footer .menu .item a {
+    text-decoration: none;
+    color: #5B3C11;
+    font-weight: normal;
+}
+
+#footer .menu .item a:hover {
+    text-decoration: underline;
+}
+
+#footer .menu-social .item a {
+    color: inherit;
+    opacity: 1;                    
+}
+
+#footer .menu-social .item a:hover {
+    opacity: 0.5;  
+}
