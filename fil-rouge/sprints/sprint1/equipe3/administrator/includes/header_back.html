@@ -19,14 +19,14 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a href="index.html"><img src="../public/img/logo.svg" alt="logo-site" width="72px" height="61px"></a>
+            <a class="m-1 mt-1" href="index.html"><img src="../public/img/logo.svg" alt="logo-site" width="72px" height="61px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
-                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse main-menu m-1" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-lg-2 p-2">
                     <li class="nav-item">
                         <a class="nav-link text-dark active" aria-current="page" href="#">Les citations</a>
                     </li>
@@ -39,12 +39,7 @@
 
                 </ul>
 
-                <form class="d-flex me-auto recherche" role="search" >
-                    <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search"  size="20"/>
-                    <!--button class="btn btn-outline-success" type="submit">Rechercher</!--button -->
-                </form>
-
-                <ul class="navbar-nav  mb-2 mb-lg-0 users-menu">
+                <ul class="navbar-nav mb-lg-2 p-2 users-menu">
                     <li class="nav-item">
                         <a class="nav-link  text-dark" href="#">Les utilisateurs</a>
                     </li>
@@ -52,10 +47,15 @@
                         <a class="nav-link  text-dark" href="#">Mon profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#"><i class="bi bi-eye"></i></a>
+                        <a class="nav-link text-dark" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Voir le site">
+                            <i class="bi bi-eye"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#"><i class="bi bi-box-arrow-right"></i></a>
+                        <a class="nav-link text-dark" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Quitter">
+                            <i class="bi bi-box-arrow-right"></i></a>
                     </li>
 
                 </ul>
