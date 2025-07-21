@@ -62,14 +62,22 @@
             Modifier une citation
         </h1>
         <form>
+
             <div class="mb-4">
                 <label for="quote" class="form-label">Citation (obligatoire)</label>
                 <input type="text" id="quote" name="quote" class="form-control" required>
             </div>
-
-            <div class="mb-4">
-                <label for="quote" class="form-label">Auteur </label>
-                <input type="text" id="author" name="author" class="form-control">
+        
+            <div class="dropdown mb-4">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Auteur (obligatoire)
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="">David Lodge</a></li>
+                    <li><a class="dropdown-item" href="">Ben Vautier</a></li>
+                    <li><a class="dropdown-item" href="">Keith Haring</a></li>
+                    <li><a class="dropdown-item" href="">Maya Angelou</a></li>
+                </ul>
             </div>
 
             <div class="mb-4">
