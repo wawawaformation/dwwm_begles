@@ -1,0 +1,170 @@
+{
+  "auteurs_et_artistes": [
+    {
+      "nom": "Ben Vautier",
+      "annee_naissance": 1935,
+      "age": 89,
+      "biographie": "Ben Vautier, connu sous le nom de 'Ben', est un artiste français d’origine suisse et italienne, né à Naples en 1935. Figure majeure de l’art contemporain, il est célèbre pour ses écritures manuscrites aux messages percutants, ironiques ou philosophiques. Son œuvre mêle art, vie quotidienne, provocation et réflexion sur l'identité, la liberté et le sens de l'art. Il a été associé au mouvement Fluxus et à l'art conceptuel.",
+      "citations": [
+        {
+          "citation": "On est tous coupable",
+          "interpretation": "Ben suggère ici une idée universelle de responsabilité. Il ne s'agit pas d'une culpabilité juridique, mais morale, existentielle..."
+        },
+        {
+          "citation": "J'ai voulu abandonner l'art mais j'en ai fait de l'art",
+          "interpretation": "Ben joue ici sur l’ironie et l’absurde..."
+        },
+        {
+          "citation": "Ecrire c'est peindre des mots",
+          "interpretation": "Ben lie deux formes d’expression : l’écriture et la peinture..."
+        },
+        {
+          "citation": "Consommer ou mourir",
+          "interpretation": "Cette phrase critique notre société de consommation..."
+        },
+        {
+          "citation": "Je suis un emmerdeur",
+          "interpretation": "Ben affirme ici son rôle provocateur..."
+        },
+        {
+          "citation": "Aller au bout du \"bout à bout\"",
+          "interpretation": "Cette phrase joue sur la répétition et l’abstraction..."
+        },
+        {
+          "citation": "Le temps qui passe ne s'arrête jamais…",
+          "interpretation": "Ben exprime ici une vérité simple mais vertigineuse..."
+        },
+        {
+          "citation": "Pas d'art sans désordre",
+          "interpretation": "Ben associe la création artistique au chaos..."
+        },
+        {
+          "citation": "Rien ne nous appartienté",
+          "interpretation": "Malgré la faute de frappe apparente, Ben veut sans doute renforcer l'idée d’universalité..."
+        },
+        {
+          "citation": "Le bonheur c'est maintenant",
+          "interpretation": "Cette citation invite à vivre l’instant présent..."
+        },
+        {
+          "citation": "Etre libre",
+          "interpretation": "Une déclaration brute et essentielle sur la liberté..."
+        },
+        {
+          "citation": "La paix! Où je crie",
+          "interpretation": "Ben joue avec les mots pour opposer paix et chaos..."
+        },
+        {
+          "citation": "Le droit d'être soi-même",
+          "interpretation": "Ben défend ici la liberté individuelle et l’authenticité..."
+        },
+        {
+          "citation": "Je suis ce que je suis",
+          "interpretation": "C’est une affirmation d’identité brute et intransigeante..."
+        }
+      ]
+    },
+    {
+      "nom": "David Lodge",
+      "annee_naissance": 1935,
+      "age": 90,
+      "biographie": "David Lodge est un écrivain et universitaire britannique né en 1935. Il est connu pour ses romans satiriques explorant le monde universitaire, les médias et la culture contemporaine...",
+      "citations": [
+        {
+          "citation": "Un monde régi par les médias. La culture du commérage",
+          "interpretation": "Lodge critique la domination des médias dans la société moderne..."
+        },
+        {
+          "citation": "Oui, bien entendu, je sais que les plaisanteries sont une forme déguisée d'agression",
+          "interpretation": "Cette phrase met en lumière la psychologie des rapports humains..."
+        },
+        {
+          "citation": "Le bonheur? Tout le monde sait que ça ne dure pas",
+          "interpretation": "Lodge adopte ici un ton désabusé ou réaliste..."
+        },
+        {
+          "citation": "Écrire des romans, c'est comme de glisser des messages dans une série de bouteilles...",
+          "interpretation": "Lodge compare l’acte d’écrire à un geste d’espoir incertain..."
+        },
+        {
+          "citation": "Quand on représente une chose, elle acquiert une signification nouvelle...",
+          "interpretation": "Lodge insiste sur le pouvoir du langage et des images..."
+        },
+        {
+          "citation": "Les médias représentent la plus grande puissance de notre société",
+          "interpretation": "Lodge exprime ici une opinion claire sur le pouvoir des médias..."
+        },
+        {
+          "citation": "Toutes les plages sont noires à Tenerife, on dirait des négatifs.",
+          "interpretation": "Cette phrase évoque l’étrangeté du réel et la perception..."
+        },
+        {
+          "citation": "Être heureux en ménage, ça signifie qu'on n'a pas à jouer le rôle...",
+          "interpretation": "Lodge décrit ici le bonheur conjugal comme un état naturel..."
+        }
+      ]
+    },
+    {
+      "nom": "Keith Haring",
+      "date_de_naissance": "1958-05-04",
+      "date_de_mort": "1990-02-16",
+      "age_au_deces": 32,
+      "biographie": "Keith Haring était un artiste américain emblématique du street art...",
+      "citations": [
+        {
+          "citation": "L'art est pour tout le monde.",
+          "interpretation": "Keith Haring rejette une vision élitiste de l’art..."
+        },
+        {
+          "citation": "Le public a droit à l’art. Le public a besoin d’art.",
+          "interpretation": "Cette phrase affirme que l’art est un besoin fondamental..."
+        },
+        {
+          "citation": "Le but de l’art est de créer un monde meilleur.",
+          "interpretation": "Haring voit l’art comme un moteur de changement positif..."
+        },
+        {
+          "citation": "Quand on fait quelque chose avec son cœur, ça finit toujours par se voir.",
+          "interpretation": "Cette citation exprime l’importance de la sincérité dans le processus créatif..."
+        },
+        {
+          "citation": "Je suis intéressé par l’art qui vient du cœur, pas de la tête.",
+          "interpretation": "Il distingue deux approches artistiques..."
+        },
+        {
+          "citation": "Les murs appartiennent aux gens.",
+          "interpretation": "C’est une revendication politique et artistique..."
+        },
+        {
+          "citation": "Le plus grand succès pour un artiste, c’est d’avoir des enfants qui dessinent grâce à lui.",
+          "interpretation": "Cette phrase illustre une vision généreuse et altruiste de l’art..."
+        }
+      ]
+    },
+    {
+      "nom": "Maya Angelou",
+      "annee_naissance": 1928,
+      "annee_deces": 2014,
+      "age_si_vivante": 97,
+      "biographie": "Maya Angelou (1928-2014) était une écrivaine, poétesse, actrice et militante américaine...",
+      "citations": [
+        {
+          "citation": "J'ai appris que les gens oublieront ce que vous avez dit, les gens oublieront ce que vous avez fait, mais les gens n'oublieront jamais ce que vous leur avez fait ressentir.",
+          "interpretation": "Cette citation met en lumière la puissance de l'impact émotionnel..."
+        },
+        {
+          "citation": "Essayez d'être un arc-en-ciel dans le nuage de quelqu'un.",
+          "interpretation": "Elle encourage à apporter de la lumière et du réconfort..."
+        },
+        {
+          "citation": "Quand quelqu'un vous montre qui il est, croyez-le la première fois...",
+          "interpretation": "Maya Angelou appelle à la lucidité dans les relations humaines..."
+        },
+        {
+          "citation": "Ne faites jamais de quelqu'un une priorité lorsque tout ce que vous êtes pour lui est une option.",
+          "interpretation": "Elle met en garde contre les relations déséquilibrées..."
+        }
+      ]
+    }
+  ]
+}
