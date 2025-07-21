@@ -67,17 +67,16 @@
                 <label for="quote" class="form-label">Citation (obligatoire)</label>
                 <input type="text" id="quote" name="quote" class="form-control" required>
             </div>
-        
-            <div class="dropdown mb-4">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Auteur (obligatoire)
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="">David Lodge</a></li>
-                    <li><a class="dropdown-item" href="">Ben Vautier</a></li>
-                    <li><a class="dropdown-item" href="">Keith Haring</a></li>
-                    <li><a class="dropdown-item" href="">Maya Angelou</a></li>
-                </ul>
+
+            <div class="mb-4">
+                <label for="author" class="form-label">Auteur </label>
+                <select id="author" name="author" class="form-select">
+                    <option value="">--choisissez un auteur--</option>
+                    <option value="1">Maya Angelou</option>
+                    <option value="2">Keith Haring</option>
+                    <option value="3">David Lodge</option>
+                    <option value="4">Ben Vautier</option>
+                </select>
             </div>
 
             <div class="mb-4">
