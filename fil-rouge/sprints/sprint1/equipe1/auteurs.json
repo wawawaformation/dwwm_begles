@@ -3,9 +3,10 @@
         "name": "Victor Hugo",
         "birthday": "1802-02-26",
         "deathday": "1885-05-22",
+        "image" : "victor_hugo._portrait.webp" , 
         "text": "Victor Hugo (1802-1885) est l'un des écrivains les plus importants et influents de la littérature française du XIXe siècle. Poète, romancier, dramaturge, mais aussi homme politique engagé, il a marqué son époque par la richesse de son œuvre et la force de ses convictions. Chef de file du mouvement romantique, il est l'auteur de chefs-d'œuvre tels que le roman historique Notre-Dame de Paris (1831) et l'épique Les Misérables (1862), qui dépeignent avec puissance la société de son temps et la misère humaine. Sa poésie, notamment Les Contemplations (1856) et La Légende des Siècles (1859), témoigne d'une sensibilité profonde et d'une vision grandiose de l'humanité. Farouchement républicain, opposé à la peine de mort et défenseur des opprimés, Victor Hugo a également mené une vie politique intense, marquée par un long exil sous le Second Empire. Ses funérailles nationales en 1885, qui ont rassemblé des millions de personnes, témoignent de l'immense popularité et du respect qu'il inspire en France. Il repose au Panthéon.",
         "citations": [
-            {
+             {
                 "citation": "Ceux qui vivent, ce sont ceux qui luttent.",
                 "origine": "Les Châtiments (1853), Livre IV",
                 "type": "Poème engagé",
@@ -71,6 +72,7 @@
         "name": "Georges Sand",
         "birthday": "1804-07-01",
         "deathday": "1876-05-08",
+        "images": "george_sand.webp",
         "text": "George Sand (1804-1876), de son vrai nom Amantine Aurore Lucile Dupin de Francueil, puis baronne Dudevant, est une écrivaine française majeure du XIXe siècle. Figure emblématique de son époque, elle a défié les conventions sociales en menant une vie libre et en s'habillant en homme pour mieux circuler dans Paris et affirmer son indépendance. Auteure extrêmement prolifique, elle a laissé une œuvre immense, comprenant des romans, des nouvelles, des pièces de théâtre, des contes et une vaste correspondance. Parmi ses romans les plus célèbres, on trouve Indiana, La Mare au Diable, et La Petite Fadette, qui explorent souvent la condition féminine, les thèmes ruraux et les idéaux sociaux. Engagée politiquement, notamment pendant la Révolution de 1848, George Sand a défendu avec ferveur la liberté, la justice et l'égalité, en particulier pour les femmes. Elle fut une voix influente et respectée, et ses amitiés avec des figures comme Alfred de Musset et Frédéric Chopin ont marqué l'histoire littéraire et artistique. Son domaine de Nohant, dans l'Indre, est aujourd'hui un lieu de mémoire important.",
         "citations": [
             {
@@ -154,6 +156,7 @@
         "name": "Voltaire",
         "birthday": "1694-11-21",
         "deathday": "1778-05-30",
+        "image": "voltaire.portrait.webp",
         "text": "Voltaire François-Marie Arouet, dit Voltaire (1694-1778), est un écrivain et philosophe français, figure emblématique du Siècle des Lumières. Esprit brillant et satirique, il a défendu avec ferveur la liberté d'expression, la tolérance religieuse et la justice, luttant inlassablement contre le fanatisme et l'obscurantisme. Son œuvre, vaste et diversifiée, comprend des pièces de théâtre (Œdipe, Zaïre), des poèmes, des essais philosophiques (Lettres philosophiques, Traité sur la tolérance), et des contes philosophiques (Candide, Zadig). Ses écrits, souvent publiés sous le manteau en raison de la censure, ont eu une influence considérable sur les idées de son temps et ont préparé le terrain pour la Révolution française.  Exilé à plusieurs reprises pour ses prises de position audacieuses, il a passé la fin de sa vie à Ferney, où il est devenu le Patriarche de Ferney, recevant de nombreux intellectuels et poursuivant son combat pour les droits de l'homme. Il est mort à Paris, acclamé par la foule, laissant un héritage intellectuel majeur.",
         "citations": [
             {
@@ -236,6 +239,7 @@
         "name": "Antoine de Saint-Exupéry",
         "birthday": "1900-06-29",
         "deathday": "1944-07-31",
+        "image": "antoine_de_saint_exupery_portrait.webp",
         "text": "Antoine de Saint-Exupéry (1900-1944) était un écrivain, poète et aviateur français. Pionnier de l'aéropostale, ses expériences de vol, souvent périlleuses, ont profondément inspiré son œuvre littéraire. Parmi ses écrits les plus connus figurent les romans Courrier Sud (1929) et Vol de nuit (1931), qui explorent les thèmes de l'héroïsme, de la solitude et du dépassement de soi. Son œuvre la plus célèbre, Le Petit Prince (1943), un conte philosophique poétique, est devenue un classique de la littérature mondiale, abordant des sujets universels comme l'amitié, l'amour et le sens de la vie. Disparu en vol lors d'une mission de reconnaissance pendant la Seconde Guerre mondiale, sa mort reste un mystère qui ajoute à la légende de cet écrivain-aviateur.",
         "citations": [
             {
@@ -304,6 +308,7 @@
         "name": "Simone de Beauvoir",
         "birthday": "1908-01-09",
         "deathday": "1986-04-14",
+        "image": "Simone_de_beauvoir_portrait.webp",
         "text": "Simone de Beauvoir (1908-1986) était une philosophe, romancière, mémorialiste et essayiste française, figure majeure du XXe siècle. Née à Paris dans une famille bourgeoise, elle choisit très tôt la voie des études et du professorat pour mener une vie libre. Elle est surtout connue pour son essai Le Deuxième Sexe (1949), un ouvrage fondamental du féminisme qui analyse la condition féminine et la construction sociale des genres. Parmi ses autres œuvres notables, on trouve les romans Les Mandarins (Prix Goncourt 1954) et des récits autobiographiques comme Mémoires d'une jeune fille rangée. Engagée politiquement, elle a défendu la cause des femmes et a participé à des mouvements pour les droits humains, notamment en signant le Manifeste des 343 pour le droit à l'avortement et le Manifeste des 121 contre la guerre d'Algérie. Sa pensée et ses engagements ont eu une influence considérable sur le féminisme moderne et la philosophie existentielle. Elle repose au cimetière du Montparnasse aux côtés de Jean-Paul Sartre.",
         "citations": [
             {
@@ -392,6 +397,7 @@
         "name": "Albert Camus",
         "birthday": "1913-11-07",
         "deathday": "1960-01-04",
+        "image": "albert_camus_portrait.webp",
         "text": "Albert Camus (1913-1960) était un écrivain, philosophe et journaliste français, né en Algérie. Figure majeure de la littérature du XXe siècle, il est souvent associé à l'existentialisme, bien qu'il ait toujours réfuté cette étiquette. Son œuvre est profondément marquée par les thèmes de l'absurde, de la révolte et de la condition humaine face à un monde dénué de sens. Parmi ses ouvrages les plus célèbres figurent les romans L'Étranger (1942) et La Peste (1947), ainsi que les essais Le Mythe de Sisyphe (1942) et L'Homme révolté (1951). Il a reçu le prix Nobel de littérature en 1957 pour « l'ensemble d'une œuvre qui met en lumière, avec une lucidité sérieuse, les problèmes qui se posent de nos jours à la conscience des hommes ». Il meurt prématurément dans un accident de voiture.",
         "citations": [
             {
@@ -484,6 +490,7 @@
         "name": "Marguerite Duras",
         "birthday": "1914-04-04",
         "deathday": "1996-03-03",
+        "image": "marguerite_duras_portrait.webp",
         "text": "Marguerite Duras (1914-1996), de son vrai nom Marguerite Donnadieu, était une écrivaine, dramaturge, scénariste et réalisatrice française. Née en Indochine française, son enfance dans cette région a profondément marqué son œuvre, notamment son roman autobiographique le plus célèbre, L'Amant (Prix Goncourt 1984). Elle est reconnue pour la diversité et la modernité de son écriture, renouvelant les genres romanesque, théâtral et cinématographique. Son style se caractérise par la déstructuration des phrases et du temps, et explore des thèmes comme l'amour, la sensualité, l'attente et la mémoire. Parmi ses œuvres notables, on peut citer Un barrage contre le Pacifique, Moderato Cantabile, et son scénario pour le film Hiroshima mon amour. Marguerite Duras est une figure majeure de la littérature de la seconde moitié du XXe siècle.",
         "citations": [
             {
