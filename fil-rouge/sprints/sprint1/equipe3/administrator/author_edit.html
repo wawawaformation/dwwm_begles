@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +78,7 @@
 
     <!--Bandeau de validation-->
     <div class=" d-none alert-success d-flex justify-content-center" role="alert">
-        Auteur ajouté avec succès !
+        Auteur édité avec succès !
     </div>
 
     <div id="main">
@@ -99,21 +98,21 @@
                             <label for="auteur" class="form-label">Nom de l'auteur (obligatoire)</label> <br>
                             <input type="text" class="form-control" id="auteur" required>
                         </div>
-                        <div class="mt-1">
-                            <label for="naissance" class="form-label">Date de naissance (obligatoire)</label>
-                            <input type="date" class="form-control" id="naissance" required>
+                        <div class="mt-4">
+                            <label for="naissance" class="form-label">Date de naissance (facultatif)</label>
+                            <input type="date" class="form-control" id="naissance">
                         </div>
-                        <div class="mt-1">
+                        <div class="mt-4">
                             <label for="deces" class="form-label">Date de décès (facultatif)</label>
                             <input type="date" class="form-control" id="deces">
                         </div>
-                        <div class="mt-1">
+                        <div class="mt-4">
                             <label for="photo" class="form-label">Photo de l'auteur (obligatoire)</label>
                             <input type="file" class="form-control" id="photo" accept="image/*" required>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="mt-2 mb-4">
+                        <div class="mt-4 mb-4">
                             <label for="biography" class="mb-2">Biographie de l'auteur</label>
                             <textarea name="" class="form-control" id="biography"></textarea>
                         </div>
