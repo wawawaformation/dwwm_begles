@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajoute des Auteurs | Citations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="public/js/tinymce/myTiny.js"></script>
+
+    <style>
+        .body {
+            background-color: antiquewhite;
+        }
+
+        .btn.btn-primary {
+            background-color: #6622CC !important;
+            border-color: #6622CC !important;
+            color: white !important;
+
+        }
+
+        .btn.btn-primary:hover {
+            background-color: #501a9c !important;
+            border-color: #501a9c !important;
+        }
+
+        .btn.btn-secondary {
+            background-color: #6D675F !important;
+            border-color: #6D675F !important;
+            color: white !important;
+        }
+
+        .btn.btn-secondary:hover {
+            background-color: #3A3227 !important;
+            border-color: #3A3227 !important;
+
+        }
+
+        .btn.btn-sm.btn-danger {
+            background-color: #F87263 !important;
+            border-color: #F87263 !important;
+        }
+
+        .btn.btn-sm.btn-warning {
+            background-color: #11B19C !important;
+            border-color: #11B19C !important;
+            color: white !important;
+        }
+
+        @media (max-width: 767.98px) {
+            .title {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .table td,
+            .table th {
+                font-size: 0.9rem;
+            }
+
+            .btn {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .form-control {
+                font-size: 0.95rem;
+            }
+
+            form {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="public/img/logo.svg" alt="logo citations" width="124" height="72">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Les auteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les pages</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right text-danger"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Voir le site
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="p-4 bg-light rounded mb-5 my-5">
+                <h1 class="title mb-3">Ajouter une citation</h1>
+
+
+                <form action="index.php" method="post" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="citation" class="form-label">Citation (obligatoire)</label>
+                        <textarea id="citation" name="citation" class="form-control" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="auteur" class="form-label">Auteur (obligatoire)</label>
+                        <input type="text" id="auteur" name="auteur" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ajouter la citation</button>
+                </form>
+
+            </div>
+            <div class="p-4 bg-light rounded mb-5 my-5">
+                <h1 class="title my-4">Modifier une citation</h1>
+
+                <table class="table table-striped mt-4">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Citation</th>
+                            <th>Auteur</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>"Ceux qui vivent, ce sont ceux qui luttent."</td>
+                            <td>Victor Hugo</td>
+
+                            <td>
+                                <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>"Le bonheur existe. Il est dans l’amour."</td>
+                            <td>Georges Sand</td>
+
+                            <td>
+                                <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>"Le doute est un état mental désagréable…"</td>
+                            <td>Voltaire</td>
+
+                            <td>
+                                <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
