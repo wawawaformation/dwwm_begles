@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo/logo.webp" alt="Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="quotes.html">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="authors.html">Les auteurs</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="static-page.html">Page statiques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="user.html">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profil.html">Mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="exit.html" class="btn btn-danger">
+                                <i class="bi bi-box-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    </header>
+    </nav>
+    <div class="container-fluid bg-success text-white text-center py-2">
+        L'auteur a bien été ajouté
+    </div>
+    <div class="container my-5">
+        <h1 class="title mb-4">
+            les auteurs
+        </h1>
+        <div class="ajouter mb-3">
+            <a href="add-author.html" class="btn btn-primary">Ajouter un auteur</a>
+        </div>
+        <div class="row row-cols1 row-cols-md-2 row-cols-lg-3 g-4 my-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../public/img/Ben-debout.webp" class="card-img-top" style="height: 400px;" alt="Ben Vautier">
+                    <div class="card-body">
+                        <h3 class="card-title">Ben Vautier</h3>
+                        <p class="card-text">connu sous le nom de 'Ben', est un artiste français d’origine... </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="author-modif.html" class="btn btn-primary btn-sm"><i class="bi bi-pencil">
+                            </i>modifier</a>
+                        <a href="author_delete" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
+                            supprimer</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../public/img/David Lodge.webp" class="card-img-top" style="height: 400px;" alt="David lodge">
+                    <div class="card-body">
+                        <h3 class="card-title">David Lodge</h3>
+                        <p class="card-text">David Lodge est un écrivain et universitaire britannique né... </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="author-modif.html" class="btn btn-primary btn-sm"><i class="bi bi-pencil">
+                            </i>modifier</a>
+                        <a href="author_delete" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
+                            supprimer</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="../public/img/KEITH-HARING.webp" class="card-img-top" style="height: 400px;" alt="Keith haring">
+                    <div class="card-body">
+                        <h3 class="card-title">Keith Haring</h3>
+                        <p class="card-text">Keith Haring était un artiste américain emblématique du street art... </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="author-modif.html" class="btn btn-primary btn-sm"><i class="bi bi-pencil">
+                            </i>modifier</a>
+                        <a href="author_delete" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
+                            supprimer</a>
+
+                    </div>
+                </div>
+            </div>
+
+             <div class="col">
+                <div class="card h-100">
+                    <img src="../public/img/angelou.webp" class="card-img-top" style="height: 400px;" alt="Maya Angelou">
+                    <div class="card-body">
+                        <h3 class="card-title">Maya Angelou</h3>
+                        <p class="card-text">Maya Angelou (1928-2014) était une écrivaine, poétesse, actrice et militante américaine... </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="author-modif.html" class="btn btn-primary btn-sm"><i class="bi bi-pencil">
+                            </i>modifier</a>
+                        <a href="author_delete" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
+                            supprimer</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="my-4 text-center bloc-pagination">
+        <div class="mb-2">
+            <strong>10 auteurs</strong> - affichage de <strong>5 par page</strong>
+        </div>
+
+        <nav aria-label="pagination des citations">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="début">
+                        <i class="bi bi-chevron-double-left"></i>
+                    </a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="page précédente">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="page précédente">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="début">
+                        <i class="bi bi-chevron-double-right"></i>
+                    </a>
+                </li>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
