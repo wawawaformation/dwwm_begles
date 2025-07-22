@@ -11,29 +11,35 @@
 
 <body>
     <header id="header">
-        <a href="" class="logo">
-            <img src="/citation/assets/logo/logo.webp" alt="Accueil">
-        </a>
 
-        <nav>
-            <ul class="menu menu-principal">
-                <li class="item"><a href="page-acceuil.html">Accueil</a></li>
-                <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
-                <li class="item"><a href="liste-citation.html">Citations</a></li>
-            </ul>
-            <a class="burger"><i class="bi bi-list"></i></a>
-            <ul class="menu menu-secondaire">
-                <li class="item">
-                    <form action="search.php" method="get" role="search">
-                        <div class="icon-recherche">
-                            <input type="search"><i class="bi bi-search"></i>
-                        </div>
-                    </form>
-                </li>
-                <li class="item"><a href="api.html">API</a></li>
-                <li class="item"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="top-header">
+            <a href="" class="logo">
+                <img src="/citation/assets/logo/logo.webp" alt="Accueil">
+            </a>
+
+            <nav>
+                <button class="burger"><i class="bi bi-list"></i></button>
+                <ul class="menu menu-secondaire">
+                    <li class="item">
+                        <form action="search.php" method="get" role="search">
+                            <div class="icon-recherche">
+                                <input type="search">
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="item"><a href="api.html">API</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul class="menu menu-principal">
+            <li class="item"><a href="page-acceuil.html">Accueil</a></li>
+            <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
+            <li class="item"><a href="liste-citation.html">Citations</a></li>
+        </ul>
+
     </header>
 
     <footer id="footer">
