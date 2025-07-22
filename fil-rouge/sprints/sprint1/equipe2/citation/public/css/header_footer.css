@@ -271,7 +271,6 @@
         text-decoration: underline;
     }
 
-    /* top-header : logo à gauche + nav à droite */
     #header .top-header {
         flex: 1;
         display: flex;
@@ -279,7 +278,6 @@
         align-items: center;
     }
 
-    /* nav contenant uniquement menu-secondaire */
     #header nav {
         display: flex;
         justify-content: flex-end;
@@ -320,14 +318,13 @@
     
     #footer {
         display: flex;
-        justify-content: space-between; /* répartit correctement */
-        align-items: center; /* centre verticalement */
+        justify-content: space-between;
+        align-items: center;
         flex-direction: row;
         padding: 30px 41px;
         text-align: left;
     }
 
-    /* Bloc menu légal horizontal */
     #footer .menu.legal {
         display: flex;
         flex-direction: row;
@@ -335,18 +332,16 @@
         margin-bottom: 0;
     }
 
-    /* Bloc social icons */
     #footer .menu-social {
         display: flex;
         justify-content: center;
-        align-items: center; /* aligne les icônes verticalement */
+        align-items: center;
         gap: 20px;
         margin-bottom: 0;
         font-size: 1.5rem;
         color: #5B3C11;
     }
 
-    /* Liens du menu */
     #footer .menu .item a {
         text-decoration: none;
         color: #5B3C11;
@@ -357,7 +352,6 @@
         text-decoration: underline;
     }
 
-    /* Hover sur icônes sociales */
     #footer .menu-social .item a {
         opacity: 1;
         transition: opacity 0.3s ease;
