@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modifier utilisateur | Citation Backoffice</title>
+    <!--Bootstrap & Boostrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="m-1 mt-1" href="index.html"><img src="public/img/logo.svg" alt="logo-site" width="72px"
+                        height="61px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-menu m-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-2 p-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="quotes_list.html">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="authors_list.html">Les auteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="statics_list.html">Pages statiques</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav mb-lg-2 p-2 users-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="user_list.html">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="profile.html">Mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Voir le site">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Quitter">
+                                <i class="bi bi-box-arrow-right"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container m-5">
+        <div class="row gutters">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="account-settings">
+                            <div class="user-profile">
+                                <div class="user-avatar">
+                                    <img src="https://images.unsplash.com/photo-1740252117027-4275d3f84385?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="Ursula Famname" width="270px" height="300px">
+                                </div>
+                                <h5 class="user-name">Ursula</h5>
+                                <h6 class="user-email">example@itineris.fr</h6>
+                            </div>
+                            <div class="about">
+                                <h5>About</h5>
+                                <p>Passionnée de citations, j'ai co-créé ce site avec mes amis. Quand je n'ai pas
+                                    d'heures d'intermitence, j'en profite pour m'occuper du site, alors n'hésitez pas à
+                                    me contacter, quelque soit la raison ;)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h6 class="mb-2 text-primary">Informations personnelles</h6>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Nom complet (obligatoire)</label>
+                                    <input type="text" class="form-control" id="fullName"
+                                        placeholder="François Damiens" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="eMail">Email (obligatoire)</label>
+                                    <input type="email" class="form-control" id="eMail"
+                                        placeholder="example@itineris.fr" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="phone">Numéro de téléphone (obligatoire)</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="06 05 04 03 02" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="website">Site internet</label>
+                                    <input type="url" class="form-control" id="website"
+                                        placeholder="https://raoul.jesuisdev.fr/">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h6 class="mt-3 mb-2 text-primary">Adresse</h6>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="Street">Rue (obligatoire)</label>
+                                    <input type="name" class="form-control" id="Street" placeholder="rue des leurs" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="Street">Complément d'adresse</label>
+                                    <input type="name" class="form-control" id="Street" placeholder="appt bat res hall">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="zIp">Code postale (obligatoire)</label>
+                                    <input type="text" class="form-control" id="sTate" placeholder="01234" required>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ciTy">Ville (obligatoire)</label>
+                                    <input type="text" class="form-control" id="ciTy" placeholder="Ciudad" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="text-right m-5">
+                                    <button type="button" id="submit" name="submit"
+                                        class="btn btn-secondary mx-4">Annuler</button>
+                                    <button type="button" id="submit" name="submit"
+                                        class="btn btn-primary mx-4">Modifier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
