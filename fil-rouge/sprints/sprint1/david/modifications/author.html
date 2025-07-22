@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un auteur | Admin citation</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap-icons/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Citations admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="quotes.html">Les citations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="authors.html">Les auteurs</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="users.html">Les utilisateurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">Mon profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" target="_blank" title="le site"><i
+                                class="bi bi-eye"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exit.html" title="Se déconnecter"><i
+                                class="bi bi-box-arrow-right"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1 class="mb-5">Ajouter un auteur</h1>
+
+        <form action="author_store.php" method="POST">
+            <div class="mb-4">
+                <label for="name" class="form-label">Nom de l'auteur (obligatoire)</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="birthdate" class="form-label">Date de naissance (facultatif)</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate">
+            </div>
+
+            <div class="mb-4">
+                <label for="deathdate" class="form-label">Date de décès (facultatif)</label>
+                <input type="date" class="form-control" id="deathdate" name="deathdate">
+            </div>
+
+            <div class="mb-4">
+                <label for="image" class="form-label">Image (obligatoire)</label>
+                <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="biography" class="form-label">Biographie (obligatoire)</label>
+                <textarea class="form-control" id="biography" name="biography" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Enregistrer
+            </button>
+            <a href="authors.html" class="btn btn-secondary ms-3">
+                <i class="bi bi-arrow-left"></i> Retour
+            </a>
+        </form>
+    </div>
+
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

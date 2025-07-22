@@ -1,0 +1,33 @@
+:root {
+    font-size: 14px;
+}
+
+body {
+
+    font-family: 'Labeur', Georgia, 'Times New Roman', Times, serif;
+    background-color: $color-bg;
+    color: $color-text;
+}
+
+a {
+    color: $color-nav;
+}
+
+
+h1,h2, h3, h4{
+    font-family: 'Titre', 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+@media (min-width: 580px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    :root {
+        font-size: 18px;
+    }
+}

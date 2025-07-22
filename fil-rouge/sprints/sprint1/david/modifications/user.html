@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un auteur | Admin citation</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/bootstrap-icons/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Citations admin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="quotes.html">Les citations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="authors.html">Les auteurs</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="users.html">Les utilisateurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.html">Mon profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html" target="_blank" title="le site"><i
+                                class="bi bi-eye"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exit.html" title="Se déconnecter"><i
+                                class="bi bi-box-arrow-right"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <h1 class="mb-5">Ajouter un utilisateur</h1>
+
+                <form action="user_add.php" method="POST">
+            <div class="mb-4">
+                <label for="lastname" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="firstname" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="email" class="form-label">Adresse e-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label">Mot de passe (<span class="text-danger">12 caractères minimum</span>, avec au moins <span class="text-danger">une majuscule</span>, <span class="text-danger">un chiffre</span> et <span class="text-danger">un caractère spécial.</span>)</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="confirm_password" class="form-label">Confirmer le mot de passe</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+            </div>
+
+             <div class="mb-4">
+                <label class="form-label">Rôles</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="role_active" name="roles[]" checked>
+                    <label class="form-check-label" for="role_active">Compte actif</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="2" id="role_editor" name="roles[]">
+                    <label class="form-check-label" for="role_editor">Rédacteur</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="3" id="role_admin" name="roles[]">
+                    <label class="form-check-label" for="role_admin">Administrateur</label>
+                </div>
+            </div>
+
+             <button type="submit" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Enregistrer
+            </button>
+            <a href="authors.html" class="btn btn-secondary ms-3">
+                <i class="bi bi-arrow-left"></i> Retour
+            </a>
+        </form>
+    </div>
+
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
