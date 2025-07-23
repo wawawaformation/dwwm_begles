@@ -6,8 +6,22 @@ body{
 }
 
 h1, h2, h3, h4, h5{
-    margin: 0;
+    margin: 0; 
 }
+
+h1
+{
+  font-size: 1.7rem;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 1.4rem;
+}
+
 
 .container-dark{ 
     padding: 1rem;

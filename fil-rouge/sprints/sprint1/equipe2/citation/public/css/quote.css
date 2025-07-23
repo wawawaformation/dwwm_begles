@@ -1,0 +1,60 @@
+body{
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-dark{ 
+    padding: 1rem;
+  max-width: 100%;
+  margin: auto;
+  background-color:hsla(35,55%, 57%, 0.4);
+  
+
+}
+
+.container-ligth{
+ padding: 1rem;
+  max-width: 100%;
+  margin: auto;
+  background-color: #FAF2E6;
+}
+
+.fil-arianne{
+    text-decoration: none;
+    color: #5B3C11 ;
+    font-size: 0.9rem;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.tiltle{
+    text-align: center;
+    font-weight: bold;
+  font-size: 1.3rem;
+  color: #5B3C11;
+}
+
+.card{
+    padding: 1rem;
+    background-color: #FAF2E6;
+    margin: 1rem;
+    justify-content: center;
+    border-radius: 6%;
+    
+}
+ 
+p{
+    text-align: center;
+    
+}
+
+.author-link{
+    text-align: center;
+    color: #6F2ECE;
+    text-decoration: none;
+}
+
