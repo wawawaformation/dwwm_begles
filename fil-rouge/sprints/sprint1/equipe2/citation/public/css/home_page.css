@@ -38,10 +38,10 @@ span{
 .precedent1{
     position: absolute;
     font-size: 50px;
-    opacity: 0;
+    opacity: 1;
     background-color: #0000001f;
     color: #5B3C11;;
-    top: 800px;
+    top: 1500px;
     left: 20px;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -50,21 +50,13 @@ span{
 .suivant1{
     position: absolute;
     font-size: 50px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
     background-color: #0000001f;
     color:#5B3C11; ;
     cursor: pointer;
-    top: 800px;
+    top: 1500px;
     right: 20px;
-}
-
-.precedent1:hover{
-    opacity: 1;
-}
-
-.suivant1:hover{
-    opacity: 1;
 }
 
 h3{
@@ -76,10 +68,10 @@ h3{
 .precedent2{
     position: absolute;
     font-size: 50px;
-    opacity: 0;
+    opacity: 1;
     background-color: #0000001f;
     color: #5B3C11;;
-    top: 1250px;
+    top: 1950px;
     left: 20px;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -88,19 +80,11 @@ h3{
 .suivant2{
     position: absolute;
     font-size: 50px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s ease;
     background-color: #0000001f;
     color:#5B3C11;;
     cursor: pointer;
-    top: 1250px;
+    top: 1950px;
     right: 20px;
-}
-
-.precedent2:hover{
-    opacity: 1;
-}
-
-.suivant2:hover{
-    opacity: 1;
 }
