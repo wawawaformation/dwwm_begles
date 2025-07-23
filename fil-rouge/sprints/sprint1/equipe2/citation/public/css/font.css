@@ -1,0 +1,14 @@
+@font-face {
+    font-family:"titre_h1";
+    src: url(../police/Libre_Baskerville/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: "corps_h2";
+    src: url(../police/Crimson_Pro/static/CrimsonPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: "citations";
+    src: url(../police/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf);
+}

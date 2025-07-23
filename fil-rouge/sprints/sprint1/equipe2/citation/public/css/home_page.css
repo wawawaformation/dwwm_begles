@@ -6,7 +6,7 @@ h1{
     align-items: center;
     margin: 0%;
     color: #5B3C11;
-
+    text-align: center;
 }
 
 h2{
@@ -31,17 +31,17 @@ span{
     height: 300px;
     width: 250px;
     display:flex;
-    margin-left: 80px;
+    margin-left: 60px;
     border-radius: 20%;
 }
 
 .precedent1{
     position: absolute;
-    font-size: 100px;
+    font-size: 50px;
     opacity: 0;
     background-color: #0000001f;
     color: #5B3C11;;
-    top: 1500px;
+    top: 800px;
     left: 20px;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -49,14 +49,14 @@ span{
 
 .suivant1{
     position: absolute;
-    font-size: 100px;
+    font-size: 50px;
     opacity: 0;
     transition: opacity 0.3s ease;
     background-color: #0000001f;
     color:#5B3C11; ;
     cursor: pointer;
-    top: 1500px;
-    right: 40px;
+    top: 800px;
+    right: 20px;
 }
 
 .precedent1:hover{
@@ -75,11 +75,11 @@ h3{
 
 .precedent2{
     position: absolute;
-    font-size: 100px;
+    font-size: 50px;
     opacity: 0;
     background-color: #0000001f;
     color: #5B3C11;;
-    top: 1950px;
+    top: 1250px;
     left: 20px;
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -87,14 +87,14 @@ h3{
 
 .suivant2{
     position: absolute;
-    font-size: 100px;
+    font-size: 50px;
     opacity: 0;
     transition: opacity 0.3s ease;
     background-color: #0000001f;
     color:#5B3C11;;
     cursor: pointer;
-    top: 1950px;
-    right: 40px;
+    top: 1250px;
+    right: 20px;
 }
 
 .precedent2:hover{
