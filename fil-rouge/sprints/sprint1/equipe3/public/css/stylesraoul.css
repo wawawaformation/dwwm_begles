@@ -1,0 +1,43 @@
+body {
+    min-width: 375px;
+    margin: 0px;
+}
+
+.footer {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 7px;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+#main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+}
+
+#main a{
+    text-decoration: none;
+    color: #3A3227;
+}
+
+#rs {
+    margin: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#footer {
+    height: 80px;
+    background-color: #EBDCC6;
+    padding: 0px;
+}
+
+@media screen and (min-width: 375px) {
+    .footer {
+        display: flex;
+    }
+}

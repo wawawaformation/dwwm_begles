@@ -59,12 +59,19 @@ main {
 
 }
 
+.footer {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
 #header {
-    background-color: orange;
+    background-color: #EBDCC6;
     height: 160px;
 }
 
 #footer {
-    background-color: orange;
+    height: 80px;
+    background-color: #EBDCC6;
     height: 80px;
 }
