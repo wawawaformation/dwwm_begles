@@ -105,7 +105,12 @@
                             placeholder="Titre de la page">
                     </div>
                     <div class="mt-4">
-                        <label for="metadescription" class="form-label"><p class="muted">Metadescription (obligatoire) <a href="#" data-bs-toggle="tooltip" data-bs-title="Long trend de 160 à 200 caractères">inline links</a></p></label>
+                        <label for="metadescription" class="form-label">Metadescription (obligatoire)
+                            <span data-bs-toggle="tooltip"
+                                data-bs-title="Long trend de 160 à 200 caractères" style="cursor: help;">
+                                <i class="bi bi-info-circle-fill"></i>
+                            </span>
+                        </label>
                         <input type="text" class="form-control" id="metadescription" required>
                     </div>
                     <div class="mt-4 mb-4">
@@ -123,9 +128,16 @@
 
     <!-- Scripts JS-->
 
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <!--Tooltips-->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
 </body>
 
