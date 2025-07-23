@@ -21,12 +21,13 @@
             background-color: #FAF2E6 !important;
         }
 
-       #header .navbar-nav .nav-link.active {
-        color: #6622cc !important;
-        font-weight: bold;
+        #header .navbar-nav .nav-link.active {
+            color: #6622cc !important;
+            font-weight: bold;
         }
+
         #header .navbar-nav .nav-link {
-        color: #6622CC !important;
+            color: #6622CC !important;
         }
 
 
@@ -93,7 +94,6 @@
                 padding: 1rem;
             }
         }
-       
     </style>
 </head>
 
@@ -135,7 +135,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0" title="voir le site"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0"
+                                    title="voir le site"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -156,12 +157,27 @@
 
                 <form action="index.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="message" class="form-label p-3">Citation (obligatoire)</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
+                        <label for="citation" class="form-label p-1">Citation (obligatoire)</label>
+                        <textarea id="citation" name="citation" class="form-control" rows="1" required></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="auteur" class="form-label p-3">Auteur (obligatoire)</label>
-                        <input type="text" id="auteur" name="auteur" class="form-control" required>
+                        <!-- Auteur selection -->
+                        <label for="auteur" class="form-label mt-3 p-1">Auteur (obligatoire)</label>
+                        <select id="auteur" name="auteur" class="form-select" required>
+                            <option value="">-- Sélectionnez un auteur --</option>
+                            <option value="Victor Hugo">Victor Hugo</option>
+                            <option value="Georges Sand">Georges Sand</option>
+                            <option value="Voltaire">Voltaire</option>
+                            <option value="">Antoine de Saint-Éxupery</option>
+                            <option value="Victor Hugo">Simone de Beauvoir</option>
+                            <option value="Georges Sand">Albert Camus</option>
+                            <option value="Voltaire">Margerite Duras</option>
+                            <option value="Voltaire">Anonyme</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label p-1">Explication citation (obligatoire)</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Ajouter la citation</button>
                 </form>
@@ -213,7 +229,7 @@
                             <td>"Le doute est un état mental désagréable…"</td>
                             <td>Voltaire</td>
 
-                             <td>
+                            <td>
                                 <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
                                     <i class="fas fa-pen"></i> Modifier
                                 </a>
