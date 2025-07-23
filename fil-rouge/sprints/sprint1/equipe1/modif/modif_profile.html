@@ -12,6 +12,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <style>
+    #header {
+            background-color: #FAF2E6 !important;
+        }
+
+       #header .navbar-nav .nav-link.active {
+        color: #6622cc !important;
+        font-weight: bold;
+        }
+        #header .navbar-nav .nav-link {
+        color: #6622CC !important;
+        }
+    .btn.btn-secondary.dropdown-toggle {
+        background-color: #6622CC !important;
+
+    }
     .btn.btn-primary {
             background-color: #6622CC !important;
             border-color: #6622CC !important;
@@ -26,7 +41,7 @@
 </style>
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="public/img/logo.svg" alt="logo citations" width="124" height="72">
@@ -42,7 +57,7 @@
                             <a class="nav-link" href="#">Les citations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Les auteurs</a>
+                            <a class="nav-link" href="#">Les auteurs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Les pages</a>
@@ -50,18 +65,18 @@
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Les utilisateurs</a>
+                            <a class="nav-link" href="#">Les utilisateurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mon profil
+                            <a class="nav-link active" aria-current="page" href="#">Mon profil
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0 text-danger"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-eye"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Voir le site
-                            </a>
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0" title="voir le site"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +99,7 @@
                     <div class="row">
         
         <div class="col-md-4 d-flex align-items-start justify-content-center mb-3">
-            <img src="public/img/blank-profile-picture.png" alt="Photo de profil" class="img-fluid rounded" style="max-width: 300px;">
+            <img src="public/img/blank-profile-picture.png" alt="Photo de profil" class="img-fluid rounded" style="max-width: 320px;">
         </div>
 
         <!-- Formulaire droite -->
@@ -135,21 +150,21 @@
             </div>
         </div>
         <!-- Section mot de passe -->
-        <hr class="my-4">
+        <hr class="my-4 p-1">
         <h5>Changer le mot de passe</h5>
 
         <div class="col-12 mb-3">
-        <label for="current_password" class="form-label">Mot de passe actuel</label>
+        <label for="current_password" class="form-label p-1">Mot de passe actuel</label>
         <input type="password" id="current_password" name="current_password" class="form-control" placeholder="Mot de passe actuel">
         </div>
 
         <div class="col-12 mb-3">
-        <label for="new_password" class="form-label">Mot de passe (<span class="text-danger">12 caractères minimum</span> , avec au moins une majuscule, un chiffre et un caractère spécial.) |</label>
+        <label for="new_password" class="form-label p-1">Mot de passe (<span class="text-danger">12 caractères minimum</span> , avec au moins <span class="text-danger">une majuscule</span>, <span class="text-danger">un chiffre</span> et <span class="text-danger">un caractère spécial</span>.)</label>
         <input type="password" id="new_password" name="new_password" class="form-control" placeholder="Nouveau mot de passe">
         </div>
 
         <div class="col-12 mb-3">
-        <label for="confirm_password" class="form-label">Confirmer le nouveau mot de passe</label>
+        <label for="confirm_password" class="form-label p-1">Confirmer le nouveau mot de passe</label>
         <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirmez le mot de passe">
         </div>
 
