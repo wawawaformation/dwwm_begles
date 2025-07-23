@@ -11,10 +11,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+<style>
+    #header {
+            background-color: #FAF2E6 !important;
+        }
 
+       #header .navbar-nav .nav-link.active {
+        color: #6622cc !important;
+        font-weight: bold;
+        }
+        #header .navbar-nav .nav-link {
+        color: #6622CC !important;
+        }
+    .btn.btn-secondary.dropdown-toggle {
+        background-color: #6622CC !important;
+
+    }
+    .btn.btn-primary {
+            background-color: #6622CC !important;
+            border-color: #6622CC !important;
+            color: white !important;
+
+        }
+
+        .btn.btn-primary:hover {
+            background-color: #501a9c !important;
+            border-color: #501a9c !important;
+        }
+</style>
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="public/img/logo.svg" alt="logo citations" width="124" height="72">
@@ -30,7 +57,7 @@
                             <a class="nav-link" href="#">Les citations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Les auteurs</a>
+                            <a class="nav-link" href="#">Les auteurs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Les pages</a>
@@ -38,18 +65,18 @@
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Les utilisateurs</a>
+                            <a class="nav-link" href="#">Les utilisateurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mon profil
+                            <a class="nav-link active" aria-current="page" href="#">Mon profil
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0 text-danger"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-eye"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Voir le site
-                            </a>
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0" title="voir le site"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -57,25 +84,99 @@
         </nav>
     </header>
  <main id="main">
+        <div class="alert alert-success" role="alert">
+            ✅ Profil mis à jour !
+        </div>
+        <div class="alert alert-danger" role="alert">
+            ❌ Veuillez remplir tous les champs.
+        </div>
         <div class="container">
             <div class="p-4 bg-light rounded mb-5 my-5">
                 <h1 class="title p-3">Profil d'utilisateur</h1>
 
 
                 <form action="index.php" method="post" enctype="multipart/form-data">
-                    <div class="mb-3">
-                        <label for="message" class="form-label p-3">Nom (obligatoire)</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    <div class="row">
+        
+        <div class="col-md-4 d-flex align-items-start justify-content-center mb-3">
+            <img src="public/img/blank-profile-picture.png" alt="Photo de profil" class="img-fluid rounded" style="max-width: 320px;">
+        </div>
+
+        <!-- Formulaire droite -->
+        <div class="col-md-8">
+            <div class="row">
+                
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="nom" class="form-label">Nom (obligatoire)</label>
+                    <input type="text" id="nom" name="nom" class="form-control" placeholder="Doe" required oninvalid="this.setCustomValidity('Veuillez remplir ce champ')" oninput="this.setCustomValidity('')">
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="prenom" class="form-label">Prénom (obligatoire)</label>
+                    <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jane" required>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="email" class="form-label">Email (obligatoire)</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="janedoe@email.com" required>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="role" class="form-label">Rôle</label>
+                    <div class="d-flex gap-2">
+                        <input type="text" id="role" name="role" class="form-control" placeholder="">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Choisissez
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#" onclick="setRole('Admin')">Admin</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setRole('Utilisateur')">Utilisateur</a></li>
+                                <li><a class="dropdown-item" href="#" onclick="setRole('Visiteur')">Visiteur</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="auteur" class="form-label p-3">Auteur (obligatoire)</label>
-                        <input type="text" id="auteur" name="auteur" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image (obligatoire)</label>
+                    <input type="file" class="form-control" id="image"
+                    accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                    required>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary mt-3">Mettre à jour</button>
+                </div>
+            </div>
+        </div>
+        <!-- Section mot de passe -->
+        <hr class="my-4 p-1">
+        <h5>Changer le mot de passe</h5>
+
+        <div class="col-12 mb-3">
+        <label for="current_password" class="form-label p-1">Mot de passe actuel</label>
+        <input type="password" id="current_password" name="current_password" class="form-control" placeholder="Mot de passe actuel">
+        </div>
+
+        <div class="col-12 mb-3">
+        <label for="new_password" class="form-label p-1">Mot de passe (<span class="text-danger">12 caractères minimum</span> , avec au moins <span class="text-danger">une majuscule</span>, <span class="text-danger">un chiffre</span> et <span class="text-danger">un caractère spécial</span>.)</label>
+        <input type="password" id="new_password" name="new_password" class="form-control" placeholder="Nouveau mot de passe">
+        </div>
+
+        <div class="col-12 mb-3">
+        <label for="confirm_password" class="form-label p-1">Confirmer le nouveau mot de passe</label>
+        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirmez le mot de passe">
+        </div>
+
+        <!-- Bouton submit -->
+        <div class="col-12">
+        <button type="submit" class="btn btn-primary mt-3">Mettre à jour</button>
+        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Ajouter la citation</button>
                 </form>
 
             </div>   
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
