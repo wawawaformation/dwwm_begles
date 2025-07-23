@@ -15,6 +15,7 @@
         #header {
             background-color: #FAF2E6 !important;
         }
+
         body {
             background-color: #FDFBF6;
         }
@@ -22,20 +23,23 @@
         a {
             color: #6622CC !important;
         }
+
         .active {
             color: #3A3227 !important;
         }
-         .btn.btn-secondary {
+
+        .btn.btn-secondary {
             color: #FEFEFE !important;
             background-color: #6622CC;
         }
-        .btn.btn-success 
-        {
+
+        .btn.btn-success {
             background-color: #11B19C;
         }
-         .btn.btn-success:hover {
+
+        .btn.btn-success:hover {
             background-color: #11B19C;
-         }
+        }
     </style>
 </head>
 
@@ -93,11 +97,12 @@
 
 <main id="main" class="my-5">
     <div class="container">
+        <h1>Modification des pages fixes</h1>
 
         <form action="">
-            <div class="mb-3">
+            <div class="m-5">
                 <label for="message" class="form-label">Modifier les mentions légales</label>
-                <textarea name="" class="form-control" id="message" required rows="10">
+                <textarea name="" class="form-control" id="message" required rows="2">
                 <h2>Politique de Cookies</h2>
 
         <h3>Qu’est-ce qu’un « cookie » ?</h3>
@@ -198,6 +203,37 @@
             modifier à tout moment vos préférences relatives à la gestion des cookies.</p>
              </textarea>
             </div>
+
+            <div class="mb-3">
+                <h2>Modifier les métadonnées</h2>
+
+                <label for="titre-og" class="form-label">Propriété Titre</label>
+                <input name="titre-og" class="form-control" id="titre-og" required
+                                placeholder="Citations">
+                </input>
+
+                <label for="type-og" class="form-label">Propriété Type</label>
+                <input name="type-og" class="form-control" id="type-og" required
+                                placeholder="website">
+                </input>
+
+                <label for="url-og" class="form-label">Propriété url</label>
+                <input name="url-og" class="form-control" id="url-og" required
+                                placeholder="#">
+                </input>
+
+                <label for="image-og" class="form-label">Propriété Image</label>
+                <input type="file" class="form-control" id="image-og" 
+                    accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                        required>
+                    <p></p>
+                </input>
+
+            </div>
+
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="#" />
+            <meta property="og:image" content="modif/public/img/logo.svg" />
 
             <button type="submit" class="btn btn-success me-3">Enregistrer</button>
             <a href="liste_auteurs.html" class="btn btn-secondary">Retour à la liste</a>
