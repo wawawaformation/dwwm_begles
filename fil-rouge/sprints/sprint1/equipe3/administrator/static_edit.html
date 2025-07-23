@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,10 +99,15 @@
             <form action="#" method="post">
 
                 <div class="col-12">
-                        <div class="mt-2">
-                            <label for="title-page" class="form-label">Titre de la page</label>
-                            <input type="text" class="form-control" id="title-page" required disabled placeholder="Titre de la page">
-                        </div>
+                    <div class="mt-2">
+                        <label for="title-page" class="form-label">Titre de la page</label>
+                        <input type="text" class="form-control" id="title-page" required disabled
+                            placeholder="Titre de la page">
+                    </div>
+                    <div class="mt-4">
+                        <label for="metadescription" class="form-label"><p class="muted">Metadescription (obligatoire) <a href="#" data-bs-toggle="tooltip" data-bs-title="Long trend de 160 à 200 caractères">inline links</a></p></label>
+                        <input type="text" class="form-control" id="metadescription" required>
+                    </div>
                     <div class="mt-4 mb-4">
                         <label for="content" class="mb-2">Contenu de la page (obligatoire)</label>
                         <textarea name="" class="form-control" id="content" required></textarea>
