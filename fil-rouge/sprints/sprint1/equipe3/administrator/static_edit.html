@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,10 +99,20 @@
             <form action="#" method="post">
 
                 <div class="col-12">
-                        <div class="mt-2">
-                            <label for="title-page" class="form-label">Titre de la page</label>
-                            <input type="text" class="form-control" id="title-page" required disabled placeholder="Titre de la page">
-                        </div>
+                    <div class="mt-2">
+                        <label for="title-page" class="form-label">Titre de la page</label>
+                        <input type="text" class="form-control" id="title-page" required disabled
+                            placeholder="Titre de la page">
+                    </div>
+                    <div class="mt-4">
+                        <label for="metadescription" class="form-label">Metadescription 
+                            <span data-bs-toggle="tooltip" data-bs-title="Longue traîne de 160 à 200 caractères"
+                                style="cursor: help;">
+                                <i class="bi bi-info-circle-fill"></i>
+                            </span>
+                        </label>
+                        <input type="text" class="form-control" id="metadescription">
+                    </div>
                     <div class="mt-4 mb-4">
                         <label for="content" class="mb-2">Contenu de la page (obligatoire)</label>
                         <textarea name="" class="form-control" id="content" required></textarea>
@@ -117,9 +128,16 @@
 
     <!-- Scripts JS-->
 
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+
+    <!--Tooltips-->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 
 </body>
 
