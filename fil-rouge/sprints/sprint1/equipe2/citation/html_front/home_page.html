@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil_citation</title>
     <link rel="stylesheet" href="../public/css/home_page.css">
+    <link rel="stylesheet" href="../public/css/header_footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <header>
+<header id="header">
+
+        <div class="top-header">
+            <a href="" class="logo">
+                <img src="/citation/assets/logo/logo.webp" alt="Accueil">
+            </a>
+
+            <nav>
+                <button class="burger"><i class="bi bi-list"></i></button>
+                <ul class="menu menu-secondaire">
+                    <li class="item">
+                        <form action="search.php" method="get" role="search">
+                            <div class="icon-recherche">
+                                <input type="search">
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="item"><a href="api.html">API</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul class="menu menu-principal">
+            <li class="item"><a href="page-acceuil.html">Accueil</a></li>
+            <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
+            <li class="item"><a href="liste-citation.html">Citations</a></li>
+        </ul>
 
     </header>
+
 
     <body>
         <section class="title_chapo">
@@ -57,27 +88,18 @@
             </div>
         </div>            
         </section>
-        <section class="accueil">
-        <div class="inbox1">
-            <h1>Abonnez-vous !</h1>
-                
-                    <h3 class="text"> Les avantages:<br>
-                        Ajouter de nouveaux auteurs <br>
-                        Ajouter de nouvelles citations <br>
-                    </h3>
-        </div>            
-        </section>
-                <section class="accueil">
-        <div class="inbox1">
-            <h1>Nos réseaux sociaux </h1>
-                
-                    <h3 class="text"> Les avantages:<br>
-                        Ajouter de nouveaux auteurs <br>
-                        Ajouter de nouvelles citations <br>
-                    </h3>
-        </div>            
-        </section>
+            <footer id="footer">
 
+        <ul class="menu legal">
+            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+            <li class="item"><a href="a-propos.html">À propos</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="menu menu-social">
+            <li class="item"><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li class="item"><a href=""><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
 
 
 
