@@ -1,86 +1,70 @@
-body {
-    
-    background-color: #FAF2E6;
-    margin: 0px;
-}
-
-
-.navbar {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #EBDCC6;
-    padding: 12px;
-}
-
-.header {
-    display: flex;
-    list-style-type: none;
-    gap: 10px;
-    padding-left: 12px;
-}
-    
-
 @font-face {
     font-family: 'Crimson Pro';
     src: url('../fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
 }
 
-.item {
-    color: #3A3227;
+:root{
+    --color-background: #FAF2E6;
+    --color-text: #3A3227;
+    --color-primary: #6222CC;
+
+    font-size: 14px;
+}
+
+body {
+
+    background-color: var(--color-background);
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+#header nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a{
     text-decoration: none;
-    font-size: 15px;
-    font-family:'Crimson Pro', serif;
+    color: var(--color-text);
 }
 
-.search{
-    width: 15px;
-    height: 15px;
+
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 1.1rem;
+    padding: .8rem;
+
 }
-
-.logo {
-    width: 81.23px;
-
-}
-
-@media screen and (min-width: 720px) {
-    .item {
-        font-size: 18px;
-    }
-
-    .search {
-        width: 18px;
-        height: 18px;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .header {
-        gap: 25px;
-    }
-}
-
     
 
 
-@media screen and (min-width: 1200px) {
-    .item {
-        font-size: 21px;
-    }
 
-    .search {
-        width: 22px;
-        height: 22px;
-    }
+.logo {
+    width: 81.23px;
+    color:#6222CC;
+}
 
-    .logo {
-        width: 130px;
-    }
 
-    .header {
-        gap: 20px;
+
+@media (min-width: 768px) {
+    :root{
+         font-size: 20px;
     }
+   
 }
