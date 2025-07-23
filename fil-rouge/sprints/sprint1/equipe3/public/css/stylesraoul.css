@@ -18,7 +18,7 @@ body {
     padding-top: 7px;
 }
 
-#main a{
+#main a {
     text-decoration: none;
     color: #3A3227;
 }
@@ -36,8 +36,27 @@ body {
     padding: 0px;
 }
 
-@media screen and (min-width: 375px) {
-    .footer {
+@media screen and (min-width: 834px) {
+    #footer {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer li {
+       margin: 0 24px;
+    }
+
+    #main {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 0px;
+    }
+
+    #rs {
+        margin: 0px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 0px;
     }
 }
