@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajoutez, modifiez ou supprimez facilement des citations et auteurs.">
     <title>Ajoute des Auteurs | Citations</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="public/js/tinymce/myTiny.js"></script>
 
@@ -17,6 +19,20 @@
 
         #header {
             background-color: #FAF2E6 !important;
+        }
+
+        #header .navbar-nav .nav-link.active {
+            color: #6622cc !important;
+            font-weight: bold;
+        }
+
+        #header .navbar-nav .nav-link {
+            color: #6622CC !important;
+        }
+
+
+        .active {
+            color: #3A3227 !important;
         }
 
         .btn.btn-primary {
@@ -100,7 +116,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Les citations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Les auteurs</a>
+                            <a class="nav-link" href="#">Les auteurs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Les pages</a>
@@ -111,22 +127,29 @@
                             <a class="nav-link" href="#">Les utilisateurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Mon profil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right text-danger"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Voir le site
+                            <a class="nav-link" href="#">Mon profil
                             </a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-eye"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0"
+                                    title="voir le site"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
     <main id="main">
+        <div class="alert alert-success" role="alert">
+            ✅ Citation ajoutée avec succès !
+        </div>
+        <div class="alert alert-danger" role="alert">
+            ❌ Veuillez remplir tous les champs.
+        </div>
         <div class="container">
             <div class="p-4 bg-light rounded mb-5 my-5">
                 <h1 class="title p-3">Ajouter une citation</h1>
@@ -134,12 +157,27 @@
 
                 <form action="index.php" method="post" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="message" class="form-label p-3">Citation (obligatoire)</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
+                        <label for="citation" class="form-label p-1">Citation (obligatoire)</label>
+                        <textarea id="citation" name="citation" class="form-control" rows="1" required></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="auteur" class="form-label p-3">Auteur (obligatoire)</label>
-                        <input type="text" id="auteur" name="auteur" class="form-control" required>
+                        <!-- Auteur selection -->
+                        <label for="auteur" class="form-label mt-3 p-1">Auteur (obligatoire)</label>
+                        <select id="auteur" name="auteur" class="form-select" required>
+                            <option value="">-- Sélectionnez un auteur --</option>
+                            <option value="Victor Hugo">Victor Hugo</option>
+                            <option value="Georges Sand">Georges Sand</option>
+                            <option value="Voltaire">Voltaire</option>
+                            <option value="">Antoine de Saint-Éxupery</option>
+                            <option value="Victor Hugo">Simone de Beauvoir</option>
+                            <option value="Georges Sand">Albert Camus</option>
+                            <option value="Voltaire">Margerite Duras</option>
+                            <option value="Voltaire">Anonyme</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label p-1">Explication citation (obligatoire)</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Ajouter la citation</button>
                 </form>
@@ -164,8 +202,12 @@
                             <td>Victor Hugo</td>
 
                             <td>
-                                <a href="#" class="btn btn-sm btn-warning">Modifier</a>
-                                <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
+                                    <i class="fas fa-pen"></i> Modifier
+                                </a>
+                                <a href="delete-url" style="color: #F87263; text-decoration: none;">
+                                    <i class="fas fa-trash-alt"></i> Supprimer
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -174,8 +216,12 @@
                             <td>Georges Sand</td>
 
                             <td>
-                                <a href="#" class="btn btn-sm btn-warning">Modifier</a>
-                                <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
+                                    <i class="fas fa-pen"></i> Modifier
+                                </a>
+                                <a href="delete-url" style="color: #F87263; text-decoration: none;">
+                                    <i class="fas fa-trash-alt"></i> Supprimer
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -184,8 +230,12 @@
                             <td>Voltaire</td>
 
                             <td>
-                                <a href="#" class="btn btn-sm btn-warning">Modifier</a>
-                                <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
+                                    <i class="fas fa-pen"></i> Modifier
+                                </a>
+                                <a href="delete-url" style="color: #F87263; text-decoration: none;">
+                                    <i class="fas fa-trash-alt"></i> Supprimer
+                                </a>
                             </td>
                         </tr>
                     </tbody>
