@@ -6,6 +6,16 @@
   gap: 10px;
 }
 
+#menu-toggle:checked ~ .menu-secondaire {
+  display: flex; 
+  flex-direction: column;
+  background-color: #fff; 
+  position: absolute;
+  top: 60px; 
+  right: 0;
+  z-index: 1000;
+}
+
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -57,7 +67,6 @@
 .menu-secondaire {
   display: none;
   flex-direction: column;
-  position: absolute;
   top: 100%;
   left: 0;
   background-color: #FAF2E6;
@@ -66,6 +75,7 @@
   border-radius: 5px;
   gap: 10px;
   list-style: none;
+  width: 100%;
 }
 
 #menu-toggle:checked + label + .search-form + .menu-secondaire {
