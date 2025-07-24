@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
     width: 393px;
     background-color: #FDFBF6;
 }
@@ -18,27 +19,30 @@ html, body{
     src: url(public/fonts/EBGaramond-Regular.ttf);
 }
 
-a{    
+a {
     text-decoration: unset;
 }
-ul{
+
+ul {
     list-style-type: none;
 }
 
-.citation{
+.citation {
+    display: flex;
     font-family: font-citation, serif;
     font-size: 14px;
     padding: 12px;
+    color: #3A3227;
 }
 
-.citation-aleatoire{
+.citation-aleatoire {
     width: 393px;
     height: 163px;
     background-color: #FAF2E6;
-    box-shadow: 0px 4px 4px  rgb(102 34 204 / 0.5);
+    box-shadow: 0px 4px 4px rgb(102 34 204 / 0.5);
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -47,29 +51,37 @@ ul{
     margin-bottom: 31px;
 }
 
-.etiquette-citation{
-    display: block;
+.etiquette-citation {
+    justify-content: space-between;
     background-color: #FAF2E6;
-    color: #3A3227;
+    box-shadow: 0px 4px 4px rgb(102 34 204 / 0.4);
     width: 345px;
     height: 72px;
+    color: #3A3227;
 }
 
-.fleche{
+.etiquette-citation a{
+    display: block;
+}
+
+.fleche {
+    align-self: center;
     width: 24px;
     height: 24px;
+
 }
 
-.bouton{
+.bouton {
     width: 140px;
     height: 28px;
+    margin-top: 10px;
     font-family: labeur;
-
+    justify-content: end;
     background-color: #6622CC;
     color: #FDFBF6;
 }
 
-.pagination-perso{
+.pagination-perso {
     width: 202px;
     height: 32px;
     display: flex;
@@ -78,7 +90,7 @@ ul{
     gap: 15px;
 }
 
-.lien-pagination{
+.lien-pagination {
     color: #3A3227;
     font-size: 20px;
     font-family: labeur, sans-serif;
