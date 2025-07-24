@@ -1,5 +1,6 @@
 body{
     font-family: "corps_h2";
+    margin: 0;
 }
 
 .fil-arianne{
@@ -7,6 +8,7 @@ body{
     color: #5B3C11 ;
     font-size: 0.9rem;
     text-align: left;
+    margin-left: 1rem;
 }
 
 .container-dark{

@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 h1{
     font-family:"titre_h1";
     margin-top: 0;
@@ -17,20 +21,13 @@ h1{
     color: #5B3C11 ;
     font-size: 0.9rem;
     text-align: left;
+    margin-left:1rem ;
 } 
 .container-dark{
     background-color: hsla(35, 55%, 57%, 0.4);
     color: #5B3C11;
     margin: 0;
 }
-
-.fil-arianne{
-    text-decoration: none;
-    color: #5B3C11 ;
-    font-size: 0.9rem;
-    text-align: left;
-}
-
 
 h2{
     margin-top: 0;
@@ -67,4 +64,3 @@ li{
 .before-br {
     color: #6622CC;
 }
-
