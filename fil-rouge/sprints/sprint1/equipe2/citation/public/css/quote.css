@@ -35,8 +35,9 @@ body {
 .tiltle {
     text-align: center;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     color: #5B3C11;
+    font-family: "titre_h1";
 }
 
 .card {
@@ -51,7 +52,6 @@ body {
 
 p {
     text-align: center;
-
 }
 
 .author-link {
@@ -62,3 +62,4 @@ p {
 .explanation {
 background-color:#FAF2E6 ;
 }
+
