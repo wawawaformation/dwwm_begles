@@ -120,3 +120,7 @@ button{
     margin-bottom: .5rem;
     border: none;
 }
+
+.no-display{
+    display: none;
+}

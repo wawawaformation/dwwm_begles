@@ -67,3 +67,7 @@ li{
 .before-br {
     color: #6622CC;
 }
+
+.no-display{
+    display: none;
+}
