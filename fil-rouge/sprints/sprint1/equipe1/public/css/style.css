@@ -28,6 +28,7 @@ ul{
 .citation{
     font-family: font-citation, serif;
     font-size: 14px;
+    padding: 12px;
 }
 
 .citation-aleatoire{
@@ -49,6 +50,7 @@ ul{
 .etiquette-citation{
     display: block;
     background-color: #FAF2E6;
+    color: #3A3227;
     width: 345px;
     height: 72px;
 }
@@ -61,7 +63,10 @@ ul{
 .bouton{
     width: 140px;
     height: 28px;
+    font-family: labeur;
+
     background-color: #6622CC;
+    color: #FDFBF6;
 }
 
 .pagination-perso{
@@ -71,4 +76,10 @@ ul{
     flex-direction: row;
     align-items: center;
     gap: 15px;
+}
+
+.lien-pagination{
+        color: #3A3227;
+        font-size: 20px;
+        font-family: labeur, sans-serif;
 }
