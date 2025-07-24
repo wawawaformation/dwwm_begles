@@ -1,6 +1,6 @@
 h1{
     background-color: #FAF2E6;
-    font-size: 3em;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ h2{
     background-color: hsla(35, 55%, 57%, 0.40);
     margin: 0%;
     color: #5B3C11;
-    font-size: 1em;
+    font-size: 1rem;
     
 }
 
