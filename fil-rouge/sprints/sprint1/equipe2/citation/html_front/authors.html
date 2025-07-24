@@ -13,35 +13,38 @@
 
 <body>
     <header id="header">
-
         <div class="top-header">
-            <a href="home_page.html" class="logo">
+            <a href="#" class="logo">
                 <img src="../assets/logo/logo.webp" alt="Accueil">
             </a>
 
-            <nav>
-                <button class="burger" aria-label="Ouvrir le menu"><i class="bi bi-list"></i></button>
+            <div class="right-header">
+
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger"><i class="bi bi-list"></i></label>
+
+
+                <form action="search.php" method="get" role="search" class="search-form">
+                    <div class="icon-recherche">
+                        <input type="search" />
+                        <i class="bi bi-search"></i>
+                    </div>
+                </form>
+
+
                 <ul class="menu menu-secondaire">
-                    <li class="item">
-                        <form action="search.php" method="get" role="search">
-                            <div class="icon-recherche">
-                                <input aria-label="Rechercher" type="search">
-                                <i class="bi bi-search"></i>
-                            </div>
-                        </form>
-                    </li>
                     <li class="item"><a href="api.html">API</a></li>
                     <li class="item"><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
 
+
         <ul class="menu menu-principal">
-            <li class="item"><a href="page-acceuil.html">Accueil</a></li>
+            <li class="item"><a href="page-accueil.html">Accueil</a></li>
             <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
             <li class="item"><a href="liste-citation.html">Citations</a></li>
         </ul>
-
     </header>
     <div class="container-dark">
         <div class="fils-arianne">
@@ -66,20 +69,31 @@
             <div class="author-dates"> 18/07/1935 - 05/06/2024</div>
         </div>
 
+        <div class="author-description">
+            <div class="biography">
+            <div class="origin">Origine : Italien</div>
+                <p>Artiste franco-suisse, il acquiert la notoriété à partir de la fin des années 1960 notamment grâce à ses œuvres fondées sur ses « écritures », qu’il décline sous diverses formes...</p>
+            </div>
+            <div class="ben-vautier">
+        <img src="../public/img/Ben-debout.webp" alt="ben-vautier">
+        </div>
+        </div>
+        
+
     </div>
 
-    <footer id="footer">
+<footer id="footer">
 
-        <ul class="menu legal">
-            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
-            <li class="item"><a href="a-propos.html">À propos</a></li>
-            <li class="item"><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul class="menu menu-social">
-            <li class="item"><a href="facebook.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a></li>
-            <li class="item"><a href="instagram.html" aria-label="instagram"><i class="bi bi-instagram"></i></a></li>
-        </ul>
-    </footer>
+    <ul class="menu legal">
+        <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+        <li class="item"><a href="a-propos.html">À propos</a></li>
+        <li class="item"><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul class="menu menu-social">
+        <li class="item"><a href=""><i class="bi bi-facebook"></i></a></li>
+        <li class="item"><a href=""><i class="bi bi-instagram"></i></a></li>
+    </ul>
+</footer>
 </body>
 
 </html>
