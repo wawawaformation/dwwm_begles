@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/contact.css">
+    <link rel="stylesheet" href="../public/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../public/css/header_footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="top-header">
+            <a href="#" class="logo">
+                <img src="../assets/logo/logo.webp" alt="Accueil">
+            </a>
+            <div class="right-header">
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger"><i class="bi bi-list"></i></label>
+                <form action="search.php" method="get" role="search" class="search-form">
+                    <div class="icon-recherche">
+                        <input type="search" />
+                        <i class="bi bi-search"></i>
+                    </div>
+                </form>
+                <ul class="menu menu-secondaire">
+                    <li class="item"><a href="api.html">API</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="menu menu-principal">
+            <li class="item"><a href="page-accueil.html">Accueil</a></li>
+            <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
+            <li class="item"><a href="liste-citation.html">Citations</a></li>
+        </ul>
+    </header>
+    <div class="container-dark">
+        <div class="fil-arianne">
+            <a href="home_page.html" class="fil-arianne">Accueil</a>
+            <i class="bi bi-chevron-double-right"></i>
+            <a href="contact.html" class="fil-arianne">Contact</a>
+        </div>
+    </div>
+    <div class="container-light">
+        <h1 class="title">Nous contacter</h1>
+    </div>
+    <div class="container-dark">
+        <p class="chapo">Vous souhaitez nous encourager dans cette galère n'hésitez plus. On a besoin de vous !</p>
+    </div>
+    <div class="container-light">
+        <h2>Remplissez notre formulaire</h2>
+    </div>
+    <div class="container-dark">
+        <form action="" method="post" class="form">
+            <li class="name">
+                <label for="name">Nom</label><br>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li class="surname">
+                <label for="surname">Prénom</label><br>
+                <input type="text" id="surname" name="user_surname" />
+            </li>
+            <li class="mail">
+                <label for="mail">Mail (obligatoire)</label><br>
+                <input type="email" id="mail" name="user_mail" required />
+            </li>
+            <li class="message">
+                <label for="message">Votre message</label><br>
+                <textarea id="message" name="user_message"></textarea>
+            </li>
+            <div class="privacy-policy">
+                <input type="checkbox" id="privacy-policy" name="privacy-policy" />
+                <label for="privacy-policy">J'accepte la <a href="https://www.politiquedeconfidentialite.com/">politique
+                        de
+                        confidentialité</a></label>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer</button>
+            </div>
+    </div>
+    </form>
+    <footer id="footer">
+        <ul class="menu legal">
+            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+            <li class="item"><a href="a-propos.html">À propos</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="menu menu-social">
+            <li class="item"><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li class="item"><a href=""><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
