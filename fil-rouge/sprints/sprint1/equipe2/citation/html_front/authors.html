@@ -12,24 +12,30 @@
 </head>
 
 <body>
+
     <header id="header">
         <div class="top-header">
-            <a href="#" class="logo">
+
+
+            <a href="home_page.html" class="logo">
                 <img src="../assets/logo/logo.webp" alt="Accueil">
             </a>
+
 
             <div class="right-header">
 
                 <input type="checkbox" id="menu-toggle" hidden>
-                <label for="menu-toggle" class="burger"><i class="bi bi-list"></i></label>
+                <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu principal"><i
+                        class="bi bi-list"></i></label>
 
 
-                <form action="search.php" method="get" role="search" class="search-form">
-                    <div class="icon-recherche">
-                        <input type="search" />
-                        <i class="bi bi-search"></i>
-                    </div>
-                </form>
+
+                <div class="icon-recherche"><a href="recherche.html" aria-label="recherche">
+                        <i class="bi bi-search"></i></a>
+
+                </div>
+
+
 
 
                 <ul class="menu menu-secondaire">
@@ -37,15 +43,18 @@
                     <li class="item"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
         </div>
 
 
+
         <ul class="menu menu-principal">
-            <li class="item"><a href="page-accueil.html">Accueil</a></li>
-            <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
-            <li class="item"><a href="liste-citation.html">Citations</a></li>
+            <li class="item"><a href="home_page.html">Accueil</a></li>
+            <li class="item"><a href="authors.html">Auteurs</a></li>
+            <li class="item"><a href="quotes.html">Citations</a></li>
         </ul>
     </header>
+
     <div class="container-dark">
         <div class="fils-arianne">
             <a href="home_page.html" class="fil-arianne">Accueil</a>
@@ -71,29 +80,140 @@
 
         <div class="author-description">
             <div class="biography">
-            <div class="origin">Origine : Italien</div>
-                <p>Artiste franco-suisse, il acquiert la notoriété à partir de la fin des années 1960 notamment grâce à ses œuvres fondées sur ses « écritures », qu’il décline sous diverses formes...</p>
+                <div class="origin">Origine : Italien</div>
+                <p>Artiste franco-suisse, il acquiert la notoriété à partir de la fin des années 1960 notamment grâce à
+                    ses œuvres fondées sur ses « écritures », qu’il décline sous diverses formes...
+                    <a class="more" href="author.html" aria-label="lire la suite">Lire la suite</a>
+                </p>
+
             </div>
             <div class="ben-vautier">
-        <img src="../public/img/Ben-debout.webp" alt="ben-vautier">
+                <img src="../public/img/Ben-debout.webp" alt="ben-vautier">
+            </div>
         </div>
+
+        <div class="quote">
+            "On est tous coupable"
         </div>
-        
+
 
     </div>
 
-<footer id="footer">
+    <div class="card">
+        <div class="author-name-date">
+            <div class="author-name">
+                <h2>David Lodge : </h2>
+            </div>
+            <div class="author-dates"> 28/01/1935 - 01/01/2025</div>
+        </div>
 
-    <ul class="menu legal">
-        <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
-        <li class="item"><a href="a-propos.html">À propos</a></li>
-        <li class="item"><a href="contact.html">Contact</a></li>
-    </ul>
-    <ul class="menu menu-social">
-        <li class="item"><a href=""><i class="bi bi-facebook"></i></a></li>
-        <li class="item"><a href=""><i class="bi bi-instagram"></i></a></li>
-    </ul>
-</footer>
+        <div class="author-description">
+            <div class="biography">
+                <div class="origin">Origine : Anglais</div>
+                <p>Issu d'une famille modeste, catholique, qui habitait le quartier de Brockley dans la banlieue sud de
+                    Londres; sa mère était secrétaire et son père musicien dans un orchestre de danse...
+                    <a class="more" href="author.html" aria-label="lire la suite">Lire la suite</a>
+                </p>
+
+            </div>
+            <div class="ben-vautier">
+                <img src="../public/img/David_Lodge.webp" alt="david lodge">
+            </div>
+        </div>
+
+        <div class="quote">
+            "Un monde régi par les médias. La culture du commérage"
+        </div>
+
+
+    </div>
+
+    <div class="card">
+        <div class="author-name-date">
+            <div class="author-name">
+                <h2>Maya Angelou :</h2>
+            </div>
+            <div class="author-dates"> 04/04/1928 - 28/05/2014</div>
+        </div>
+
+        <div class="author-description">
+            <div class="biography">
+                <div class="origin">Origine : Américain</div>
+                <p>Enfance et formation
+                    Marguerite Annie Johnson est la fille de Bailey Johnson et de Vivian (Baxter) Johnson, elle est
+                    surnommée « Maya » par son frère ...
+                    <a class="more" aria-label="lire la suite" href="author.html">Lire la suite</a>
+                </p>
+
+            </div>
+            <div class="ben-vautier">
+                <img src="../public/img/angelou.webp" alt="Maya angelou">
+            </div>
+        </div>
+
+        <div class="quote">
+            "Nous nous délectons de la beauté du papillon, mais admettons rarement les changements qu'il a subis pour
+            atteindre cette beauté."
+        </div>
+
+
+    </div>
+
+    <div class="card">
+        <div class="author-name-date">
+            <div class="author-name">
+                <h2>Keith Haring :</h2>
+            </div>
+            <div class="author-dates"> 04/05/1958 - 16/02/1990</div>
+        </div>
+
+        <div class="author-description">
+            <div class="biography">
+                <div class="origin">Origine : Américain</div>
+                <p>Fils d'Allen et de Joan Haring, il est l'aîné de trois sœurs. Il passe son enfance à Kutztown. Il est
+                    élevé dans une famille où règnent la discipline et un ...
+                    <a class="more" aria-label="lire la suite" href="author.html">Lire la suite</a>
+                </p>
+
+            </div>
+            <div class="ben-vautier">
+                <img src="../public/img/KEITH-HARING.webp" alt="KEITH HARING">
+            </div>
+        </div>
+
+        <div class="quote">
+            “Rien n'est important...donc tout est important."
+        </div>
+
+
+    </div>
+
+    <div class="pagination">
+        <a href="previous.html" class="arrow" aria-label="previous"><i class="bi bi-chevron-left"></i></a>
+        <a href="authors.html" class="page active">1</a>
+        <a href="authors.html" class="page">2</a>
+        <a href="authors.html" class="page">3</a>
+        <span class="dots">...</span>
+        <a href="authors.html" class="page">10</a>
+        <a href="authors.html" class="arrow" aria-label="next"><i class="bi bi-chevron-right"></i></a>
+    </div>
+
+    <footer id="footer">
+
+        <ul class="menu legal">
+            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+            <li class="item"><a href="a-propos.html">À propos</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="menu menu-social">
+            <li class="item"><a href="https://www.facebook.com/" aria-label="facebook"><i
+                        class="bi bi-facebook"></i></a>
+            </li>
+            <li class="item"><a href="https://www.instagram.com/" aria-label="instagram"><i
+                        class="bi bi-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 </html>
