@@ -8,3 +8,21 @@ html, body{
     background-color: #FDFBF6;
     box-shadow: 0px 4px 4px  rgb(102 34 204 / 0.5);
 }
+
+.etiquette-citation{
+    display: block;
+    background-color: #FAF2E6;
+    width: 345px;
+    height: 72px;
+}
+
+.fleche{
+    width: 24px;
+    height: 24px;
+}
+
+.bouton{
+    width: 140px;
+    height: 28px;
+    background-color: #6622CC;
+}
