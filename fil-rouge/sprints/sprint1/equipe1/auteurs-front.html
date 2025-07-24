@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liste des auteurs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="public/css/header.css">
+  <style>
+    body {
+        max-width: 393px;
+        background: #FDFBF6;
+    }
+
+     
+    .wrapper {
+        max-width: 393px;
+        height: 1500px;
+        padding: 1rem;
+        background-color: #FDFBF6;
+
+    }
+
+    .titre {
+        text-align: center;
+    }
+    .cartes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .carte-auteur {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 351px;
+      height: 120px;
+      background-color: #faf2e6;
+      box-shadow: 0 2px 8px rgba(102, 34, 204, 0.4);
+      padding: 0.5rem 1rem;
+    }
+
+    .carte-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .carte-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carte-contenu {
+      flex-grow: 1;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100px;
+    }
+
+    .carte-contenu h2 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .carte-contenu p {
+      margin: 0.3rem 0 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .link-citation {
+      color: #6622cc !important;
+      margin-top: auto;
+      font-weight: bold;
+    }
+
+    .arrow-link {
+      color: #6622cc;
+      font-size: 24px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+   
+</style>
+</head>
+<script>
+        const toggleBtn = document.getElementById("toggle-menu");
+        const navLinks = document.getElementById("nav-links");
+
+        toggleBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+            navLinks.classList.toggle("active");
+        });
+</script>
+<body>
+    <header id="header">
+        <nav>
+            <ul class="menu menu-principal d-flex">
+                <li class="item"><a href="#" id="toggle-menu"><i class="bi bi-list"></i></a></li>
+                <li><img src="/fil-rouge/sprints/sprint1/equipe1/public/img/logo.svg" alt="logo" width="124"></li>
+                <li class="item"><a href="#"><i class="bi bi-search"></i></a></li>
+            </ul>
+
+            <ul class="menu menu-liens" id="nav-links">
+                <li class="item"><a href="#">Les Citations</a></li>
+                <li class="item"><a href="#">Les Auteurs</a></li>
+                <li class="item"><a href="#">API</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="wrapper">
+            <div class="titre">
+                <h1>Les auteurs</h1>
+            </div>
+            <div class="cartes">
+                <div class="carte-auteur">
+        <div class="carte-image">
+          <img src="/fil-rouge/sprints/sprint1/equipe1/public/img/victor_hugo._portrait.webp" alt="Victor Hugo" />
+        </div>
+        <div class="carte-contenu">
+          <div>
+            <h2>Victor Hugo</h2>
+            <p>1802 - 1885</p>
+          </div>
+          <p class="link-citation">10 citations</p>
+        </div>
+        <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                <div class="carte-auteur">
+        <div class="carte-image">
+          <img src="/fil-rouge/sprints/sprint1/equipe1/public/img/george_sand.webp" alt="Georges Sand" />
+        </div>
+        <div class="carte-contenu">
+          <div>
+            <h2>Georges Sand</h2>
+            <p>1804 - 1876</p>
+          </div>
+          <p class="link-citation">10 citations</p>
+        </div>
+        <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                <div class="carte-auteur">
+        <div class="carte-image">
+          <img src="/imgs/imgs_bw/Voltaire.jpg" alt="Voltaire" />
+        </div>
+        <div class="carte-contenu">
+          <div>
+            <h2>Voltaire</h2>
+            <p>1694 - 1778</p>
+          </div>
+          <p class="link-citation">10 citations</p>
+        </div>
+        <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                <div class="carte-auteur">
+        <div class="carte-image">
+          <img src="/imgs/imgs_bw/Antoine.jpg" alt="Antoine de Saint-Éxupery" />
+        </div>
+        <div class="carte-contenu">
+          <div>
+            <h2>Antoine de Saint-Éxupery</h2>
+            <p>1900 - 1944</p>
+          </div>
+          <p class="link-citation">10 citations</p>
+        </div>
+        <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                <div class="carte-auteur">
+                    <div class="carte-image">
+                    <img src="/imgs/imgs_bw/Simone-de-beauvoir.jpeg" alt="Simone de Beauvoir" />
+                    </div>
+                    <div class="carte-contenu">
+                    <div>
+                        <h2>Simone de Beauvoir</h2>
+                        <p>1908 - 1986</p>
+                    </div>
+                    <p class="link-citation">10 citations</p>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                <div class="carte-auteur">
+                    <div class="carte-image">
+                    <img src="/imgs/imgs_bw/Albert_Camus.jpg" alt="Albert Camus" />
+                    </div>
+                    <div class="carte-contenu">
+                    <div>
+                        <h2>Albert Camus</h2>
+                        <p>1913 - 1960</p>
+                    </div>
+                    <p class="link-citation">10 citations</p>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                <div class="carte-auteur">
+                    <div class="carte-image">
+                    <img src="/imgs/imgs_bw/Duras.jpg" alt="Margerite Duras" />
+                    </div>
+                    <div class="carte-contenu">
+                    <div>
+                        <h2>Margerite Duras</h2>
+                        <p>1914 - 1996</p>
+                    </div>
+                    <p class="link-citation">10 citations</p>
+                    </div>
+                    <a href="#" class="arrow-link"><i class="bi bi-arrow-right-circle-fill"></i></a>
+                </div>
+                    
+                
+
+    </main>
+</body>
+</html>
