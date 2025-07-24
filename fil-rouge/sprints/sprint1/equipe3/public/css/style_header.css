@@ -8,6 +8,7 @@
     --color-background: #FAF2E6;
     --color-text: #3A3227;
     --color-primary: #6222CC;
+    --color-header: #E4C496;
 
     font-size: 14px;
 }
@@ -49,6 +50,7 @@ body {
     gap: 1.4rem;
     font-size: 1.1rem;
     padding: .8rem;
+    background-color: var(--color-header)
 
 }
     
