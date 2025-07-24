@@ -5,11 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/contact.css">
+    <link rel="stylesheet" href="../public/css/font.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../public/css/header_footer.css">
     <title>Document</title>
 </head>
 
 <body>
+    <header id="header">
+        <div class="top-header">
+            <a href="#" class="logo">
+                <img src="../assets/logo/logo.webp" alt="Accueil">
+            </a>
+            <div class="right-header">
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger"><i class="bi bi-list"></i></label>
+                <form action="search.php" method="get" role="search" class="search-form">
+                    <div class="icon-recherche">
+                        <input type="search" />
+                        <i class="bi bi-search"></i>
+                    </div>
+                </form>
+                <ul class="menu menu-secondaire">
+                    <li class="item"><a href="api.html">API</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="menu menu-principal">
+            <li class="item"><a href="page-accueil.html">Accueil</a></li>
+            <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
+            <li class="item"><a href="liste-citation.html">Citations</a></li>
+        </ul>
+    </header>
     <div class="container-dark">
         <div class="fil-arianne">
             <a href="home_page.html" class="fil-arianne">Accueil</a>
@@ -45,16 +73,27 @@
                 <textarea id="message" name="user_message"></textarea>
             </li>
             <div class="privacy-policy">
-                <input type="checkbox" id="privacy-policy" name="privacy-policy"/>
+                <input type="checkbox" id="privacy-policy" name="privacy-policy" />
                 <label for="privacy-policy">J'accepte la <a href="https://www.politiquedeconfidentialite.com/">politique
                         de
                         confidentialité</a></label>
             </div>
-            <div></div>
             <div class="button">
                 <button type="submit">Envoyer</button>
             </div>
     </div>
     </form>
+    <footer id="footer">
+        <ul class="menu legal">
+            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+            <li class="item"><a href="a-propos.html">À propos</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="menu menu-social">
+            <li class="item"><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li class="item"><a href=""><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
 </body>
+
 </html>

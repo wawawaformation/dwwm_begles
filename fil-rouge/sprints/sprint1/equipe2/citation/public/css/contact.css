@@ -1,3 +1,6 @@
+body{
+    font-family: "corps_h2";
+}
 .fil-arianne{
     padding: .5rem;
     text-align: left;
@@ -26,21 +29,22 @@
     margin-top: 0;
     margin-bottom: 0;
     padding:.1rem;
-    font-weight: lighter;
     font-size: 1.5rem;
+    font-family: "titre_h1";
 }
 
 .chapo{
     margin-bottom: 0;
     padding: 0.5rem;
     font-weight: lighter;
+    font-family: "corps_h2";
 }
 
 h2{
     margin-top: 0;
     margin-bottom: 0;
     padding: .7rem;
-    font-weight: lighter;
+    font-family: "corps_h2";
 }
 
 ul{
@@ -94,7 +98,7 @@ li{
 }
 
 .button {
-    margin-bottom: 1rem;
+    margin-bottom:0;
     padding: 1rem;
 }
 
@@ -105,4 +109,5 @@ button{
     width: 6rem;
     border-radius: 1.8rem;
     margin-bottom: .5rem;
+    border: none;
 }
