@@ -1,4 +1,5 @@
-     #header {
+
+        #header {
             max-width: 393px;
             background-color: #FAF2E6;
             padding: 1rem;
@@ -9,7 +10,19 @@
             list-style-type: none;
             padding: 0;
         }
+         a {
+            text-decoration: none;
+            color: #6622CC;
+            font-size: 1rem;
+        }
 
+        a:hover {
+            text-decoration: underline;
+            color: #6622CC;
+        }
+        .item i {
+            font-size: 2rem;
+        }
         .menu-principal {
             justify-content: space-between;
             align-items: center;
@@ -20,8 +33,6 @@
             text-align: center;
             margin-top: 1rem;
             display: none;
-            /* caché par défaut */
-
         }
 
         .menu-liens.active {
@@ -33,17 +44,4 @@
             padding: 0.5rem;
         }
 
-        a {
-            text-decoration: none;
-            color: #6622CC;
-            font-size: 1rem;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: #6622CC;
-        }
-
-        .item i {
-            font-size: 2rem;
-        }
+        
