@@ -360,6 +360,24 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 
+.container {
+  box-sizing: border-box;
+  width: 90vw;
+  margin: auto;
+}
+
+/*=============================================================================
+Les titres
+=============================================================================*/
+.title-section {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 #header, #navbar {
   padding: 1.2rem;
   background-color: #D1BEA1;
@@ -398,6 +416,7 @@ h1, h2, h3, h4 {
 }
 
 #footer {
+  margin: 3rem auto;
   margin-bottom: 6rem;
   padding: 1.2rem;
   display: flex;
@@ -415,6 +434,7 @@ h1, h2, h3, h4 {
   position: fixed;
   bottom: 0;
   box-sizing: border-box;
+  margin-top: 4rem;
   width: 100vw;
   z-index: 1000;
   display: flex;
@@ -444,6 +464,10 @@ h1, h2, h3, h4 {
   #header .loupe {
     transform: translateY(0.2rem);
   }
+  #footer {
+    margin-bottom: 0;
+    background-color: #D1BEA1;
+  }
 }
 .title-page {
   margin: 2.4em auto;
@@ -456,6 +480,21 @@ Les citations
 =============================================================================*/
 .quote {
   margin: 1.2rem auto;
+}
+
+.quote-quote {
+  font-family: "Citation", "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #3A3227;
+  margin: 0;
+}
+
+.one-quote .quote-author {
+  text-align: right;
+}
+
+.quote-author, .quote-author a {
+  text-decoration: none;
 }
 
 .quote-bubble {
@@ -473,15 +512,6 @@ Les citations
   align-items: center;
   margin-top: 1.2rem;
 }
-.quote-bubble .quote-quote {
-  font-family: "Citation", "Courier New", Courier, monospace;
-  font-size: 1rem;
-  color: #3A3227;
-  margin: 0;
-}
-.quote-bubble .quote-author {
-  text-decoration: none;
-}
 .quote-bubble .quote-more {
   font-family: "Citation", "Courier New", Courier, monospace;
 }
@@ -497,7 +527,7 @@ Les citations
 Pagination
 =============================================================================*/
 .pagination {
-  margin: 2.4rem auto;
+  margin-top: 2.4rem;
   text-align: center;
   font-size: 1.2rem;
   color: #3A3227;
@@ -525,6 +555,35 @@ Pagination
   background-color: #B3AFA8;
   color: #3A3227;
   font-weight: bold;
+}
+
+/*=============================================================================
+List
+=============================================================================*/
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*=============================================================================
+Classes utilitaires
+=============================================================================*/
+.btn {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  color: #6622CC;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  border: 1px solid #6622CC;
+}
+
+.text-decoration-none {
+  text-decoration: none;
 }
 
 @media (max-width: 580px) {

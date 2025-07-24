@@ -42,6 +42,7 @@
     }
 
     #footer{
+        margin:3rem auto ;
         margin-bottom: 6rem;
         padding: 1.2rem;
         display: flex;
@@ -61,6 +62,7 @@
     position: fixed;
     bottom: 0;
     box-sizing: border-box;
+    margin-top: 4rem;
     width: 100vw;
     z-index: 1000;
 
@@ -91,4 +93,10 @@
            transform: translateY(.2rem); 
         }
     }
+
+    #footer{
+        margin-bottom: 0;
+        background-color: $color-bg-nav;
+    }
+    
 }
