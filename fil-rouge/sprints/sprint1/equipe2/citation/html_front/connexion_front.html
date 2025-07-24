@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion</title>
+  <link rel="stylesheet" href="../public/css/connexion_front.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="form-container">
+      <h2>Connexion</h2>
+      <form id="login-form">
+        <label for="identifiant">Identifiant ou email</label>
+        <input type="text" id="identifiant" name="identifiant" required />
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="captcha">Combien font <span id="num1"></span> + <span id="num2"></span> ?</label>
+        <input type="text" id="captcha" required />
+
+        <div class="checkbox">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Se souvenir de mon appareil</label>
+        </div>
+
+        <button type="submit" class="neumorphic-button">Se connecter</button>
+        <div class="message" id="message"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("num1").textContent = num1;
+    document.getElementById("num2").textContent = num2;
+
+    document.getElementById("login-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const answer = parseInt(document.getElementById("captcha").value);
+      const message = document.getElementById("message");
+
+      if (answer === num1 + num2) {
+        message.textContent = "Connexion réussie !";
+        message.className = "message success";
+      } else {
+        message.textContent = "Captcha incorrect.";
+        message.className = "message error";
+      }
+    });
+  </script>
+</body>
+
+</html>
