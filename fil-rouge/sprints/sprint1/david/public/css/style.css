@@ -619,5 +619,8 @@ Classes utilitaires
     display: none;
   }
 }
+.no-display {
+  display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
