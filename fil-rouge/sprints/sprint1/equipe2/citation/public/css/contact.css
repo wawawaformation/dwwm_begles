@@ -3,13 +3,11 @@ body{
     margin: 0;
 }
 
-.fil-arianne{
+.fils-arianne{
     text-decoration: none;
     color: #5B3C11 ;
-    font-size: 0.9rem;
     text-align: left;
-    margin-left: 1rem;
-}
+} 
 
 .container-dark{
     background-color: hsla(35, 55%, 57%, 0.4);
@@ -59,7 +57,7 @@ ul{
     margin-bottom: 0;
 }
 
-li{
+.field{
     padding: 1rem;
 }
 

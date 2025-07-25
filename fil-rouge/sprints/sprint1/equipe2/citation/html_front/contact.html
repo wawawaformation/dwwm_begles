@@ -16,35 +16,40 @@
 <body>
     <header id="header">
         <div class="top-header">
-            <a href="#" class="logo">
+            <a href="home_page.html" class="logo">
                 <img src="../assets/logo/logo.webp" alt="Accueil">
             </a>
             <div class="right-header">
+
                 <input type="checkbox" id="menu-toggle" hidden>
-                <label for="menu-toggle" class="burger"><i class="bi bi-list"></i></label>
-                <form action="search.php" method="get" role="search" class="search-form">
-                    <div class="icon-recherche">
-                        <input type="search" />
-                        <i class="bi bi-search"></i>
-                    </div>
-                </form>
+                <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu principal"><i
+                        class="bi bi-list"></i></label>
+
+
+
+                <div class="icon-recherche"><a href="recherche.html" aria-label="recherche">
+                        <i class="bi bi-search"></i></a>
+
+                </div>
                 <ul class="menu menu-secondaire">
                     <li class="item"><a href="api.html">API</a></li>
                     <li class="item"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
         </div>
         <ul class="menu menu-principal">
-            <li class="item"><a href="page-accueil.html">Accueil</a></li>
-            <li class="item"><a href="listes-auteur.html">Auteurs</a></li>
-            <li class="item"><a href="liste-citation.html">Citations</a></li>
+            <li class="item"><a href="home_page.html">Accueil</a></li>
+            <li class="item"><a href="authors.html">Auteurs</a></li>
+            <li class="item"><a href="quotes.html">Citations</a></li>
         </ul>
     </header>
+
     <div class="container-dark">
         <div class="fils-arianne">
-            <a href="home_page.html" class="fil-arianne">Accueil</a>
+            <a href="home_page.html" class="fils-arianne">Accueil</a>
             <i class="bi bi-chevron-double-right"></i>
-            <a href="contact.html" class="fil-arianne">Contact</a>
+            <a href="contact.html" class="fils-arianne">Contact</a>
         </div>
     </div>
 
@@ -75,7 +80,7 @@
                 <label for="message">Votre message</label><br>
                 <textarea id="message" name="user_message"></textarea>
             </div>
-            <div class="privacy-policy">
+            <div class=" field privacy-policy">
                 <input type="checkbox" id="privacy-policy" name="privacy-policy" />
                 <label for="privacy-policy">J'accepte la <a href="https://www.politiquedeconfidentialite.com/">politique
                         de
