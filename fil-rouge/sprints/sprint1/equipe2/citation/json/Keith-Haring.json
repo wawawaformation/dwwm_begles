@@ -1,0 +1,39 @@
+{
+  "artiste": {
+    "nom": "Keith Haring",
+    "date_de_naissance": "4 mai 1958",
+    "date_de_mort": "16 février 1990",
+    "age_au_deces": 32,
+    "biographie": "Keith Haring était un artiste américain emblématique du street art, célèbre pour ses dessins aux lignes claires et ses personnages dynamiques. Il a commencé à dessiner dans le métro de New York au début des années 1980, rendant l’art accessible à tous. Militant engagé, il a utilisé son art pour parler de justice sociale, du SIDA, de l’homophobie et de l’inégalité raciale. Son travail, à la fois ludique et engagé, a profondément marqué la culture urbaine contemporaine."
+  },
+  "citations_et_interpretations": [
+    {
+      "citation": "L'art est pour tout le monde.",
+      "interpretation": "Keith Haring rejette une vision élitiste de l’art réservé à une minorité cultivée. Pour lui, l’art est un langage universel, compréhensible et accessible à tous, quelle que soit leur origine sociale ou culturelle. Cette phrase résume son engagement à créer de l’art dans des lieux publics et à destination d’un large public."
+    },
+    {
+      "citation": "Le public a droit à l’art. Le public a besoin d’art.",
+      "interpretation": "Cette phrase affirme que l’art est un besoin fondamental, comme l’éducation ou la liberté. Ce n’est pas un luxe, mais un droit. Haring souligne la responsabilité de l’artiste envers la société, et le devoir de partager sa création au plus grand nombre pour nourrir l’imaginaire collectif."
+    },
+    {
+      "citation": "Le but de l’art est de créer un monde meilleur.",
+      "interpretation": "Haring voit l’art comme un moteur de changement positif. Il considère que l’artiste peut éveiller les consciences, dénoncer les injustices et inspirer l’empathie. L’art devient un outil d’espoir, de transformation et d’amélioration du vivre ensemble."
+    },
+    {
+      "citation": "Quand on fait quelque chose avec son cœur, ça finit toujours par se voir.",
+      "interpretation": "Cette citation exprime l’importance de la sincérité dans le processus créatif. Haring valorise l’authenticité, le lien entre émotion et création. Pour lui, l’art qui touche vient d’un élan véritable, et cette vérité se transmet naturellement au spectateur."
+    },
+    {
+      "citation": "Je suis intéressé par l’art qui vient du cœur, pas de la tête.",
+      "interpretation": "Il distingue deux approches artistiques : celle guidée par la raison, parfois froide ou conceptuelle, et celle nourrie par l’émotion, spontanée, sincère. Il défend un art direct, ressenti, qui ne cherche pas à impressionner, mais à émouvoir."
+    },
+    {
+      "citation": "Les murs appartiennent aux gens.",
+      "interpretation": "C’est une revendication politique et artistique. Haring estime que l’espace public doit servir à l’expression populaire, pas uniquement à la publicité ou à des usages contrôlés. Il légitime ainsi le street art comme art démocratique, proche des gens."
+    },
+    {
+      "citation": "Le plus grand succès pour un artiste, c’est d’avoir des enfants qui dessinent grâce à lui.",
+      "interpretation": "Cette phrase illustre une vision généreuse et altruiste de l’art. Haring mesure le succès d’un artiste à sa capacité à transmettre l’envie de créer, à inspirer les générations futures. L’art est ici un héritage vivant et partagé."
+    }
+  ]
+}

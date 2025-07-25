@@ -1,0 +1,130 @@
+body{
+    font-family: "corps_h2";
+    margin: 0;
+}
+
+.fils-arianne{
+    text-decoration: none;
+    color: #5B3C11 ;
+    text-align: left;
+    padding:0.9rem;
+} 
+
+.fils-arianne i, .fils-arianne a {
+    padding-left: 0;
+    padding-right:0 ;
+}
+
+.container-dark{
+    background-color: hsla(35, 55%, 57%, 0.4);
+    color: #5B3C11;
+    margin: 0;
+}
+
+.container-light{
+    background-color: #FAF2E6;
+    color: #5B3C11;
+    text-align: center;
+}
+
+.title{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:.1rem;
+    font-size: 1.5rem;
+    font-family: "titre_h1";
+}
+
+.chapo{
+    margin-bottom: 0;
+    padding: 0.5rem;
+    font-weight: lighter;
+    font-family: "corps_h2";
+    text-align: center;
+}
+
+h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .7rem;
+    font-family: "corps_h2";
+}
+
+.second-title{
+    background-color:#FAF2E6 ;
+}
+
+.form{
+    text-align: center;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.field{
+    padding: 1rem;
+}
+
+.form input {
+    width: 100%;
+    height: 2rem;            
+    border-radius: .7rem;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 0.1px solid #5B3C11;
+    background-color: #FAF2E6;
+}
+
+.form textarea {
+    width: 100%;
+    height: 4rem;            
+    border-radius: .8rem;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border: 0.1px solid #5B3C11;
+    background-color: #FAF2E6;
+    
+}
+
+.form input, .form textarea {
+    margin-top: .5rem;
+}
+
+.privacy-policy{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+}
+
+.privacy-policy input{
+    width: 1.2rem;
+}
+
+.privacy-policy label a{
+    color: #6622CC;
+}
+
+.button {
+    margin-bottom:0;
+    padding: 1rem;
+}
+
+button{
+    background-color: #6622CC;
+    color: #FAF2E6;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 1.8rem;
+    margin-bottom: .5rem;
+    border: none;
+}
+
+.no-display{
+    display: none;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/api.css">
+    <link rel="stylesheet" href="../public/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../public/css/header_footer.css">
+    <link rel="stylesheet" href="../public/css/flis_ariane.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>API | Les Citations</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="top-header">
+            <a href="home_page.html" class="logo">
+                <img src="../assets/logo/logo.webp" alt="Accueil">
+            </a>
+            <div class="right-header">
+
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu principal"><i
+                        class="bi bi-list"></i></label>
+                <div class="icon-recherche"><a href="recherche.html" aria-label="recherche">
+                        <i class="bi bi-search"></i></a>
+
+                </div>
+                <ul class="menu menu-secondaire">
+                    <li class="item"><a href="api.html">API</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <ul class="menu menu-principal">
+            <li class="item"><a href="home_page.html">Accueil</a></li>
+            <li class="item"><a href="authors.html">Auteurs</a></li>
+            <li class="item"><a href="quotes.html">Citations</a></li>
+        </ul>
+    </header>
+
+    <div class="container-dark">
+        <div class="fils-arianne">
+            <a href="home_page.html" class="fils-arianne">Accueil</a>
+            <i class="bi bi-chevron-double-right"></i>
+            <a href="api.html" class="fils-arianne">API</a>
+        </div>
+    </div>
+
+    <div class="container-light">
+        <h1>Documentation API</h1>
+    </div>
+    <div class="container-dark">
+        <p class="chapo">Bienvenue sur la documentation de l'API. Cette interface vous permet d'accéder librement aux
+            données
+            publiques du site : citations et auteurs.
+            Toutes les réponses sont renvoyées au format JSON.</p>
+    </div>
+
+    <div class="container-light">
+        <h2 class="second-menu">Liste des endpoints disponibles</h2>
+    </div>
+
+    <div class="container-dark">
+        <ul>
+            <li><span class="before-br">/json/quotes</span><br>Récupère la liste de toutes les ciations.</li>
+            <li><span class="before-br">/json/quotes/1</span><br>Récupère la citation avec l'id 1</li>
+            <li><span class="before-br">/json/quotes/random</span><br>Récupère une citation au hasard</li>
+            <li><span class="before-br">/json/authors</span><br>Récupère la liste des auteurs</li>
+            <li><span class="before-br">/json/authors/1</span><br>Récupère l'auteur avec l'id 1</li>
+            <li><span class="before-br">/json/quotes</span><br>Récupère la liste de toutes les ciations</li>
+            <li><span class="before-br">/json/usage</span><br>Aide à l'utilisation de cette API</li>
+
+        </ul>
+    </div>
+
+
+    <footer id="footer">
+        <ul class="menu legal">
+            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+            <li class="item"><a href="a-propos.html">À propos</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="menu menu-social">
+            <li class="item"><a href=""><i class="bi bi-facebook"><span class="no-display">facebook</span></i></a></li>
+            <li class="item"><a href=""><i class="bi bi-instagram"><span class="no-display">instagram</span></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
