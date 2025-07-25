@@ -20,7 +20,15 @@ h1{
     text-decoration: none;
     color: #5B3C11 ;
     text-align: left;
+    padding: 1rem;
+    font-size: 0.9rem;
 } 
+
+.fils-arianne i, .fils-arianne a {
+    padding-left: 0;
+    padding-right:0 ;
+} 
+
 .container-dark{
     background-color: hsla(35, 55%, 57%, 0.4);
     color: #5B3C11;
