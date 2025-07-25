@@ -11,6 +11,7 @@ body {
     margin: auto;
     background-color: hsla(35, 55%, 57%, 0.4);
 }
+
 .container-ligth {
     display: flex;
     align-items: center;
@@ -58,4 +59,40 @@ p {
     text-align: center;
     color: #6F2ECE;
     text-decoration: none;
+}
+
+.editeur_site {
+    font-family: "corps_h2";
+    background-color: #FAF2E6;
+    color: #5B3C11;
+}
+
+.hebergement {
+    font-family: "corps_h2";
+    background-color: #FAF2E6;
+    color: #5B3C11;
+}
+
+.propriete {
+    font-family: "corps_h2";
+    background-color: #FAF2E6;
+    color: #5B3C11;
+}
+
+.données {
+    font-family: "corps_h2";
+    background-color: #FAF2E6;
+    color: #5B3C11;
+}
+
+.cookies {
+    font-family: "corps_h2";
+    background-color: #FAF2E6;
+    color: #5B3C11;
+}
+
+.responsabilté {
+    font-family: "corps_h2";
+    background-color: #FAF2E6;
+    color: #5B3C11;
 }
