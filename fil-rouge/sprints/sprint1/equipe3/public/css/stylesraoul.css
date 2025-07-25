@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf') format('truetype');
+
+}
+
 body {
     min-width: 375px;
     margin: 0px;
@@ -7,7 +13,7 @@ body {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    margin: 7px;
+    margin: 5px;
     padding-left: 0px;
     text-decoration: none;
 }
@@ -15,7 +21,7 @@ body {
 #main {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 7px;
+    padding-top: 5px;
 }
 
 #main a {
