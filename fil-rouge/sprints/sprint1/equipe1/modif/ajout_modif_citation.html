@@ -21,17 +21,19 @@
             background-color: #FAF2E6 !important;
         }
 
-        #header .navbar-nav .nav-link.active {
-            color: #6622cc !important;
-            font-weight: bold;
-        }
-
-        #header .navbar-nav .nav-link {
+        a {
             color: #6622CC !important;
         }
 
-
         .active {
+            color: #3A3227 !important;
+        }
+        #modifier {
+            color: blue !important;
+        }
+
+
+        .nav-link.active {
             color: #3A3227 !important;
         }
 
@@ -47,28 +49,19 @@
             border-color: #501a9c !important;
         }
 
-        .btn.btn-secondary {
+        .btn.btn-secondaire {
             background-color: #6D675F !important;
             border-color: #6D675F !important;
             color: white !important;
         }
 
-        .btn.btn-secondary:hover {
+        .btn.btn-secondaire:hover {
             background-color: #3A3227 !important;
             border-color: #3A3227 !important;
 
         }
 
-        .btn.btn-sm.btn-danger {
-            background-color: #F87263 !important;
-            border-color: #F87263 !important;
-        }
-
-        .btn.btn-sm.btn-warning {
-            background-color: #11B19C !important;
-            border-color: #11B19C !important;
-            color: white !important;
-        }
+        
 
         @media (max-width: 767.98px) {
             .title {
@@ -132,11 +125,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="bi bi-eye"></i>
+                               <p class="d-none">voir le site</p> 
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0"
-                                    title="voir le site"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0" title="voir le site"></i><p class="d-none">se déconnecter</p></a>
                         </li>
                     </ul>
                 </div>
@@ -180,6 +173,7 @@
                         <textarea id="message" name="message" class="form-control" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Ajouter la citation</button>
+                    <button type="submit" class="btn btn-secondaire">Réinitialiser</button>
                 </form>
 
             </div>
@@ -202,11 +196,11 @@
                             <td>Victor Hugo</td>
 
                             <td>
-                                <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
+                                <a id="modifier" href="edit-url" style="text-decoration: none; margin-right: 10px;">
                                     <i class="fas fa-pen"></i> Modifier
                                 </a>
-                                <a href="delete-url" style="color: #F87263; text-decoration: none;">
-                                    <i class="fas fa-trash-alt"></i> Supprimer
+                                <a href="delete-url" class="text-danger text-decoration-none">
+                                <i class="fas fa-trash-alt"></i> Supprimer
                                 </a>
                             </td>
                         </tr>
@@ -216,11 +210,12 @@
                             <td>Georges Sand</td>
 
                             <td>
-                                <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
+                                <a id="modifier" href="edit-url" style="text-decoration: none; margin-right: 10px;">
                                     <i class="fas fa-pen"></i> Modifier
                                 </a>
-                                <a href="delete-url" style="color: #F87263; text-decoration: none;">
-                                    <i class="fas fa-trash-alt"></i> Supprimer
+                                <a href="delete-url" class="text-danger text-decoration-none">
+                                <i class="fas fa-trash-alt"></i> Supprimer
+                                </a>
                                 </a>
                             </td>
                         </tr>
@@ -230,11 +225,11 @@
                             <td>Voltaire</td>
 
                             <td>
-                                <a href="edit-url" style="color: #11B19C; text-decoration: none; margin-right: 10px;">
+                                <a id="modifier" href="edit-url" style="text-decoration: none; margin-right: 10px;">
                                     <i class="fas fa-pen"></i> Modifier
                                 </a>
-                                <a href="delete-url" style="color: #F87263; text-decoration: none;">
-                                    <i class="fas fa-trash-alt"></i> Supprimer
+                                <a href="delete-url" class="text-danger text-decoration-none">
+                                <i class="fas fa-trash-alt"></i> Supprimer
                                 </a>
                             </td>
                         </tr>
