@@ -1,0 +1,580 @@
+[
+    {
+        "name": "Victor Hugo",
+        "birthday": "1802-02-26",
+        "deathday": "1885-05-22",
+        "image" : "victor_hugo._portrait.webp" , 
+        "text": "Victor Hugo (1802-1885) est l'un des écrivains les plus importants et influents de la littérature française du XIXe siècle. Poète, romancier, dramaturge, mais aussi homme politique engagé, il a marqué son époque par la richesse de son œuvre et la force de ses convictions. Chef de file du mouvement romantique, il est l'auteur de chefs-d'œuvre tels que le roman historique Notre-Dame de Paris (1831) et l'épique Les Misérables (1862), qui dépeignent avec puissance la société de son temps et la misère humaine. Sa poésie, notamment Les Contemplations (1856) et La Légende des Siècles (1859), témoigne d'une sensibilité profonde et d'une vision grandiose de l'humanité. Farouchement républicain, opposé à la peine de mort et défenseur des opprimés, Victor Hugo a également mené une vie politique intense, marquée par un long exil sous le Second Empire. Ses funérailles nationales en 1885, qui ont rassemblé des millions de personnes, témoignent de l'immense popularité et du respect qu'il inspire en France. Il repose au Panthéon.",
+        "citations": [
+             {
+                "citation": "Ceux qui vivent, ce sont ceux qui luttent.",
+                "origine": "Les Châtiments (1853), Livre IV",
+                "type": "Poème engagé",
+                "contexte": "Célébration du combat comme essence de la vie, dans un contexte politique troublé."
+            },
+            {
+                "citation": "La liberté commence où l’ignorance finit.",
+                "origine": "Discours au Congrès de 1862 / Océan prose",
+                "type": "Discours / Poème en prose",
+                "contexte": "Éloge de l’instruction et du progrès humain par la connaissance."
+            },
+            {
+                "citation": "Lire c’est boire et manger. L’esprit qui ne lit pas maigrit…",
+                "origine": "Maximes et pensées / Océan prose",
+                "type": "Maxime",
+                "contexte": "Comparaison de la lecture à la nourriture : essentielle à l'esprit."
+            },
+            {
+                "citation": "Je ne suis rien… mais je compose mon rien avec un petit morceau de tout.",
+                "origine": "Océan prose / Maximes",
+                "type": "Réflexion personnelle",
+                "contexte": "Expression d’humilité et d’unité universelle."
+            },
+            {
+                "citation": "Tout ce qui est mort… est vivant comme enseignement.",
+                "origine": "Maximes / Océan prose",
+                "type": "Réflexion philosophique",
+                "contexte": "Le passé est source d'apprentissage."
+            },
+            {
+                "citation": "Vous voulez la misère secourue… moi, je la veux supprimée.",
+                "origine": "Discours politique (1850) / Le Monde",
+                "type": "Discours social",
+                "contexte": "Critique des mesures caritatives inefficaces : plaidoyer pour des réformes de fond."
+            },
+            {
+                "citation": "L’Église chez elle et l’État chez lui.",
+                "origine": "Discours politiques (1848-1850)",
+                "type": "Principe politique",
+                "contexte": "Défense de la laïcité et de la séparation des pouvoirs."
+            },
+            {
+                "citation": "Police partout, justice nulle part.",
+                "origine": "Débat parlementaire (17 juillet 1851), Choses vues",
+                "type": "Déclaration politique",
+                "contexte": "Critique du régime autoritaire sous Louis-Napoléon Bonaparte."
+            },
+            {
+                "citation": "Aucune grâce extérieure n’est complète si la beauté intérieure…",
+                "origine": "Maximes / Océan prose",
+                "type": "Réflexion morale",
+                "contexte": "La beauté véritable inclut l'âme et les qualités morales."
+            },
+            {
+                "citation": "Faire rire, c’est faire oublier...",
+                "origine": "Maximes / Pensées",
+                "type": "Réflexion poétique",
+                "contexte": "Le rire comme acte de générosité et de réconfort."
+            }
+        ]
+    },
+    {
+        "name": "Georges Sand",
+        "birthday": "1804-07-01",
+        "deathday": "1876-05-08",
+        "images": "george_sand.webp",
+        "text": "George Sand (1804-1876), de son vrai nom Amantine Aurore Lucile Dupin de Francueil, puis baronne Dudevant, est une écrivaine française majeure du XIXe siècle. Figure emblématique de son époque, elle a défié les conventions sociales en menant une vie libre et en s'habillant en homme pour mieux circuler dans Paris et affirmer son indépendance. Auteure extrêmement prolifique, elle a laissé une œuvre immense, comprenant des romans, des nouvelles, des pièces de théâtre, des contes et une vaste correspondance. Parmi ses romans les plus célèbres, on trouve Indiana, La Mare au Diable, et La Petite Fadette, qui explorent souvent la condition féminine, les thèmes ruraux et les idéaux sociaux. Engagée politiquement, notamment pendant la Révolution de 1848, George Sand a défendu avec ferveur la liberté, la justice et l'égalité, en particulier pour les femmes. Elle fut une voix influente et respectée, et ses amitiés avec des figures comme Alfred de Musset et Frédéric Chopin ont marqué l'histoire littéraire et artistique. Son domaine de Nohant, dans l'Indre, est aujourd'hui un lieu de mémoire important.",
+        "citations": [
+            {
+                "citation": "Le bonheur existe. Il est dans l’amour.",
+                "explication": "L’amour est la source du bonheur authentique.",
+                "origine": "Propos extrait de ses écrits romantiques, notamment du roman Indiana (1832), ainsi que mentionné dans ses correspondances amoureuses avec Jules Sandeau.",
+                "sources": []
+            },
+            {
+                "citation": "Rien n’est bon pour l’homme s’il ne le veut librement.",
+                "explication": "La liberté est une condition sine qua non du bien-être.",
+                "origine": "Maxime philosophique issue de sa correspondance dans les années 1830.",
+                "sources": []
+            },
+            {
+                "citation": "L’esprit cherche et c’est le cœur qui trouve.",
+                "explication": "La raison interroge, le cœur comprend.",
+                "origine": "Citation recensée sur Evene et divers recueils de pensées.",
+                "sources": [
+                    "Evene"
+                ]
+            },
+            {
+                "citation": "Je voudrais mourir par curiosité.",
+                "explication": "Exprimant un désir d’expérimenter jusqu’au bout.",
+                "origine": "Phrase prononcée par le personnage de Lélia (1833, volume I, chap. XXII).",
+                "sources": []
+            },
+            {
+                "citation": "Avez-vous remarqué comme on est bête, quand on est beaucoup ?",
+                "explication": "Moquerie sur l’esprit de foule et ses limites.",
+                "origine": "Maxime satirique trouvée sur Evene et archives de ses pensées.",
+                "sources": [
+                    "Evene"
+                ]
+            },
+            {
+                "citation": "La nature est tout ce qu’on voit… (Tout ce qu’on veut, tout ce qu’on aime. Tout ce qu’on sait, tout ce qu’on croit, Tout ce que l’on sent en soi-même.)",
+                "explication": "Célébration de la nature omniprésente et sensible.",
+                "origine": "Citation issue de ses écrits sur la nature, comme La Mare au Diable (1846).",
+                "sources": [
+                    "abc-citations"
+                ]
+            },
+            {
+                "citation": "Vivre ! Que c’est doux !… malgré les douleurs… vivre c’est enivrant !",
+                "explication": "Exaltation de la vie, malgré ses souffrances.",
+                "origine": "Phrase tirée de ses écrits autobiographiques ou romans, mentionnée sur amisdegeorgesand.info.",
+                "sources": [
+                    "amisdegeorgesand.info"
+                ]
+            },
+            {
+                "citation": "La beauté fraîche et vraie ne peut rien cacher.",
+                "explication": "La sincérité de la beauté est transparente.",
+                "origine": "Présente sur proverbes-francais.fr. Également liée à son roman Le marquis de Villemer (1861).",
+                "sources": [
+                    "www.proverbes-francais.fr"
+                ]
+            },
+            {
+                "citation": "Avec la loi du chacun pour soi… ennemis.",
+                "explication": "Critique de l’individualisme destructeur.",
+                "origine": "Citation relevée sur proverbes‑francais.fr et dans des maximes attribuées à Sand, notamment dans Monsieur Sylvestre (1865).",
+                "sources": [
+                    "www.proverbes-francais.fr",
+                    "Citons-precis.com"
+                ]
+            },
+            {
+                "citation": "Elle initie ainsi les règles d’une exploitation forestière respectueuse…",
+                "explication": "Engagement écolo avant l’heure, en défense de Fontainebleau.",
+                "origine": "Tirée de son engagement pour la conservation de la forêt de Fontainebleau en 1872.",
+                "sources": [
+                    "Wikipédia"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Voltaire",
+        "birthday": "1694-11-21",
+        "deathday": "1778-05-30",
+        "image": "voltaire.portrait.webp",
+        "text": "Voltaire François-Marie Arouet, dit Voltaire (1694-1778), est un écrivain et philosophe français, figure emblématique du Siècle des Lumières. Esprit brillant et satirique, il a défendu avec ferveur la liberté d'expression, la tolérance religieuse et la justice, luttant inlassablement contre le fanatisme et l'obscurantisme. Son œuvre, vaste et diversifiée, comprend des pièces de théâtre (Œdipe, Zaïre), des poèmes, des essais philosophiques (Lettres philosophiques, Traité sur la tolérance), et des contes philosophiques (Candide, Zadig). Ses écrits, souvent publiés sous le manteau en raison de la censure, ont eu une influence considérable sur les idées de son temps et ont préparé le terrain pour la Révolution française.  Exilé à plusieurs reprises pour ses prises de position audacieuses, il a passé la fin de sa vie à Ferney, où il est devenu le Patriarche de Ferney, recevant de nombreux intellectuels et poursuivant son combat pour les droits de l'homme. Il est mort à Paris, acclamé par la foule, laissant un héritage intellectuel majeur.",
+        "citations": [
+            {
+                "citation": "Le doute est un état mental désagréable…",
+                "explication": "Le doute est mauvais mais la certitude aveugle est pire.",
+                "origine": "Lettre de Voltaire à Frédéric-Guillaume II de Prusse, datée de 1770. Il y valorise le doute comme posture intellectuelle saine.",
+                "sources": []
+            },
+            {
+                "citation": "J’ai décidé d’être heureux parce que c’est bon pour la santé.",
+                "explication": "Le bonheur est un choix utile et vivifiant.",
+                "origine": "Lettre à l'Abbé Trublet, 27 avril 1761. Voltaire exprime une philosophie hédoniste modérée.",
+                "sources": []
+            },
+            {
+                "citation": "La politique est le premier des arts et le dernier des métiers.",
+                "explication": "Politique = art subtil, métier exigeant.",
+                "origine": "Citation attribuée à Voltaire, reprise dans des anthologies et sites comme Evene et Dicocitations.",
+                "sources": []
+            },
+            {
+                "citation": "La loi naturelle est l’instinct qui nous fait sentir la justice.",
+                "explication": "Notre sens de la justice est inné et naturel.",
+                "origine": "Dictionnaire philosophique (1764). Voltaire développe sa théorie de la morale naturelle.",
+                "sources": [
+                    "Evene"
+                ]
+            },
+            {
+                "citation": "Les hommes sont des machines que la coutume pousse, comme le vent fait tourner les ailes d'un moulin",
+                "explication": "Critique de l’habitude sans réflexion.",
+                "origine": "Lettre au Marquis d’Argence, 28 avril 1760.",
+                "sources": [
+                    "Toupie"
+                ]
+            },
+            {
+                "citation": "Qu’est-ce que la tolérance ? C’est l’apanage de l’humanité.",
+                "explication": "Tolérance = essence de l’humanité.",
+                "origine": "Article « Tolérance » du Dictionnaire philosophique (1769).",
+                "sources": [
+                    "Toupie"
+                ]
+            },
+            {
+                "citation": "Ce monde est un vaste naufrage : sauve qui peut !",
+                "explication": "Tirade ironique sur le chaos du monde.",
+                "origine": "Correspondance du 17 avril 1765.",
+                "sources": [
+                    "Evene"
+                ]
+            },
+            {
+                "citation": "Ceux qui peuvent vous faire croire en absurdités… peuvent vous faire commettre des atrocités",
+                "explication": "Danger de la manipulation d’idées fausses.",
+                "origine": "Formule issue du Dictionnaire philosophique, vers 1764–1765.",
+                "sources": [
+                    "Pinterest"
+                ]
+            },
+            {
+                "citation": "La douleur est aussi nécessaire que la mort.",
+                "explication": "La souffrance fait partie intégrante de la vie.",
+                "origine": "Attribuée à Voltaire sans source précise.",
+                "sources": [
+                    "Evene"
+                ]
+            },
+            {
+                "citation": "Toute l’Europe est corse.",
+                "explication": "Observation satirique sur le caractère européen.",
+                "origine": "Attribuée à Voltaire sans référence sûre.",
+                "sources": [
+                    "Evene"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Antoine de Saint-Exupéry",
+        "birthday": "1900-06-29",
+        "deathday": "1944-07-31",
+        "image": "antoine_de_saint_exupery_portrait.webp",
+        "text": "Antoine de Saint-Exupéry (1900-1944) était un écrivain, poète et aviateur français. Pionnier de l'aéropostale, ses expériences de vol, souvent périlleuses, ont profondément inspiré son œuvre littéraire. Parmi ses écrits les plus connus figurent les romans Courrier Sud (1929) et Vol de nuit (1931), qui explorent les thèmes de l'héroïsme, de la solitude et du dépassement de soi. Son œuvre la plus célèbre, Le Petit Prince (1943), un conte philosophique poétique, est devenue un classique de la littérature mondiale, abordant des sujets universels comme l'amitié, l'amour et le sens de la vie. Disparu en vol lors d'une mission de reconnaissance pendant la Seconde Guerre mondiale, sa mort reste un mystère qui ajoute à la légende de cet écrivain-aviateur.",
+        "citations": [
+            {
+                "citation": "On ne voit bien qu’avec le cœur. L’essentiel est invisible pour les yeux.",
+                "origine": "Le Petit Prince (1943), dialogue avec le renard, chapitre XXI",
+                "type": "Conte philosophique",
+                "contexte": "La vision du cœur permet de percevoir l’essentiel caché aux yeux physiques."
+            },
+            {
+                "citation": "Fais de ta vie un rêve, et d’un rêve, une réalité.",
+                "origine": "Attribuée au Petit Prince (1943), souvent citée sans référence précise",
+                "type": "Maxime inspirante",
+                "contexte": "Invitation à transformer ses rêves en actions concrètes."
+            },
+            {
+                "citation": "Aimer, ce n’est pas se regarder l’un l’autre, c’est regarder ensemble dans la même direction.",
+                "origine": "Le Petit Prince (1943)",
+                "type": "Conte philosophique",
+                "contexte": "L'amour est une vision partagée, plus qu'une admiration mutuelle."
+            },
+            {
+                "citation": "Une opinion n’est pas l’opinion du nombre.",
+                "origine": "Reprise dans divers recueils (abc‑citations), non localisée précisément",
+                "type": "Réflexion personnelle",
+                "contexte": "Valorisation de la pensée autonome contre la pensée collective."
+            },
+            {
+                "citation": "L’homme se découvre lorsqu’il se mesure à un obstacle.",
+                "origine": "Citation souvent attribuée à Saint‑Exupéry, sans source définie",
+                "type": "Réflexion philosophique",
+                "contexte": "Les défis révèlent la véritable nature humaine."
+            },
+            {
+                "citation": "Ce qui importe, ce n’est pas d’arriver, mais d’aller vers.",
+                "origine": "Citation largement attribuée, sans œuvre précise",
+                "type": "Maxime philosophique",
+                "contexte": "Le chemin compte plus que le résultat final."
+            },
+            {
+                "citation": "Si tu veux construire un bateau, fais naître dans le cœur le désir.",
+                "origine": "Citation populaire attribuée à Saint‑Exupéry, non localisée",
+                "type": "Conseil inspirant",
+                "contexte": "Le désir est le moteur essentiel pour motiver l’action collective."
+            },
+            {
+                "citation": "C’est le temps que tu as perdu pour ta rose…",
+                "origine": "Le Petit Prince (chapitre XXI)",
+                "type": "Conte philosophique",
+                "contexte": "Le temps investi rend ce qu’on aime précieux et unique."
+            },
+            {
+                "citation": "Le véritable voyage… c’est d’atteindre un point qui baigne la vie intérieure.",
+                "origine": "Citation attribuée à Saint‑Exupéry, sans source déterminée",
+                "type": "Réflexion philosophique",
+                "contexte": "Le voyage intérieur a plus de valeur que le voyage géographique."
+            },
+            {
+                "citation": "L’homme se découvre…",
+                "origine": "Formule générique issue de divers recueils, non localisée",
+                "type": "Maxime personnelle",
+                "contexte": "Rappel après une autre citation similaire sur la découverte de soi."
+            }
+        ]
+    },
+    {
+        "name": "Simone de Beauvoir",
+        "birthday": "1908-01-09",
+        "deathday": "1986-04-14",
+        "image": "Simone_de_beauvoir_portrait.webp",
+        "text": "Simone de Beauvoir (1908-1986) était une philosophe, romancière, mémorialiste et essayiste française, figure majeure du XXe siècle. Née à Paris dans une famille bourgeoise, elle choisit très tôt la voie des études et du professorat pour mener une vie libre. Elle est surtout connue pour son essai Le Deuxième Sexe (1949), un ouvrage fondamental du féminisme qui analyse la condition féminine et la construction sociale des genres. Parmi ses autres œuvres notables, on trouve les romans Les Mandarins (Prix Goncourt 1954) et des récits autobiographiques comme Mémoires d'une jeune fille rangée. Engagée politiquement, elle a défendu la cause des femmes et a participé à des mouvements pour les droits humains, notamment en signant le Manifeste des 343 pour le droit à l'avortement et le Manifeste des 121 contre la guerre d'Algérie. Sa pensée et ses engagements ont eu une influence considérable sur le féminisme moderne et la philosophie existentielle. Elle repose au cimetière du Montparnasse aux côtés de Jean-Paul Sartre.",
+        "citations": [
+            {
+                "citation": "On ne naît pas femme : on le devient.",
+                "explication": "Le féminisme comme construction sociale.",
+                "origine": "Le Deuxième Sexe (1949). Proposition centrale du féminisme existentialiste : la féminité est une construction sociale, non un déterminisme biologique.",
+                "sources": [
+                    "time.com",
+                    "ORIENTACTION",
+                    "Toupie",
+                    "Wikipédia"
+                ]
+            },
+            {
+                "citation": "Le présent n’est pas un passé en puissance… : il est le moment du choix et de l'action",
+                "explication": "Le présent comme moment d’action et choix.",
+                "origine": "Extrait cité et reconnu dans Le Deuxième Sexe (1949). Elle y insiste sur le présent comme espace de liberté et décision.",
+                "sources": [
+                    "ORIENTACTION"
+                ]
+            },
+            {
+                "citation": "La femme est tout ce que l’homme appelle… et tout ce qu'il n'atteint pas",
+                "explication": "Réflexion sur la perception masculine de la femme.",
+                "origine": "Réflexion extraite de Le Deuxième Sexe. Elle y critique la façon dont la femme est définie par la perspective masculine, plutôt qu’elle-même.",
+                "sources": [
+                    "Evene",
+                    "abc-citations"
+                ]
+            },
+            {
+                "citation": "Vivre, c’est vieillir, rien de plus.",
+                "explication": "Le temps s’écoule, la vie est ce processus.",
+                "origine": "Formule issue d’un essai ou interview, fréquemment repris sur espace‑de‑beauvoir.fr. Elle synthétise l’idée que vivre est fondamentalement un processus de vieillissement.",
+                "sources": [
+                    "espace-de-beauvoir.fr"
+                ]
+            },
+            {
+                "citation": "Le problème de la femme… a toujours été un problème d’hommes.",
+                "explication": "La condition féminine est façonnée par la société patriarcale.",
+                "origine": "Le Deuxième Sexe. Elle y montre que l’infériorisation féminine est avant tout imposée, non héritée.",
+                "sources": [
+                    "espace-de-beauvoir.fr"
+                ]
+            },
+            {
+                "citation": "Une femme qui n’a pas peur des hommes leur fait peur.",
+                "explication": "La force tranquille désarme les préjugés masculins.",
+                "origine": "Citation rapportée dans des interviews et articles sur Elle, résumant l’idée que la confiance féminine remet en cause les rapports de pouvoir traditionnels.",
+                "sources": [
+                    "Elle"
+                ]
+            },
+            {
+                "citation": "L’humanité est mâle…",
+                "explication": "La femme est définie relativement à l’homme, pas en elle-même.",
+                "origine": "Extrait du Deuxième Sexe — l’idée que le genre « humain » a été historiquement défini à partir de la position masculine.",
+                "sources": [
+                    "Toupie"
+                ]
+            },
+            {
+                "citation": "La femme n’est victime d’aucune mystérieuse fatalité… : il ne faut pas conclure que ses ovaires la condamnent à vivre éternellement à genoux",
+                "explication": "Pas de destin biologique limitant la femme.",
+                "origine": "Phrase synthétique de Le Deuxième Sexe. Elle y affirme que la condition féminine n’est pas prédéterminée, mais construite.",
+                "sources": [
+                    "Pinterest"
+                ]
+            },
+            {
+                "citation": "La liberté est une source de découverte…",
+                "explication": "La liberté enrichit le monde.",
+                "origine": "Philosophiquement alignée avec l’existentialisme de Beauvoir (référence implicite à Le Deuxième Sexe), soulignant l’importance de la liberté comme force créatrice.",
+                "sources": []
+            },
+            {
+                "citation": "Il n’existe pas une nature féminine, mais… éducation.",
+                "explication": "Synthèse de sa pensée sur la construction identitaire.",
+                "origine": "Reformulation synthétique de la pensée du Deuxième Sexe. Elle y oppose nature et éducation dans la construction du rôle féminin.",
+                "sources": []
+            }
+        ]
+    },
+    {
+        "name": "Albert Camus",
+        "birthday": "1913-11-07",
+        "deathday": "1960-01-04",
+        "image": "albert_camus_portrait.webp",
+        "text": "Albert Camus (1913-1960) était un écrivain, philosophe et journaliste français, né en Algérie. Figure majeure de la littérature du XXe siècle, il est souvent associé à l'existentialisme, bien qu'il ait toujours réfuté cette étiquette. Son œuvre est profondément marquée par les thèmes de l'absurde, de la révolte et de la condition humaine face à un monde dénué de sens. Parmi ses ouvrages les plus célèbres figurent les romans L'Étranger (1942) et La Peste (1947), ainsi que les essais Le Mythe de Sisyphe (1942) et L'Homme révolté (1951). Il a reçu le prix Nobel de littérature en 1957 pour « l'ensemble d'une œuvre qui met en lumière, avec une lucidité sérieuse, les problèmes qui se posent de nos jours à la conscience des hommes ». Il meurt prématurément dans un accident de voiture.",
+        "citations": [
+            {
+                "citation": "Au milieu de l’hiver, j’ai découvert en moi un invincible été.",
+                "explication": "Résilience intérieure face à l’adversité.",
+                "origine": "Tirée de ses lettres personnelles (Retour à Tipasa), écrites en Algérie vers 1952. Elle renforce l’idée de résilience intérieure face à l’adversité.",
+                "sources": [
+                    "Dicocitations",
+                    "ORIENTACTION",
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "Mal nommer les choses, c’est ajouter au malheur du monde.",
+                "explication": "Le vrai langage est essentiel à la compréhension et au bien-être.",
+                "origine": "Formulée en 1944 dans l’article « Sur une philosophie de l’expression », repris dans Poésie 44.",
+                "sources": []
+            },
+            {
+                "citation": "Ceux qui désespèrent… est un lâche, mais celui qui espère est un fou.",
+                "explication": "Tension entre lâcheté et utopie.",
+                "origine": "Phrase issue de ses Carnets ou recueils de pensées, retrouve une version proche dans Carnets.",
+                "sources": [
+                    "Evene",
+                    "Toupie",
+                    "Le Monde.fr"
+                ]
+            },
+            {
+                "citation": "Je me révolte, donc je suis.",
+                "explication": "La révolte est affirmation de l’existence.",
+                "origine": "Extrait de L’Homme révolté (1951), essai central de sa philosophie de la révolte.",
+                "sources": [
+                    "Toupie"
+                ]
+            },
+            {
+                "citation": "J’ai compris qu’il ne suffisait pas de dénoncer l’injustice… il fallait donner sa vie pour la combattre.",
+                "explication": "Engagement au-delà de la parole.",
+                "origine": "Tirée de la pièce Les Justes (1949-1952).",
+                "sources": [
+                    "Toupie",
+                    "Wikipédia",
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "L’absurdité est surtout le divorce de l’homme et du monde.",
+                "explication": "L’absurde naît de la rupture entre désir et réalité.",
+                "origine": "Développée dans Le Mythe de Sisyphe (1942) et d'autres textes comme EspaceFrancais.",
+                "sources": [
+                    "Toupie"
+                ]
+            },
+            {
+                "citation": "Si l’homme échoue à concilier la justice et la liberté…, alors il échoue a tout",
+                "explication": "Ces deux principes sont indispensables à l’humanité.",
+                "origine": "Provient des Carnets, repris dans L’Homme révolté.",
+                "sources": [
+                    "Toupie"
+                ]
+            },
+            {
+                "citation": "Dans la profondeur de l’hiver… un invincible été.",
+                "explication": "Alternative formulation sur la résilience.",
+                "origine": "Attribuée à ses lettres personnelles ou au court essai Retour à Tipasa (1952).",
+                "sources": [
+                    "ORIENTACTION"
+                ]
+            },
+            {
+                "citation": "La vraie générosité envers l’avenir consiste à tout donner au présent.",
+                "explication": "Le présent est la seule réalisation possible de l’avenir.",
+                "origine": "Phrase finale de L’Homme révolté, chapitre « La pensée de Midi » (1951).",
+                "sources": [
+                    "ORIENTACTION"
+                ]
+            },
+            {
+                "citation": "Ce qui compte, ce n’est pas d’être heureux, c’est d’être nécessaire.",
+                "explication": "Le sens de la vie réside dans l’utilité et l’action.",
+                "origine": "Maxime extraite de ses Carnets (1949‑1959), sans publication formelle.",
+                "sources": [
+                    "ORIENTACTION"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Marguerite Duras",
+        "birthday": "1914-04-04",
+        "deathday": "1996-03-03",
+        "image": "marguerite_duras_portrait.webp",
+        "text": "Marguerite Duras (1914-1996), de son vrai nom Marguerite Donnadieu, était une écrivaine, dramaturge, scénariste et réalisatrice française. Née en Indochine française, son enfance dans cette région a profondément marqué son œuvre, notamment son roman autobiographique le plus célèbre, L'Amant (Prix Goncourt 1984). Elle est reconnue pour la diversité et la modernité de son écriture, renouvelant les genres romanesque, théâtral et cinématographique. Son style se caractérise par la déstructuration des phrases et du temps, et explore des thèmes comme l'amour, la sensualité, l'attente et la mémoire. Parmi ses œuvres notables, on peut citer Un barrage contre le Pacifique, Moderato Cantabile, et son scénario pour le film Hiroshima mon amour. Marguerite Duras est une figure majeure de la littérature de la seconde moitié du XXe siècle.",
+        "citations": [
+            {
+                "citation": "Écrire, c’est aussi ne pas parler… c'est se taire. C'est hurler sans bruit.",
+                "explication": "L’écriture est un cri silencieux.",
+                "origine": "Du livre Écrire (1993) et d’analyses comme Cairn. Pour Duras, l’écriture équivaut à un « hurler silencieux », un cri intérieur.",
+                "sources": [
+                    "Evene",
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "On ne trouve pas la solitude, on la fait.",
+                "explication": "La solitude est un choix et une construction intime.",
+                "origine": "Phrase tirée d'Écrire ou d’essais personnels.",
+                "sources": [
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "La confirmation de la tristesse est une consolation.",
+                "explication": "La reconnaissance de la tristesse apaise.",
+                "origine": "Également tirée de Écrire ou essais intimes : reconnaître sa tristesse lui donne sens et apaisement.",
+                "sources": [
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "Il reste toujours quelque chose de l’enfance, toujours...",
+                "explication": "L’enfance nous marque à jamais.",
+                "origine": "Issu de ses récits autobiographiques (ex. La Vie matérielle) : l’enfance comme matrice permanente de la sensibilité.",
+                "sources": [
+                    "Evene",
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "On ne peut pas écrire sans la force du corps.",
+                "explication": "L’écriture exige une intensité corporelle et émotionnelle.",
+                "origine": "Réflexion tirée de ses carnets ou essais ; rapportée par abc-citations.",
+                "sources": [
+                    "abc-citations"
+                ]
+            },
+            {
+                "citation": "Aucun amour au monde ne peut tenir lieu de l’amour…",
+                "explication": "Chaque amour reste unique et irremplaçable.",
+                "origine": "Tiré de textes et interviews.",
+                "sources": [
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "Il est impossible de rester sans amour aucun… même s'il n'y a plus que les mots, ça se vit toujours. La pire chose c'est de ne pas aimer, je crois que ça n'existe pas.",
+                "explication": "L’amour est inévitable dans notre nature d’humains.",
+                "origine": "Formule citée sur abc‑citations. Elle exprime l’inévitabilité de l’amour dans la vie humaine.",
+                "sources": [
+                    "abc-citations"
+                ]
+            },
+            {
+                "citation": "On croit que, lorsqu’une chose finit (…) entre les deux, c’est la pagaille.",
+                "explication": "Entre deux événements, il y a souvent un vide chaotique.",
+                "origine": "Issue de Écrire ou de ses carnets : entre deux termes, règne un chaos émotionnel profond.",
+                "sources": [
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "L’écrit ça arrive comme le vent(…, c’est nu, c’est de l’encre, c’est l’écrit,) et ça passe.(, comme rien d’autre ne passe dans la vie, rien de plus, sauf elle, la vie.”)",
+                "explication": "L’écriture est fugace, comme la vie.",
+                "origine": "Réflexion personnelle reprise dans analyses Écrire : l’écriture est fugitive, passagère.",
+                "sources": [
+                    "Scribe"
+                ]
+            },
+            {
+                "citation": "Il n’y a pas de vacances à l’amour…( ça n’existe pas. L’amour, il faut le vivre complètement avec son ennui et tout, il n’y a pas de vacances possibles à ça.”)",
+                "explication": "L’amour demande engagement, même dans l’ennui.",
+                "origine": "Idée issue des essais ou entretiens : l’amour demande constance même dans la routine.",
+                "sources": [
+                    "Scribe"
+                ]
+            }
+        ]
+    }
+]
