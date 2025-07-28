@@ -1,4 +1,4 @@
-# La console
+# La console 1.2
 ## OPO
 - Expliquer ce qu’est la programmation et différencier langage compilé et interprété
 - Déclarer et utiliser des variables
@@ -208,6 +208,8 @@ fruits.pop()                     // retire le dernier
 console.log(fruits)
 
 console.log(fruits.includes("banane")) // => true
+
+// voir shift et unshift
 ```
 
 
