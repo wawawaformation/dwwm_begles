@@ -130,7 +130,7 @@ for (index in apprenant){
 ```
 
 Exercice :
-Voici le tableau suivants
+Voici le tableau suivant
 ```JS
 const animaux = [
     {

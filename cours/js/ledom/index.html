@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Introduction au DOM</title>
+  <style>
+    .important {
+      color: darkblue;
+      font-weight: bold;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="titre-principal">Bienvenue dans le DOM</h1>
+    <nav>
+      <ul>
+        <li><a href="#section1" class="nav-link">Section 1</a></li>
+        <li><a href="#section2" class="nav-link">Section 2</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1">
+      <h2 class="important">Balises HTML</h2>
+      <p>Voici un paragraphe avec une <strong>balise forte</strong> et une <em>balise emphase</em>.</p>
+      <img src="https://via.placeholder.com/150" alt="Image exemple" id="exemple-img" />
+    </section>
+
+    <section id="section2">
+      <h2 class="important">Classes et identifiants</h2>
+      <ul>
+        <li class="highlight">Élément 1</li>
+        <li class="highlight">Élément 2</li>
+        <li>Élément 3</li>
+      </ul>
+      <button id="action-btn" title="Clique-moi !">Clique ici</button>
+    </section>
+  </main>
+
+  <footer>
+    <p id="footer-text"><span class="credit">© 2025 - </span>Cours DOM de David</p>
+  </footer>
+
+</body>
+</html>
