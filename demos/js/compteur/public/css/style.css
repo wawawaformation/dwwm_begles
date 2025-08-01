@@ -1,0 +1,36 @@
+#counter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:blueviolet;
+    width: 320px;
+    padding: 16px;
+}
+
+.display{
+    background-color: #FFF;
+    padding: 8px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.actions{
+    margin-top: 32px;
+}
+.crementer{
+
+    display: flex;
+    justify-content: space-between;
+}
+.crementer button{
+    width: 48%;
+    font-size: 32px;
+}
+
+.reset button{
+    margin-top: 16px;
+   display: block;
+   width: 100%;
+   padding: 8px;
+}
