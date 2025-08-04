@@ -12,23 +12,23 @@
         - document.querySelectorAll()
         
     1. Propriétés
-        - document.images
-        - document.links
-        - parentNode
-        - parentElement
-        - children
-        - childNodes
-        - firstElementChild
-        - lastElementChild
-        - previousElementSibling
-        - nextElementSibling
-        - previousSibling
+        - document.images <- osef
+        - document.links <-osef
+        - parentNode 
+        - parentElement <-osef
+        - children <-osef
+        - childNodes 
+        - firstElementChild <-osef
+        - lastElementChild <-osef
+        - previousElementSibling <-osef
+        - nextElementSibling <-osef
+        - previousSibling 
         - nextSibling
 
 
 ## Modifier un noeud
 1. Quelques méthodes
-
+- getAttribute(name) -> retourna la valeur
 - setAttribute(name, value) → Modifie (ou crée) un attribut
     → element.setAttribute('class', 'nouvelle-classe')
 
@@ -47,25 +47,25 @@
 
 - remove() → Supprime le nœud lui-même
 
-- replaceWith(node) → Remplace un nœud par un autre
+- replaceWith(node) → Remplace un nœud par un autre <- osef
 
-- insertBefore(newNode, referenceNode) → Insère un nœud avant un autre (ancien mais encore utile)
+- insertBefore(newNode, referenceNode) → Insère un nœud avant un autre (ancien mais encore utile) <- later
 
-- insertAdjacentHTML(position, html) → Injecte du HTML à un endroit précis (beforebegin, afterbegin, beforeend, afterend)
+- insertAdjacentHTML(position, html) → Injecte du HTML à un endroit précis (beforebegin, afterbegin, beforeend, afterend) <- later
 
 1. Quelques propriétés
 
 - textContent → Modifie le texte brut
     → element.textContent = 'Hello DOM !'
 
-- innerText → Modifie le texte visible (attention : dépend du CSS)
+- innerText → Modifie le texte visible (attention : dépend du CSS) <- osef
 
 - innerHTML → Modifie ou récupère le HTML à l’intérieur
     → element.innerHTML = '<strong>Important</strong>'
  
-- outerHTML → Remplace l’élément entier avec du HTML
-
-- value → Pour les champs de formulaire (input, textarea)
+- outerHTML → Remplace l’élément entier avec du HTML <-osef
+ 
+- value → Pour les champs de formulaire (input, textarea) 
     → input.value = 'Bonjour'
 
 - src, href, alt, title, etc. → Pour manipuler des attributs directement
