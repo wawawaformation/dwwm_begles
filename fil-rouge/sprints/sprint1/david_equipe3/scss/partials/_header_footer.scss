@@ -1,0 +1,102 @@
+#header, #navbar{
+    padding: 1.2rem;
+    background-color: $color-bg-nav;
+
+
+       a{
+        text-decoration: none;
+       }
+
+
+    .menu-main{
+        font-size: 1.43rem;
+        gap: 1rem
+       }
+
+    .menu-secondary{
+        gap: 1rem;
+        a{
+            color: $color-text;
+        }
+
+        
+    }
+}
+
+#header{
+       @include flex();
+
+      
+       .item.active a{
+        font-weight: 700;
+       }
+
+       nav{
+        @include flex($direction:column, $align-items: flex-end);
+       }
+       
+        a svg{
+            width: 1.2rem;
+        }
+
+    }
+
+    #footer{
+        margin:3rem auto ;
+        margin-bottom: 6rem;
+        padding: 1.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu{
+            gap: 1rem;
+        }
+
+        .bi{
+            font-size: 24px;
+        }
+    }
+
+#navbar{
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    margin-top: 4rem;
+    width: 100vw;
+    z-index: 1000;
+
+    @include flex;
+
+    a svg{
+            width: 1.4rem;
+        }
+}
+
+@media (min-width: 580px) {
+    #navbar{
+        display: none;
+    }
+
+
+    #header{
+        justify-content: flex-start;
+        gap: 1.4rem;
+        nav{
+            transform: translateY(-.4rem);
+            flex-grow: 1;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .loupe{
+           transform: translateY(.2rem); 
+        }
+    }
+
+    #footer{
+        margin-bottom: 0;
+        background-color: $color-bg-nav;
+    }
+    
+}

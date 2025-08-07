@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilisation de l'API | Citations</title>
+    <link rel="stylesheet" href="public/css/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="quote-page">
+    <header id="header">
+        <div class="logo">
+            <a href="">
+                <img src="public/img/logo.png" alt="Accueil">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu menu-main">
+                <li class="item"><a href="index.html" aria-current="page">Citations</a></li>
+                <li class="item"><a href="authors.html">Auteurs</a></li>
+            </ul>
+            <ul class="menu menu-secondary">
+                <li class="item"><a href="api.html">API</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+                <li class="item"><a href="about.html">A propos</a></li>
+                <li class="item no-sm"><a href="search.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="loupe" viewBox="0 0 16 16">
+                            <title>Rechercher</title>
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title title-page">Utilisation de l'API</h1>
+
+
+
+        <div class="content container">
+            <div class="chapo">
+                Bienvenue sur la documentation de l’API. Cette interface vous permet d’accéder librement aux données
+                publiques du site : citations et auteurs.
+                Toutes les réponses sont renvoyées au format JSON.
+            </div>
+            <section class="explanation">
+                <h2 class="title-section">Liste des endpoints</h2>
+                <ul class="list endpoints">
+                    <li class="item"><code>GET <a href="/json/quotes" class="text-decoration-none">/json/quotes</a></code><br>Récupérer la liste des citations</li>
+                    <li class="item"><code>GET <a href="/json/quotes/{id}" class="text-decoration-none">/json/quotes/{id}</a></code><br>Récupérer une citation par son identifiant</li>
+                    <li class="item"><code>GET <a href="/json/quotes/random" class="text-decoration-none">/json/quotes/random</a></code><br>Récupérer une citation au hasard</li>
+                    <li class="item"><code>GET <a href="/json/authors" class="text-decoration-none">/json/authors</a></code><br>Récupérer la liste des auteurs</li>
+                    <li class="item"><code>GET <a href="/json/authors/{id}" class="text-decoration-none">/json/authors/{id}</a></code><br>Récupérer un auteur par son identifiant</li>
+                    <li class="item"><code>GET <a href="/json/authors/random" class="text-decoration-none">/json/authors/random</a></code><br>Récupérer un auteur au hasard</li>
+                    <li class="item"><code>GET <a href="/json/usage" class="text-decoration-none">/json/usage</a></code><br>Liste des endpoints</li>
+                </ul>
+            </section>           
+        </div>
+    </main>
+    <footer id="footer">
+        <ul class="menu main-menu">
+            <li class="item"><a href="mentions_legales.html">Mentions légales</a></li>
+            <li class="item"><a href="rgpd.html">RGPD</a></li>
+        </ul>
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i><span class="no-display">Facebook</span></a>
+    </footer>
+
+
+    <div id="navbar" class="no-md">
+        <ul class="menu menu-main">
+            <li class="item active"><a href="index.html" aria-current="page">Citations</a></li>
+            <li class="item"><a href="authors.html">Auteurs</a></li>
+        </ul>
+
+        <a href="search.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="loupe" viewBox="0 0 16 16">
+                <title>Rechercher</title>
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+        </a>
+
+    </div>
+</body>
+
+</html>
