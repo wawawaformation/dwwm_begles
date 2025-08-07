@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    let couleur = prompt("Quelle est ta couleur préférée ? (rouge, vert, bleu, jaune)");
+
+
+    switch (couleur.toLowerCase()) {
+        case "rouge":
+        case "jaune":
+        case "orange":
+            console.log("Couleur chaude");
+            break;
+        case "vert":
+        case "bleu":
+            console.log("Couleurs froides");
+            break;
+        case "violet":
+            console.log("Couleur neutre");
+            break;
+        default:
+            console.log("Couleur inconnue");
+    }
+
+    </script>
+</body>
+</html>

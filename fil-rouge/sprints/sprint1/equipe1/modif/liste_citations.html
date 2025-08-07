@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des citations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        #header {
+            background-color: #FAF2E6 !important;
+        }
+
+        a {
+            color: #6622CC !important;
+        }
+
+        .active {
+            color: #3A3227 !important;
+        }
+
+        .btn {
+            color: white !important;   
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="public/img/logo.svg" alt="logo citations" width="124" height="72">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Les auteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les pages</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mon profil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-eye"><p class="d-none">Voir le site</p></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0" title="se déconnecter"></i><p class="d-none">Se Déconnecter</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--MAIN-->
+    <main id="main" class="container my-2">
+
+        
+
+        <div class="alert alert-success " role="alert">
+            La citation a bien été ajouté
+        </div>
+
+
+        <h1 class="title mb-4">Citations</h1>
+
+        <div class="add">
+            <a href="" class="btn btn-primary mb-4">Ajouter une citation</a>
+        </div>
+
+        <p>70 citations, 7 par page</p>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"Ceux qui vivent, ce sont ceux qui luttent."</span><br>
+                        <small class="text-muted">Victor Hugo</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/victor_hugo._portrait.webp" class="img-fluid rounded-circle"
+                                alt="Photo Victor Hugo" style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"><p class="d-none">Supprimer</p></i></a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"Le bonheur existe. Il est dans l’amour."</span><br>
+                        <small class="text-muted">Georges Sand</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/george_sand.webp" class="img-fluid rounded-circle"
+                                alt="Photo Georges Sand" style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"></i><p class="d-none">Supprimer</p></a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"J’ai décidé d’être heureux parce que c’est bon pour la
+                            santé"</span><br>
+                        <small class="text-muted">Voltaire</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/voltaire_portrait.webp" class="img-fluid rounded-circle"
+                                alt="Photo Voltaire" style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"></i><p class="d-none">Supprimer</p></a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"On ne voit bien qu’avec le cœur. L’essentiel est invisible pour les
+                            yeux"</span><br>
+                        <small class="text-muted">Antoine de St Exupéry</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/antoine_de_saint_exupery_portrait.webp"
+                                class="img-fluid rounded-circle" alt="Photo antoine de saint exupery"
+                                style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"></i><p class="d-none">Supprimer</p></a>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"On ne naît pas femme : on le devient"</span><br>
+                        <small class="text-muted">Simone de Beauvoir</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/Simone_de_beauvoir_portrait.webp"
+                                class="img-fluid rounded-circle" alt="Photo Simone de Beauvoir"
+                                style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"></i><p class="d-none">Supprimer</p></a>
+                </div>
+            </li>
+        </ul>
+
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"Au milieu de l’hiver, j’ai découvert en moi un invincible
+                            été"</span><br>
+                        <small class="text-muted">Albert Camus</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/albert_camus_portrait.webp" class="img-fluid rounded-circle"
+                                alt="Photo Albert Camus" style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"></i><p class="d-none">Supprimer</p></a>
+                </div>
+            </li>
+        </ul>
+
+
+
+        <ul class="list-group">
+            <li class="list-group-item position-relative">
+                <div class="row">
+                    <div class="col">
+                        <span class="col-auto mb-1">"On ne trouve pas la solitude, on la fait"</span><br>
+                        <small class="text-muted">Marguerite Duras</small>
+                    </div>
+                    <div class="col-auto d-flex justify-content-end">
+                        <a href=""><img src="public/img/marguerite_duras_portrait.webp" class="img-fluid rounded-circle"
+                                alt="Photo Marguerite Duras" style="width: 60px; height: 60px; object-fit: cover;"></a>
+                    </div>
+                </div>
+                <div class="bottom-0 end-0 mb-0 me-1">
+                    <a href="#" class="text-primary me-2"><i class="bi bi-pencil fs-5"><p class="d-none">Modifier</p></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-trash fs-5"></i><p class="d-none">Supprimer</p></a>
+                </div>
+            </li>
+        </ul>
+
+
+        <nav aria-label="Pagination">
+            <ul class="pagination justify-content-center mt-4">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item active"><a class="page-link text-white" href="#">1</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

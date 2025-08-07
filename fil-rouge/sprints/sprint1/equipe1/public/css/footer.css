@@ -1,0 +1,40 @@
+        #footer {
+            width: 393px;
+            background-color: #FAF2E6;
+            font-family: 'font-citation', serif;
+        }
+
+        .nav {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            gap: 2rem;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            color: #6622CC;
+            font-size: 1rem;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .menu-footer {
+            flex-direction: column;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .menu-contact {
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 1.5rem;
+    
+        }
+        .menu-contact a {
+            font-size: 1.5rem;
+        }
+
+        .item i:hover {
+            opacity: 50%;
+        }

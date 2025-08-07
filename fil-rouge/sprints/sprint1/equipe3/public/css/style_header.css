@@ -4,11 +4,24 @@
 
 }
 
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Crimson Pro Italic';
+    src: url('../fonts/Crimson_Pro/CrimsonPro-Italic-VariableFont_wght.ttf');
+}
+
+
 :root{
     --color-background: #FAF2E6;
     --color-text: #3A3227;
     --color-primary: #6222CC;
-    --color-header: #E4C496;
+    --color-bgtitre: #E4C496;
+    --color-header: #EBDCC6;
+    --color-carte: #EEE5D7;
 
     font-size: 14px;
 }
@@ -70,3 +83,52 @@ body {
     }
    
 }
+
+/* ========================= Un auteur ========================= */
+
+
+.title {
+    display:flex;
+    justify-content: center;
+    height: 69px;
+    align-items: center;
+    font-family: LibreBaskerville;
+    background-color: var(--color-bgtitre);
+}
+
+.conteneur {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-carte);
+}
+
+.imgauteur {
+    width: 324px;
+    height: 284px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.date {
+    font-family: 'Crimson Pro Italic', serif;
+    font-size: 13px;
+    padding: 8px;
+}
+
+p {
+    font-family:'Crimson Pro';
+    font-size: 14px;
+    margin: 12px;
+}
+
+.lien {
+    text-decoration: none;
+    color: #6222CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+
+
+

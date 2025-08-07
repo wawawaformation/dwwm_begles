@@ -1,0 +1,44 @@
+@font-face {
+    font-family: titre;
+    src: url(public/fonts/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: labeur;
+    src: url(public/fonts/CrimsonPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: font-citation;
+    src: url(public/fonts/EBGaramond-Regular.ttf);
+}
+
+:root {
+    font-size: 14px;
+    margin: 24px;
+}
+
+body {
+    width: 393px;
+    background-color: #FDFBF6;
+}
+
+.resultat {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    padding-left: 2px;
+}
+
+h1 {
+    font-family: titre serif;
+    text-align: center;
+    margin: 24px 0 24px 0;
+}

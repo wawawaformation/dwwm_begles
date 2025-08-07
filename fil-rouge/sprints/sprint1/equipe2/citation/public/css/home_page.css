@@ -1,0 +1,90 @@
+h1{
+    background-color: #FAF2E6;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    color: #5B3C11;
+    text-align: center;
+}
+
+h2{
+    background-color: hsla(35, 55%, 57%, 0.40);
+    margin: 0%;
+    color: #5B3C11;
+    font-size: 1rem;
+    
+}
+
+span{
+    color:  #6622CC;
+}
+
+.accueil{
+    background-color: hsla(35, 55%, 57%, 0.40);
+    margin: 0%;
+}
+
+
+.slide{ 
+    height: 300px;
+    width: 250px;
+    display:flex;
+    margin-left: 60px;
+    border-radius: 20%;
+}
+
+.precedent1{
+    position: absolute;
+    font-size: 50px;
+    opacity: 1;
+    background-color: #0000001f;
+    color: #5B3C11;;
+    top: 1500px;
+    left: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.suivant1{
+    position: absolute;
+    font-size: 50px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    background-color: #0000001f;
+    color:#5B3C11; ;
+    cursor: pointer;
+    top: 1500px;
+    right: 20px;
+}
+
+h3{
+    justify-content: center;
+    display: flex;
+    margin: 0%;
+}
+
+.precedent2{
+    position: absolute;
+    font-size: 50px;
+    opacity: 1;
+    background-color: #0000001f;
+    color: #5B3C11;;
+    top: 1950px;
+    left: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.suivant2{
+    position: absolute;
+    font-size: 50px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    background-color: #0000001f;
+    color:#5B3C11;;
+    cursor: pointer;
+    top: 1950px;
+    right: 20px;
+}
