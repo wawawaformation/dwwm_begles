@@ -10,3 +10,12 @@
 }
 
 
+
+#submit-btn:disabled {
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+
+body{
+    background-color: aqua;
+}

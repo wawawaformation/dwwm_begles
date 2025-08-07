@@ -1,0 +1,80 @@
+/* Afficher le mot de passe*/
+
+const inputMotDePasse = document.getElementById("password")
+const checkbox = document.getElementById("togglePassword")
+
+checkbox.addEventListener("change", function(){
+
+    if(checkbox.checked === true){
+        inputMotDePasse.type = "text";
+
+    }else{
+        inputMotDePasse.type = "password";
+    }
+})
+
+/* Faire correspondre les Mots de passes*/ 
+
+const password = document.getElementById("password")
+const confirmPassword = document.getElementById("confirm_password")
+const form = document.getElementById("resetForm")
+
+
+form.addEventListener("submit", function(e){
+     
+     if(password.value === confirmPassword.value){
+        alert('on envoie')
+     }else{
+        e.preventDefault()
+        const confirmLabelElt = document.querySelector('[for="confirm_password"]')
+        confirmLabelElt.textContent = " pas identiques"
+        confirmLabelElt.style.color = "red"
+        
+     }
+})       
+
+/* REGEX Condition de validation du MDP*/
+
+const passwordRegex = /^(?=.*[A-Z])(?=.*\d).{12,}$/
+const passwordInput = document.getElementById("password")
+const spanLength = document.getElementById("length")
+const spanUppercase = document.getElementById("upper_case")
+const spanNumber = document.getElementById("number")
+const buttonSubmit = document.getElementById("button_submit")
+
+passwordInput.addEventListener("input", () => {
+    const value = passwordInput.value
+    const conditionLength = value.length >= 12 
+    const conditionUpperCase = /[A-Z]/.test(value);
+    const conditionNumber = /\d/.test(value)
+
+    conditionChecked(spanLength, conditionLength)
+    conditionChecked(spanUppercase, conditionUpperCase)
+    conditionChecked(spanNumber, conditionNumber)
+
+
+    if(conditionLength && conditionUpperCase && conditionNumber){
+        buttonSubmit.disabled = false
+    }else{
+        buttonSubmit.disabled = true
+    }
+})
+
+/*Modification des couleurs des critères MDP*/
+
+function conditionChecked(element, condition){
+    if (condition){
+        element.classList.remove("text-danger")
+        element.classList.add("text-success")
+    }else{
+        element.classList.remove("text-success")
+        element.classList.add("text-danger")
+    }
+}
+
+
+
+
+    
+
+    
