@@ -1,3 +1,22 @@
+// Afficher la photo de profil importée
+const inputImage = document.getElementById("image");
+const previewImg = document.querySelector("img[src^='public/img/profils/']");
+
+inputImage.addEventListener("change", function () {
+    const file = this.files[0];
+
+    if (file && file.type.startsWith("image/")) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+            previewImg.src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+});
+
+
 // Afficher / masquer les mots de passe
 document.getElementById('togglePassword').addEventListener('change', function () {
     const type = this.checked ? 'text' : 'password';
@@ -5,24 +24,24 @@ document.getElementById('togglePassword').addEventListener('change', function ()
     document.getElementById('confirm_password').setAttribute('type', type);
 });
 
-// Conditions deviennent vertes lorqu'elles sont validées
+// Conditions deviennent vertes lorsqu'elles sont validées
 document.getElementById('password').addEventListener('input', function () {
     const pwd = this.value;
-    const rules = document.querySelectorAll('ul li');
+    const rules = document.querySelectorAll('.condition');
 
-    rules.forEach((li) => {
-        const text = li.textContent;
+    rules.forEach((condition) => {
+        const text = condition.textContent;
 
         if (text.includes('12 caractères')) {
-            toggleRule(li, pwd.length >= 12);
+            toggleRule(condition, pwd.length >= 12);
         }
 
-        if (text.includes('1 majuscule')) {
-            toggleRule(li, /[A-Z]/.test(pwd));
+        if (text.includes('majuscule')) {
+            toggleRule(condition, /[A-Z]/.test(pwd));
         }
 
-        if (text.includes('1 chiffre')) {
-            toggleRule(li, /\d/.test(pwd));
+        if (text.includes('chiffre')) {
+            toggleRule(condition, /\d/.test(pwd));
         }
     });
 });
@@ -39,17 +58,14 @@ document.getElementById('resetForm').addEventListener('submit', function (e) {
     const errorMsg = document.getElementById('errorMsg');
     const confirmLabel = document.querySelector('[for="confirm_password"]');
 
-    // Vérifie les critères du mot de passe
     const isValid =
         pwd.length >= 12 &&
         /[A-Z]/.test(pwd) &&
         /\d/.test(pwd) &&
         pwd === confirmPwd;
 
-
-
     if (!isValid) {
-        e.preventDefault(); //Envoie pas le formulaire s'il n'est pas valide
+        e.preventDefault();
         errorMsg.classList.remove('d-none');
         confirmLabel.textContent = 'Confirmer le mot de passe - erreur';
         confirmLabel.style.color = 'red';
@@ -57,6 +73,6 @@ document.getElementById('resetForm').addEventListener('submit', function (e) {
         errorMsg.classList.add('d-none');
         confirmLabel.textContent = 'Confirmer le mot de passe';
         confirmLabel.style.color = '';
-        alert('Votre mot de passe à été réinitialisé');
+        alert('Votre mot de passe a été réinitialisé');
     }
 });

@@ -6,6 +6,7 @@
     <title>Mon prof | Admin citation</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/bootstrap-icons/bootstrap-icons.min.css">
+    <script src="public/js/profil.js" defer></script>
 </head>
 
 <body>
@@ -42,21 +43,23 @@
                                 class="bi bi-box-arrow-right"></i></a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
+
     <div class="container-fluid bg-success text-white text-center py-2">
         Votre profil a bien été modifié
     </div>
+
     <div class="container my-5">
         <h1 class="mb-5">Mon profil</h1>
 
-        <form action="user_modif.php" method="POST">
+        <!--  Formulaire avec ID ajouté -->
+        <form action="user_modif.php" method="POST" id="resetForm">
 
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <img src="public/img/profils/delphine_raoux_2345.jpeg" alt="">
+                    <img src="public/img/profils/profil.png" alt="" width="400px">
                 </div>
 
                 <div class="col-12 col-md-8">
@@ -81,30 +84,38 @@
                         <label for="image" class="form-label">Image</label>
                         <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
                     </div>
-
                 </div>
             </div>
 
-            <h2 class="my-3 fs-3">Changer le mot de passe</h4>
-                <div class="mb-4">
-                    <label for="password" class="form-label">Mot de passe (<span class="text-danger">12 caractères
-                            minimum</span>, avec au moins <span class="text-danger">une majuscule</span>, <span
-                            class="text-danger">un chiffre</span> et <span class="text-danger">un caractère
-                            spécial.</span>)</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
-                </div>
+            <h2 class="my-3 fs-3">Changer le mot de passe</h2>
 
-                <div class="mb-4">
-                    <label for="confirm_password" class="form-label">Confirmer le mot de passe</label>
-                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
-                </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Mot de passe (<span class="text-danger condition">12 caractères
+                        minimum</span>, avec au moins <span class="text-danger condition">une majuscule</span> et <span
+                        class="text-danger condition">un chiffre.</span>)</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
 
+            <div class="mb-4">
+                <label for="confirm_password" class="form-label">Confirmer le mot de passe</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+            </div>
 
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="togglePassword">
+                <label class="form-check-label" for="togglePassword">
+                    Afficher les mots de passe
+                </label>
+            </div>
 
-                <button type="submit" class="btn btn-success">
-                    <i class="bi bi-check-circle"></i> Enregistrer
-                </button>
+            <!--  Message d’erreur -->
+            <div id="errorMsg" class="alert alert-danger d-none">
+                Le mot de passe ne respecte pas les critères ou la confirmation est incorrecte.
+            </div>
 
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Enregistrer
+            </button>
         </form>
     </div>
 
