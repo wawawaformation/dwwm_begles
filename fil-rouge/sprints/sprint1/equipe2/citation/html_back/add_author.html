@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <title>auteur</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo/logo.webp" alt="Logo" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="quotes.html">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="authors.html">Les auteurs</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="static_page.html">Page statiques</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="user.html">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profil.html">Mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="exit.html" class="btn btn-danger">
+                                <i class="bi bi-box-arrow-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <h1 class="mb-5">Ajouter un auteur</h1>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="form-label">Nom de l'auteur (obligatoire)</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="birthdate" class="form-label">Date de naissance (facultatif)</label>
+                <input type="date" class="form-control" id="birthdate" name="birthdate">
+            </div>
+
+            <div class="mb-4">
+                <label for="deathdate" class="form-label">Date de décès (facultatif)</label>
+                <input type="date" class="form-control" id="deathdate" name="deathdate">
+            </div>
+
+            <div class="mb-4">
+                <label for="image" class="form-label">Image (obligatoire)</label>
+                <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="biography" class="form-label">Biographie (obligatoire)</label>
+                <textarea class="form-control" id="biography" name="biography" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Enregistrer
+            </button>
+            <a href="authors.html" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#back-to-authors">
+                retour </a>
+            </a>
+        </form>
+        <div class="modal fade" id="back-to-authors" tabindex="-1" aria-labelledby="back-to-authors-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="back-to-authors-label">retour aux auteurs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Êtes-vous sûr de vouloir retourner aux auteurs sans avoir enregistré votre auteur ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">continuer l'ajout</button>
+                        <a href="authors.html" class="btn btn-success">Retour aux auteurs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>

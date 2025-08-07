@@ -1,0 +1,35 @@
+.menu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+
+}
+
+
+
+.container {
+    box-sizing: border-box;
+    width: 90vw;
+    margin: auto;
+}
+
+
+
+
+/*=============================================================================
+Les titres
+=============================================================================*/
+
+.title-section{
+    margin-top: 2rem;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    
+}

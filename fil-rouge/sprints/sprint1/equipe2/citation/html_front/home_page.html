@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil_citation</title>
+    <link rel="stylesheet" href="../public/css/home_page.css">
+    <link rel="stylesheet" href="../public/css/header_footer.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+<header id="header">
+
+        <div class="top-header">
+            <a href="" class="logo">
+                <img src="/citation/assets/logo/logo.webp" alt="Accueil">
+            </a>
+
+            <nav>
+                <button class="burger"><i class="bi bi-list"></i></button>
+                <ul class="menu menu-secondaire">
+                    <li class="item">
+                        <form action="search.php" method="get" role="search">
+                            <div class="icon-recherche">
+                                <input type="search">
+                                <i class="bi bi-search"></i>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="item"><a href="api.html">API</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul class="menu menu-principal">
+            <li class="item"><a href="home_page.html">Accueil</a></li>
+            <li class="item"><a href="authors.html">Auteurs</a></li>
+            <li class="item"><a href="liste-citation.html">Citations</a></li>
+        </ul>
+
+    </header>
+
+
+    <body>
+        <section class="title_chapo">
+            <h1>Modernité et citations</h1>
+            <h2>Découvrez les plus belles citations d’hier et d’aujourd’hui,
+                classées par auteur ou citations. Qu’il s’agisse de trouver les
+                mots justes pour exprimer une pensée, réfléchir à la vie ou simplement
+                s’évader l’espace d’un instant, laissez-vous porter par la sagesse,
+                l’humour et la beauté des mots.
+            </h2>
+        </section>
+        <section class="title_a_propos">
+            <h1> A propos</h1>
+            <h2>Etudiants en DWWM: Développeur Web et Web Mobile.
+                Nous sommes 16 élèves. Nous n’avons ni matériels,
+                ni réseaux, ni ordinateur. Nous sommes des génies
+                pour coder sans ! <br></br>
+                On fait se projet pour s’entrainer et
+                rien d’autre car bon les auteurs de nos jours...
+                <span>Lire la suite</span>
+            </h2>
+        </section>
+        <section class="accueil">
+            <div class="inbox1">
+                <h1> Découvrez nos auteurs</h1>
+                    <img class="slide" id="slide" src="../public/img/KEITH-HARING.webp" alt="">
+                        <h3 class="text"> <span>Liste complète des auteurs...</span></h3>
+                <div class="touche" id="touche">
+                    <div class="precedent1" id="precedent" onclick="changeSlide(-1)">&lt;</div>
+                    <div class="suivant1" id="suivant" onclick="changeSlide(1)">&gt;</div>
+                </div>
+            </div>
+
+        </section>
+        <section class="accueil">
+        <div class="inbox1">
+            <h1> Découvrez nos citations</h1>
+                <img class="slide" id="slide" src="../public/img/angelou.webp" alt="">
+                    <h3 class="text"> <span>Liste complète des citations ...</span> </h3>
+            <div class="touche" id="touche">
+                <div class="precedent2" id="precedent" onclick="changeSlide(-1)">&lt;</div>
+                <div class="suivant2" id="suivant" onclick="changeSlide(1)">&gt;</div>
+            </div>
+        </div>            
+        </section>
+            <footer id="footer">
+
+        <ul class="menu legal">
+            <li class="item"><a href="mention-légales.html">Mentions Légales</a></li>
+            <li class="item"><a href="a-propos.html">À propos</a></li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="menu menu-social">
+            <li class="item"><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li class="item"><a href=""><i class="bi bi-instagram"></i></a></li>
+        </ul>
+    </footer>
+
+
+
+
+    </body>
+
+</body>
+
+</html>

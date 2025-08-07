@@ -1,0 +1,17 @@
+/*=============================================================================
+Classes utilitaires
+=============================================================================*/
+
+.btn{
+    display: inline-block;
+    padding: 0.6rem .8rem;
+    font-size: 1rem;
+    color: $color-nav;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    border: 1px solid $color-nav;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}

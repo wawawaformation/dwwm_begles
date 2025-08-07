@@ -1,0 +1,48 @@
+{
+  "auteur": "Maya Angelou",
+  "annee_naissance": 1928,
+  "age_si_vivante": 97,
+  "biographie": "Maya Angelou (1928-2014) était une écrivaine, poétesse, actrice et militante américaine. Figure emblématique du mouvement des droits civiques, elle est mondialement reconnue pour son autobiographie 'Je sais pourquoi chante l'oiseau en cage'. Ses œuvres célèbrent la résilience, la dignité humaine, l'identité noire, les luttes féminines et l'expression personnelle. Par sa voix et sa plume, elle a inspiré des générations à trouver la force de s'élever au-delà des épreuves.",
+  "citations": [
+    {
+      "citation": "J'ai appris que les gens oublieront ce que vous avez dit, les gens oublieront ce que vous avez fait, mais les gens n'oublieront jamais ce que vous leur avez fait ressentir.",
+      "interpretation": "Cette citation met en lumière la puissance de l'impact émotionnel dans nos relations. Maya Angelou souligne que les émotions que l'on suscite chez autrui sont souvent plus marquantes que nos paroles ou nos actions."
+    },
+    {
+      "citation": "Essayez d'être un arc-en-ciel dans le nuage de quelqu'un.",
+      "interpretation": "Elle encourage à apporter de la lumière et du réconfort dans la vie des autres. Même dans les moments sombres, un petit geste de gentillesse peut faire une grande différence."
+    },
+    {
+      "citation": "Quand quelqu'un vous montre qui il est, croyez-le la première fois. Les gens se connaissent bien mieux que vous. C'est pourquoi il est important d'arrêter de s'attendre à ce qu'ils soient autre chose que ce qu'ils sont.",
+      "interpretation": "Maya Angelou appelle à la lucidité : il faut accepter les gens tels qu’ils se présentent, plutôt que de projeter nos attentes sur eux. Cela évite les déceptions et les illusions."
+    },
+    {
+      "citation": "Ne faites jamais de quelqu'un une priorité lorsque tout ce que vous êtes pour lui est une option.",
+      "interpretation": "Elle met en garde contre les relations déséquilibrées. Il est essentiel de se respecter et de ne pas se sacrifier pour des personnes qui ne nous accordent pas la même importance."
+    },
+    {
+      "citation": "Le succès, c'est de s'aimer, d'aimer ce que vous faites et d'aimer comment vous le faites.",
+      "interpretation": "Cette définition du succès privilégie l’épanouissement personnel à la réussite matérielle. Le vrai accomplissement vient de l’amour de soi et de ses actions."
+    },
+    {
+      "citation": "Peu importe ce qui se passe, ou à quel point cela semble mauvais aujourd'hui, la vie continue et ce sera mieux demain.",
+      "interpretation": "Un message d’espoir et de persévérance : même dans la douleur, il faut garder foi en l’avenir. Le temps apporte souvent soulagement et renouveau."
+    },
+    {
+      "citation": "Je ne suis en compétition avec personne d'autre que moi-même. Je veux être excellent dans tout ce que je fais.",
+      "interpretation": "Elle valorise le dépassement de soi plutôt que la comparaison avec les autres. La vraie compétition est intérieure et vise à progresser selon ses propres critères."
+    },
+    {
+      "citation": "Le coeur heureux court avec la rivière, flotte dans l'air, s'élève au son de la musique, s'envole avec l'aigle, espère avec la prière.",
+      "interpretation": "Cette image poétique évoque la liberté, la légèreté et la puissance d’un cœur en paix. Le bonheur rend l’esprit créatif, ouvert et réceptif à la beauté du monde."
+    },
+    {
+      "citation": "Nous nous délectons de la beauté du papillon, mais admettons rarement les changements qu'il a subis pour atteindre cette beauté.",
+      "interpretation": "Cette métaphore nous rappelle que la beauté et la force naissent souvent de la souffrance ou du changement. Il faut respecter les processus intérieurs derrière chaque transformation."
+    },
+    {
+      "citation": "Ma mission dans la vie n'est pas simplement de survivre, mais de prospérer ; et de le faire avec un peu de passion, de compassion, d'humour et de style.",
+      "interpretation": "Maya Angelou affirme l’importance de vivre pleinement, avec engagement et élégance. L’existence ne doit pas se limiter à la survie, mais être une célébration consciente et inspirée."
+    }
+  ]
+}
