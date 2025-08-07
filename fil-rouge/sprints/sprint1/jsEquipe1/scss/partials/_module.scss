@@ -1,0 +1,124 @@
+.title-page {
+    margin: 2.4em auto;
+    text-align: center;
+    font-size: 1.72rem;
+}
+
+/*=============================================================================
+Les citations
+=============================================================================*/
+
+.quote {
+    margin: 1.2rem auto;
+
+}
+
+.quote-quote {
+    font-family: 'Citation', 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: $color-text;
+    margin: 0;
+}
+.one-quote .quote-author{
+    text-align: right;
+}
+.quote-author, .quote-author a {
+    text-decoration: none;
+}
+
+.quote-bubble {
+    background: $color-bg-quote;
+    box-sizing: border-box;
+    width: 94vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2em;
+    border-radius: .8rem;
+
+    .quote-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.2rem;
+    }
+
+
+
+
+
+    .quote-more {
+        font-family: 'Citation', 'Courier New', Courier, monospace;
+    }
+
+
+
+}
+
+.quote-after {
+    height: 1.17rem;
+    background-image: url(img/pointe.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+
+
+/*=============================================================================
+Pagination
+=============================================================================*/
+
+.pagination {
+    margin-top: 2.4rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+    color: $color-text;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem auto;
+    list-style: none;
+    padding: 0;
+    gap: 0;
+
+    .pagination-item {
+
+        a {
+            display: block;
+            border: solid 1px $color-nav;
+            text-decoration: none;
+            color: $color-nav;
+            font-size: 1.2rem;
+            padding: .8rem;
+            width: 1.5rem;
+
+
+
+        }
+
+        a.active {
+            background-color: $color-light-grey;
+            color: $color-text;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*=============================================================================
+List
+=============================================================================*/
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+
+
+}
