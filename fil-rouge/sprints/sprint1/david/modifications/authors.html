@@ -65,13 +65,15 @@
                         style="height: 400px;" alt="Michel Audiard">
                     <div class="card-body">
                         <h5 class="card-title">Michel Audiard</h5>
-                        <p class="card-text">Dialoguiste à l’humour ravageur, maître du verbe...</p>
+                        <p class="card-text">Dialoguiste à l'humour ravageur, maître du verbe...</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <a href="auteur_edit/1" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i>
                             Modifier</a>
-                        <a href="auteur_delete/1" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-                            Supprimer</a>
+                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal" data-delete-url="auteur_delete/1">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -88,8 +90,10 @@
                     <div class="card-footer d-flex justify-content-between">
                         <a href="auteur_edit/2" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i>
                             Modifier</a>
-                        <a href="auteur_delete/2" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-                            Supprimer</a>
+                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal" data-delete-url="auteur_delete/2">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,13 +104,15 @@
                         style="height: 400px;" alt="Blanche Gardin">
                     <div class="card-body">
                         <h5 class="card-title">Blanche Gardin</h5>
-                        <p class="card-text">Humoriste au verbe tranchant et à l’esprit critique aiguisé...</p>
+                        <p class="card-text">Humoriste au verbe tranchant et à l'esprit critique aiguisé...</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <a href="auteur_edit/3" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i>
                             Modifier</a>
-                        <a href="auteur_delete/3" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-                            Supprimer</a>
+                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal" data-delete-url="auteur_delete/3">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -117,13 +123,15 @@
                         style="height: 400px;" alt="Agnès Martin-Lugand">
                     <div class="card-body">
                         <h5 class="card-title">Agnès Martin-Lugand</h5>
-                        <p class="card-text">Romancière à succès, elle explore l’âme humaine...</p>
+                        <p class="card-text">Romancière à succès, elle explore l'âme humaine...</p>
                     </div>
                     <div class="card-footer d-flex justify-content-between">
                         <a href="auteur_edit/4" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i>
                             Modifier</a>
-                        <a href="auteur_delete/4" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-                            Supprimer</a>
+                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal" data-delete-url="auteur_delete/4">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -139,8 +147,10 @@
                     <div class="card-footer d-flex justify-content-between">
                         <a href="auteur_edit/5" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i>
                             Modifier</a>
-                        <a href="auteur_delete/5" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-                            Supprimer</a>
+                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal" data-delete-url="auteur_delete/5">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -156,8 +166,10 @@
                     <div class="card-footer d-flex justify-content-between">
                         <a href="auteur_edit/6" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i>
                             Modifier</a>
-                        <a href="auteur_delete/6" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i>
-                            Supprimer</a>
+                        <a href="#" class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#confirmDeleteModal" data-delete-url="auteur_delete/6">
+                            <i class="bi bi-trash"></i> Supprimer
+                        </a>
                     </div>
                 </div>
             </div>
@@ -166,7 +178,7 @@
 
     <div class="my-4 text-center bloc-pagination mt-5 py-5">
         <div class="mb-2">
-            <strong>86 auteurs</strong> – affichage de <strong>6 par page</strong>
+            <strong>86 auteurs</strong> - affichage de <strong>6 par page</strong>
         </div>
 
         <nav aria-label="Pagination des citations">
@@ -209,10 +221,44 @@
         </nav>
     </div>
 
-
+    <!-- Modal pour la confirmation de suppression -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="confirmDeleteLabel">Confirmer la suppression</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    Êtes-vous sûr de vouloir supprimer cet auteur ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                    <a id="confirmDeleteBtn" class="btn btn-danger">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        const confirmDeleteModal = document.getElementById('confirmDeleteModal');
+        const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+
+        confirmDeleteModal.addEventListener('show.bs.modal', function (event) {
+            const triggerLink = event.relatedTarget;
+            const deleteUrl = triggerLink.getAttribute('data-delete-url');
+            confirmDeleteBtn.setAttribute('href', deleteUrl);
+        });
+    </script>
+
+
+
 </body>
 
 </html>
