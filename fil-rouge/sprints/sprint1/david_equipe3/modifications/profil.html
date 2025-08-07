@@ -56,8 +56,8 @@
 
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <img id="display-image" src="public/img/profils/delphine_raoux_2345.jpeg" width="400" height="400"
-                        alt="" style="object-fit: cover;">
+                    <img id="display-image" src="public/img/profils/default_profil_pic.webp" width="400" height="400"
+                        alt="default_profil_pic" style="object-fit: cover;">
                 </div>
 
                 <div class="col-12 col-md-8">
@@ -88,10 +88,11 @@
 
             <h2 class="my-3 fs-3">Changer le mot de passe</h4>
                 <div class="mb-4">
-                    <label for="password" class="form-label">Mot de passe (<span class="text-danger">12 caractères
-                            minimum</span>, avec au moins <span class="text-danger">une majuscule</span>, <span
-                            class="text-danger">un chiffre</span> et <span class="text-danger">un caractère
-                            spécial.</span>)</label>
+                    <label for="password" class="form-label">Mot de passe (<span id="length" class="text-danger">12
+                        caractères
+                        minimum</span>, avec au moins <span id="upper_case" class="text-danger">une majuscule</span>,
+                    <span id="number" class="text-danger">un chiffre</span> <strike>(et un caractère
+                        spécial)</strike>.)</label>
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
 
@@ -102,7 +103,7 @@
 
 
 
-                <button type="submit" class="btn btn-success">
+                <button type="submit" class="btn btn-success" id="btn-submit" disabled>
                     <i class="bi bi-check-circle"></i> Enregistrer
                 </button>
 
@@ -111,6 +112,7 @@
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script src="public/js/display_image.js"></script>
+    <script src="public/js/script_raoul.js"></script>
 </body>
 
 </html>
