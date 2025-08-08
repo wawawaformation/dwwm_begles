@@ -117,8 +117,58 @@
                 reader.readAsDataURL(input.files[0]);
             }
         });
-    </script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            const name = document.getElementById('name').value.trim();
+            const image = document.getElementById('image').files.length;
+            const biography = tinymce.get('biography').getContent({ format: 'text' }).trim(); // récupère le texte brut
 
+            if (!name || !image || !biography) {
+                e.preventDefault();
+
+                let message = "Veuillez remplir tous les champs obligatoires :\n";
+                if (!name) message += "- Nom de l'auteur\n";
+                if (!image) message += "- Image\n";
+                if (!biography) message += "- Biographie\n";
+
+                alert(message);
+            }
+        });
+        
+    </script>
+   <script>
+document.querySelector('form').addEventListener('submit', function (e) {
+    const name = document.getElementById('name').value.trim();
+    const image = document.getElementById('image').files.length;
+    const biography = tinymce.get('biography').getContent({ format: 'text' }).trim();
+    const birthdate = document.getElementById('birthdate').value;
+    const deathdate = document.getElementById('deathdate').value;
+
+    let message = "";
+
+    
+    if (!name || !image || !biography) {
+        message += "Veuillez remplir tous les champs obligatoires :\n";
+        if (!name) message += "- Nom de l'auteur\n";
+        if (!image) message += "- Image\n";
+        if (!biography) message += "- Biographie\n";
+    }
+
+    
+    if (birthdate && deathdate) {
+        const birth = new Date(birthdate)
+        const death = new Date(deathdate);
+
+        if (birth > death) {
+            message += "\nLa date de naissance doit être antérieure à la date de décès.";
+        }
+    }
+
+    if (message) {
+        e.preventDefault();
+        alert(message);
+    }
+});
+</script>
 
 </body>
 
