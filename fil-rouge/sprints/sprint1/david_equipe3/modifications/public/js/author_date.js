@@ -1,7 +1,7 @@
 /**
  * Transforme les chaînes de caractères de date en objets Date, puis vérifie que dateBefore est antérieur à dateAfter.
  * @param {string} dateBeforeString 
- * @param {string} dateAfterString 
+ * @param {string} dateAfterString
  */
 function compareDates(dateBeforeString, dateAfterString) {
     const dateBefore = new Date(dateBeforeString);
@@ -12,7 +12,7 @@ function compareDates(dateBeforeString, dateAfterString) {
 /**
  * Comapare si la date passé en paramètre est antérieur à la date du jour.
  * @param {string} dateString 
- * @returns 
+ * @returns true si la date est antérieure, sinon false
  */
 
 function isDateBeforeToday(dateString) {
@@ -21,7 +21,7 @@ function isDateBeforeToday(dateString) {
     return date < today;
 }
 
-document.getElementById('add-author').addEventListener('submit', function (e) {
+document.getElementById('add-author').addEventListener('submit', function(e) {
     const birthdate = document.getElementById('birthdate').value;
     const deathdate = document.getElementById('deathdate').value;
 
