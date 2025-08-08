@@ -624,3 +624,8 @@ Classes utilitaires
 }
 
 /*# sourceMappingURL=style.css.map */
+
+input[type="submit"]:disabled{
+  opacity: 50%;
+  cursor: not-allowed;
+}

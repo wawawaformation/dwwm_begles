@@ -6,6 +6,8 @@
     <title>Ajouter un auteur | Admin citation</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/bootstrap-icons/bootstrap-icons.min.css">
+        <script src="https://cdn.tiny.cloud/1/3pgzvkg7kp63adlkbww75e7vs8y8ss3huw26osa6yfnkhmjw/tinymce/8/tinymce.min.js"
+        referrerpolicy="origin" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -85,6 +87,13 @@
     </div>
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
+        <script>
+        tinymce.init({
+            selector: '#biography',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+    </script>
 </body>
 
 </html>

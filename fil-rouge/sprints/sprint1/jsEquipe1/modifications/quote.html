@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Ajouter une citation</title>
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/bootstrap-icons/bootstrap-icons.min.css">
+    <!-- Tiny MCE -->
+    <script src="https://cdn.tiny.cloud/1/3pgzvkg7kp63adlkbww75e7vs8y8ss3huw26osa6yfnkhmjw/tinymce/8/tinymce.min.js"
+        referrerpolicy="origin" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Citations admin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,6 +57,7 @@
             <div class="mb-4">
                 <label for="quote" class="form-label">Texte de la citation (obligatoire)</label>
                 <input type="text" id="quote" name="quote" class="form-control" required>
+
             </div>
 
             <div class="mb-4">
@@ -66,7 +73,7 @@
                 </select>
             </div>
 
-           
+
 
             <div class="mb-4">
                 <label for="explanation" class="form-label">Explication (obligatoire)</label>
@@ -83,5 +90,13 @@
     </div>
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#quote',
+            plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+    </script>
 </body>
+
 </html>

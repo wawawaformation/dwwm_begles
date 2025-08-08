@@ -56,20 +56,19 @@
                     <div class="field field-email">
                         <label for="email">Email (Obligatoire)</label>
                         <input type="email" id="email" name="email" required>
-                </div>
-                <div class="field field-message">
-                    <label for="message">Message (Obligatoire)</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="submit">
-                    <div class="field field-accept">
-                        <input type="checkbox" id="accept" name="accept" required>
-                        <label for="accept">J'accepte la
-                            <a href="rgpd.html">politique de confidentialité</a></label>
                     </div>
-                    <input type="submit" value="Envoyer" class="btn btn-primary">
-
-                </div>
+                    <div class="field field-message">
+                        <label for="message">Message (Obligatoire)</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <div class="field field-accept">
+                            <input type="checkbox" value="true" id="accept" name="accept" required>
+                            <label for="accept">J'accepte la
+                                <a href="rgpd.html">politique de confidentialité</a></label>
+                        </div>
+                        <input type="submit" value="Envoyer" id="submitBtn" class="btn btn-primary" disabled>
+                    </div>
             </form>
         </div>
     </main>
@@ -97,6 +96,38 @@
         </a>
 
     </div>
+
+    <script>
+
+        /**
+         * JavaScript pour désactiver le bouton "Envoyer" sur la page contact lorsque le formulaire n'est pas rempli
+         * et que la chekcbox n'est pas "check"
+         **/
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            const checkbox = document.getElementById('accept')
+            const submitBtn = document.getElementById('submitBtn')
+            const nameElt = document.getElementById('name')
+            const firstnameElt = document.getElementById('firstname')
+            const emailElt = document.getElementById('email')
+            const messageElt = document.getElementById('message')
+
+            function checkFormValidity() {
+                const form = messageElt.value.trim() !== '' &&
+                    nameElt.value.trim() !== '' &&
+                    firstnameElt.value.trim() !== '' &&
+                    emailElt.value.trim() !== '' &&
+                    checkbox.checked;
+                submitBtn.disabled = !form;
+            }
+
+            [messageElt, checkbox, nameElt, firstnameElt, emailElt].forEach(el => {
+                el.addEventListener('input', checkFormValidity)
+                el.addEventListener('change', checkFormValidity)
+            });
+        });
+    </script>
 </body>
 
 </html>
