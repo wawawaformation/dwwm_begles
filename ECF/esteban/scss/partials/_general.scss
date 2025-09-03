@@ -12,3 +12,9 @@ body {
 .hidden {
     display: none;
 }
+
+@media screen and (min-width : 720px) {
+    :root, html {
+        font-size: 16px;
+    }
+}
