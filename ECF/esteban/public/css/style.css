@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Titre";
+  src: url(../../public/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Texte";
+  src: url(../../public/fonts/OpenSans-Regular.ttf);
+}
+:root, html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Texte", sans-serif;
+  color: #202429;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  position: relative;
+}
+
+.logo {
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+}
+nav .menu {
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+nav .menu li {
+  border-bottom: 1px #ffffff;
+}
+nav .menu .item-menu {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  color: #202429;
+  background-color: #86ba33;
+}
+nav .menu .item-menu :hover {
+  color: #e2007d;
+}
+nav .menu .active {
+  background-color: #44a33c;
+}
+
+.burger-button {
+  background: none;
+  border: none;
+}
+.burger-button svg :hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
