@@ -1,0 +1,9 @@
+@use 'vars' as v;
+
+.breadcrumbs {
+    padding:1rem 2rem;
+
+    a {
+        color: v.$link-color;
+    }
+}

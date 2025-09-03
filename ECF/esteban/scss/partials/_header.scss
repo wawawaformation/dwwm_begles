@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 0;
     margin: 0;
     position: relative;
 }
@@ -92,6 +92,10 @@
     #nav {
         position: static;
         text-align: center;
+
+        &.hidden {
+            display : flex;
+        }
 
         .main-menu {
             display: flex;
