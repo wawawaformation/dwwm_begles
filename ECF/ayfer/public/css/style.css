@@ -1,39 +1,39 @@
 /**************************************FONTS*************************************/
 @font-face {
-  font-family: 'Montserrat';
-  src:url('./fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src:url('./fonts/OpenSans-Regular.ttf') format('truetype');
+    font-family: 'OpenSans';
+    src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
 /**************************************VARIABLES*************************************/
-:root{
---color-text :#212529;
---color-background-page :#f1f1f1;
---color-background-header-arianne-card :#ffffff;
---color-background-footer-menu :#87BB35;
---color-background-hover :#43A33D;
---color-background-lien :#E3007E;
---font-title: 'Montserrat', sans-serif;
---font-text: 'OpenSans', sans-serif;
+:root {
+    --color-text: #212529;
+    --color-background-page: #f1f1f1;
+    --color-background-header-arianne-card: #ffffff;
+    --color-background-footer-menu: #87BB35;
+    --color-background-hover: #43A33D;
+    --color-background-lien: #E3007E;
+    --font-title: 'Montserrat', sans-serif;
+    --font-text: 'OpenSans', sans-serif;
 }
 
 /********************************GENERAL*********************************/
-.wrapper{
+.wrapper {
     margin: auto;
     width: 80%;
 }
 
 body {
-    margin:0;
+    margin: 0;
     background-color: var(--color-background-page);
     font-family: var(--font-text);
 }
 
-header{
+header {
     background-color: var(--color-background-header-card);
 }
 
@@ -48,6 +48,7 @@ header{
     gap: 0;
     list-style: none;
     background-color: var(--color-background-footer-menu);
+
     a {
         text-decoration: none;
         color: var(--color-text);
@@ -58,7 +59,7 @@ header{
     background-color: var(--color-background-hover);
 }
 
-.fil_arianne{
+.fil_arianne {
     background-color: var(--color-background-header-arianne-card);
     padding: 1rem;
 }
@@ -68,76 +69,105 @@ header{
     text-decoration: none;
 }
 
-.titre-page{
+.titre-page {
     font-family: var(--font-title);
     font-weight: lighter;
 }
 
-.chapo{
+.chapo {
     font-style: italic;
     padding-bottom: 2rem;
 }
 
-.footer{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        background-color: var(--color-background-footer-menu);
+/***********************FOOTER************************/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: var(--color-background-footer-menu);
+}
+
+.footer .wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer .menu {
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-logo {
+    background-color: var(--color-background-header-arianne-card);
+}
+
+.menu-logo img {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+.menu-legal {
+    gap: 10px;
+    font-style: italic;
 }
 
 /*******************************************CARTES********************************************/
 
 .cartes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  padding-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 4rem;
 }
 
 .carte {
-  width: 340px;
-  background-color: var(--color-background-header-arianne-card);
-  padding: 0.8rem;
-  box-sizing: border-box;
+    width: 340px;
+    background-color: var(--color-background-header-arianne-card);
+    padding: 0.8rem;
+    box-sizing: border-box;
 }
 
 .titre-carte {
-  font-weight: bold;
-  margin: 0 0 0.5rem 0;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
 }
 
 .contenu-carte {
-  display: flex;
-  gap: 0.8rem;
+    display: flex;
+    gap: 0.8rem;
 }
 
 .image-carte img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
 }
 
 .infos {
-  display: flex;
-  justify-content: flex-start;
-  gap: 1.5rem;
-  margin-top: 0.8rem;
-  gap: 6rem;
-  margin-left:.2rem ;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 0.8rem;
+    gap: 6rem;
+    margin-left: .2rem;
 }
 
 .infos a {
-  text-decoration: none;
-  color: var(--color-background-lien);
-  display: flex;
-  align-items: center;
-  font-style: italic;
-  gap: 0.2rem;
+    text-decoration: none;
+    color: var(--color-background-lien);
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    gap: 0.2rem;
 }
 
 .infos a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 
@@ -170,6 +200,7 @@ header{
         flex-direction: column;
         gap: .1rem;
         padding: 0;
+
         a {
             display: block;
             text-align: center;
@@ -226,16 +257,16 @@ header{
         }
 
     }
-    
-    .fil_arianne a{
+
+    .fil_arianne a {
         margin-left: 2.5rem;
     }
 
-    .titre-page{
+    .titre-page {
         margin-left: 2.5rem;
     }
 
-    .chapo{
-        margin-left:2.5rem ;
+    .chapo {
+        margin-left: 2.5rem;
     }
 }
