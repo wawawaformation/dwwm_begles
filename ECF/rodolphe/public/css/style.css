@@ -1,0 +1,442 @@
+
+/* site de base */
+
+:root {
+    --gap-carte: 20px;
+}
+
+@font-face{
+font-family: Title;
+src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face{
+font-family: Labor;
+src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Title', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+p{
+  font-family: 'Labor', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+body {
+    max-width: 1920px;   
+    margin: 0 auto;      
+    font-size: 14px;
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+main {
+   margin: 0;                 
+   padding: 2rem 30px;         
+   background-color: transparent;
+}
+
+.logos-mobile {
+  display: none;
+  margin-top: 20px;
+}
+
+/* partie pour gérer les menu-le logo */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-color: white;
+  padding: 10px 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo img {
+    width: 60px;
+    height: auto;
+}
+
+/* Burger */
+#burger {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#burger img {
+    width: 60px;
+    height: auto;
+}
+
+/* menu principal de la navbar */
+.menu {
+    padding: 0;
+    margin: 0;              
+    width: 100%;           
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    background-color: #86ba33; /*couleur de base du site afpa*/
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: .5rem .75rem;
+    font-family: 'Title', sans-serif;
+     color: rgb(0, 0, 0);
+}
+
+.menu a:hover {
+    background-color: #44A33C;  
+}
+
+
+
+.titre-page {
+  font-family: 'Title', sans-serif;
+  font-size: 1.2rem;               
+  font-weight: 400;                 
+  margin: 1rem 0;
+  
+}
+
+.breadcrumb {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  font-family: 'Labor', sans-serif; 
+  font-size: 0.7rem;               
+}
+
+.breadcrumb  li {
+display : inline;
+}
+
+.breadcrumb  a {
+color: black;
+text-decoration: none;
+position: relative;
+padding: 0px 11px;
+}
+
+cite {
+  font-family: 'Labor', sans-serif; 
+  font-size: 0.8rem;                 
+  font-weight: 400;                 
+  display: block;                  
+  margin: 0 0 1.5rem 0;          
+ 
+}
+
+
+/*contenu des cartes*/
+
+.titre-carte {
+    margin: 0 0 8px 0; 
+    font-family: 'Title', sans-serif; 
+    font-size: 0.9rem;
+    font-weight: 400;   
+}
+
+.carte-contenu {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;  
+                
+}   
+    
+
+.contenu-carte {
+    text-align: justify;
+    font-family: 'Labor', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400; 
+}
+
+.reseaux_sociaux {
+  list-style: none;      
+  margin: 0;
+  padding: 0;
+  display: flex;        
+  gap: 30px;             
+}
+
+.reseaux_sociaux li {
+  display: flex;
+  align-items: center;     
+}
+
+.reseaux_sociaux a {
+  display: flex;         
+  align-items: center;
+  gap: 8px;               
+  color: #e2007d;             
+  text-decoration: none;  
+  padding: 0 11px;
+}
+
+
+.reseaux_sociaux img {
+  height: 24px;            
+  width: auto;
+}
+
+.apprenant {
+    display: flex;
+    flex-wrap: wrap;                 
+    gap: 20px;       
+    justify-content: center;         
+}
+
+#footer a {
+  font-family: 'Labor', sans-serif;
+  font-size: 0.80rem;               
+  font-weight: 400;                 
+  color: black;
+  text-decoration: none;
+}
+
+
+.carte {
+    
+    padding: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: white;
+}
+
+
+@media screen and (max-width: 320px) {
+    #header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .menu a {
+        background-color: #87BB34;
+        color: #000;
+        text-align: center;
+        padding: 6px;
+    }
+
+    .hidden { display: none; }
+
+    .carte-contenu {
+        flex-direction: column;
+    }
+
+    .logos-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;    
+    padding: 10px 0;
+    background-color: white;
+    margin-top: 0px;
+  }
+
+  .logos-mobile img {
+    height: 40px; 
+    width: auto;
+  }
+    
+main {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .apprenant {
+    gap: 0px;   
+
+  }
+
+  .carte {
+    width: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 0; 
+  }
+
+}
+
+/* De 321px à 700px → 2 colonnes */
+@media screen and (min-width: 321px) and (max-width: 700px) {
+    .carte {
+        width: calc((100% - var(--gap-carte)) / 2);
+    }
+
+    .carte-contenu {
+        flex-direction: column;
+    }
+
+    .menu { justify-content: start; }
+    #burger { display: none; }
+}
+
+/* De 701px à 1919px → 3 colonnes */
+@media screen and (min-width: 701px) and (max-width: 1919px) {
+    .carte {
+        width: calc((100% - (var(--gap-carte) * 2)) / 3);
+    }
+
+    .menu { justify-content: start; }
+    #burger { display: none; }
+}
+
+/* ≥ 1920px → toujours 3 colonnes */
+@media screen and (min-width: 1920px) {
+    .carte {
+        width: calc((100% - (var(--gap-carte) * 2)) / 3);
+    }
+
+    .menu { justify-content: start; }
+    #burger { display: none; }
+}
+
+/* Image de carte : taille fixe partout */
+
+.image-carte {
+  width: 75px;
+  height: 85px;
+  flex: 0 0 75px;   
+}
+
+  
+.image-carte img {
+  width: 100%;
+  height: 100%;
+  max-width: none;  
+  object-fit: cover;
+  display: block;
+}
+
+#footer {
+    background-color: #87BB34;
+    color:black;
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: 0px;
+}
+
+.pied_de_page {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+
+.footer-left,
+.footer-center,
+.footer-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#footer a {
+  color: black;
+}
+
+@media screen and (max-width: 320px) {
+
+ 
+  .pied_de_page .footer-left {
+    display: none;
+  }
+
+
+  .pied_de_page {
+    display: flex;
+    flex-direction: row;      
+    justify-content: center;  
+    align-items: center;     
+    gap: 12px;               
+    flex-wrap: wrap;       
+  }
+
+ 
+  .footer-center,
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-center a {
+    display: inline-block;   
+  }
+
+  #footer img {
+    height: 24px;
+  }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+
+:root { --page-gutter: 30px; } 
+
+ 
+#header { padding: 10px var(--page-gutter); }
+#logo { margin: 0; }
+
+
+nav { background-color: #86ba33; }
+.menu {
+  background: transparent;            
+  padding: 0 var(--page-gutter);     
+
+ 
+.breadcrumb { padding: 0.5rem var(--page-gutter); }
+main { padding: 2rem var(--page-gutter); }
+}
+
+@media screen and (max-width: 320px) {
+  .menu { padding: 0; }               
+  .breadcrumb { padding: 0.5rem 1rem; }
+}
+
+
+
+
