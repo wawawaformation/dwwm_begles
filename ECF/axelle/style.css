@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratItalic";
+    src: url(fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+
+
+/* MONTSERRAT : 21px; 
+    H1 MONTSERRAT : 18/16px;
+    H2 OPENSANS : 14px; (paragraphe)
+    rose :#e2007d
+    vert foncée : #44a33c
+    */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+/* ====================== NAVBAR ====================== */
+
+.navbar {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo-header {
+    max-width: 150px;
+}
+
+.menu-burger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-burger img {
+    width: 100%;
+    height: auto;
+}
+
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background: #86ba33;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.menu li {
+    border-bottom: 1px solid white;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #202429;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.lien-active {
+    background-color: #44a33c;
+}
+
+
+/* ====================== @MEDIA HEADER ====================== */
+
+@media (min-width: 700px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
+        width: auto;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 20px;
+        background-color: #86ba33;
+    }
+
+    .menu li {
+        border: none;
+    }
+
+    .menu a {
+        padding: 10px 15px;
+    }
+
+    .menu-burger {
+        display: none;
+    }
+
+    .chapo {
+        display: block;
+    }
+}
+
+.fil-dariane {
+    background-color: #fdfdfd;
+    padding-top: 20px;
+}
+
+/* CHAPO */
+
+a {
+    text-decoration: none;
+    color: #d63384;
+}
+
+.chapo h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 21px;
+    padding: 20px;
+    color: #202429;
+}
+
+.chapo p {
+    font-family: OpenSans, sans-serif;
+    font-size: 14px;
+    padding: 0 20px 20px 20px;
+    color: #202429;
+    margin: 0;
+}
+
+.texte {
+    font-family: OpenSans, sans-serif;
+    font-style: italic;
+}
+
+/* ====================== MAIN ====================== */
+
+.apprenant {
+    padding: 1rem;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: #fdfdfd;
+}
+
+
+.apprenant img {
+    width: 120px;
+    height: 90px;
+}
+
+.apprenant h2,
+p {
+    margin-bottom: 1rem;
+}
+
+.photo-texte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+
+.social a {
+    display: flex;
+    text-decoration: none;
+    color: #d63384;
+    font-family: MontserratItalic, sans-serif;
+    gap: 5px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: Montserrat, sans-serif;
+    color: #202429;
+}
+
+p {
+    font-family: OpenSans, sans-serif;
+    font-size: 16px;
+    color: #202429;
+}
+
+.apprenant:nth-child(9),
+.apprenant:nth-of-type(9) {
+    display: none;
+}
+
+
+/* ====================== @MEDIA CARTE TABLETTE ====================== */
+
+@media screen and (min-width: 700px) {
+    .apprenants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .apprenant {
+        flex: 0 0 48%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .apprenant:nth-child(9),
+    .apprenant:nth-of-type(9) {
+        display: none;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+}
+
+/* ====================== @MEDIA CARTE DESKTOP ====================== */
+
+@media screen and (min-width: 1500px) {
+    .apprenants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .apprenant {
+        flex: 0 0 63%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .apprenant:nth-child(9),
+    .apprenant:nth-of-type(9) {
+        display: inline-block;
+        /* réaffiche la 9ème carte*/
+    }
+}
+
+
+/* ====================== FOOTER ====================== */
+
+.footer-logo {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+}
+
+.logo-footer {
+    max-width: 120px;
+}
+
+.footer-menu {
+    background-color: #86ba33;
+    padding: 10px;
+}
+
+.footer-liste {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 8px;
+
+}
+
+.footer-lien {
+    color: #202429;
+    font-family: MontserratItalic, sans-serif;
+}
+
+.footer-icon {
+    width: 25px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-liste li:first-child {
+    display: none;
+}
+
+
+/* ====================== @MEDIA FOOTER ====================== */
+
+@media (min-width: 700px) {
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-liste li:first-child {
+        display: list-item;
+    }
+
+    .footer-menu {
+        padding: 0;
+    }
+
+    .logo-tablette {
+        width: 250px;
+        display: block;
+    }
+}
