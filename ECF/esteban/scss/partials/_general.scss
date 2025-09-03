@@ -7,6 +7,8 @@ body {
     font-family: 'Text', sans-serif;
     color : v.$text-color;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 
     .title {
         font-family: 'Title', serif;
