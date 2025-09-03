@@ -1,0 +1,32 @@
+@use 'vars' as v;
+@use 'fonts';
+
+.breadcrumbs {
+    padding:1rem 2rem;
+    background-color: v.$header-background;
+
+    a {
+        color: v.$link-color;
+    }
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-color: v.$background-color;
+    padding: 1rem 1.2rem;
+    width: auto;
+
+    .chapo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+         .text-chapo {
+        font-style: italic;
+    }
+    }
+
+    
+}
+
+

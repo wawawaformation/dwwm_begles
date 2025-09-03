@@ -4,10 +4,23 @@
     font-size: 14px;
 }
 body {
-    font-family: 'Texte', sans-serif;
+    font-family: 'Text', sans-serif;
     color : v.$text-color;
-    background-color: v.$background-color;
     margin: 0;
+
+    .title {
+        font-family: 'Title', serif;
+        font-weight: normal;
+    }
+
+    .title-page {
+        font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: v.$text-color
+    }
 }
 .hidden {
     display: none;
