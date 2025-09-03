@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('../fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf') format('truetype');
+
+}
+
+:root{
+    --color-background: #FAF2E6;
+    --color-text: #3A3227;
+    --color-primary: #6222CC;
+    --color-header: #E4C496;
+
+    font-size: 14px;
+}
+
+body {
+
+    background-color: var(--color-background);
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+#header nav{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 1.1rem;
+    padding: .8rem;
+    background-color: var(--color-header)
+
+}
+    
+
+
+
+.logo {
+    width: 81.23px;
+    color:#6222CC;
+}
+
+
+
+@media (min-width: 768px) {
+    :root{
+         font-size: 20px;
+    }
+   
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajoute des Auteurs | Citations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<style>
+    #header {
+            background-color: #FAF2E6 !important;
+        }
+
+        a {
+            color: #6622CC !important;
+        }
+
+        .active {
+            color: #3A3227 !important;
+        }
+    .btn.btn-secondary.dropdown-toggle {
+        background-color: #6622CC !important;
+
+    }
+    .btn.btn-primary {
+            background-color: #6622CC !important;
+            border-color: #6622CC !important;
+            color: white !important;
+
+        }
+
+        .btn.btn-primary:hover {
+            background-color: #501a9c !important;
+            border-color: #501a9c !important;
+        }
+             .btn.btn-secondaire {
+            background-color: #6D675F !important;
+            border-color: #6D675F !important;
+            color: white !important;
+        }
+
+        .btn.btn-secondaire:hover {
+            background-color: #3A3227 !important;
+            border-color: #3A3227 !important;
+
+        }
+</style>
+<body>
+  <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="public/img/logo.svg" alt="logo citations" width="124" height="72">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les auteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les pages</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Mon profil
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-eye"></i>
+                               <p class="d-none">voir le site</p> 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-box-arrow-right p-0" title="voir le site"></i><p class="d-none">se déconnecter</p></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ <main id="main">
+        <div class="alert alert-success" role="alert">
+            ✅ Profil mis à jour !
+        </div>
+        <div class="alert alert-danger" role="alert">
+            ❌ Veuillez remplir tous les champs.
+        </div>
+        <div class="container">
+            <div class="p-4 bg-light rounded mb-5 my-5">
+                <h1 class="title p-3">Profil d'utilisateur</h1>
+
+
+                <form action="index.php" method="post" enctype="multipart/form-data">
+                    <div class="row">
+        
+        <div class="col-md-4 d-flex align-items-start justify-content-center mb-3">
+            <img src="public/img/blank-profile-picture.png" alt="Photo de profil" class="img-fluid rounded" style="max-width: 300px;">
+        </div>
+
+        <!-- Formulaire droite -->
+        <div class="col-md-8">
+            <div class="row">
+                
+                <div class="col-12">
+                    <label for="nom" class="form-label">Nom (obligatoire)</label>
+                    <input type="text" id="nom" name="nom" class="form-control" placeholder="Doe" required oninvalid="this.setCustomValidity('Veuillez remplir ce champ')" oninput="this.setCustomValidity('')">
+                </div>
+
+                <div class="col-12">
+                    <label for="prenom" class="form-label">Prénom (obligatoire)</label>
+                    <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Jane" required>
+                </div>
+
+                <div class="col-12">
+                    <label for="email" class="form-label">Email (obligatoire)</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="janedoe@email.com" required>
+                </div>
+
+                
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image (obligatoire)</label>
+                    <input type="file" class="form-control" id="image"
+                    accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                    required>
+                </div>
+
+                
+            </div>
+            </div>
+                </form>
+
+            </div> 
+        </div>
+        <!-- Section mot de passe -->
+        <hr class="my-4 p-1">
+        <h2 class="h5">Changer le mot de passe</h2>
+
+        <div class="col-12 mb-3">
+        <label for="current_password" class="form-label p-1">Mot de passe actuel</label>
+        <input type="password" id="current_password" name="current_password" class="form-control" placeholder="Mot de passe actuel">
+        </div>
+
+        <div class="col-12 mb-3">
+        <label for="new_password" class="form-label p-1">Mot de passe (<span class="text-danger">12 caractères minimum</span> , avec au moins <span class="text-danger">une majuscule</span>, <span class="text-danger">un chiffre</span> et <span class="text-danger">un caractère spécial</span>.)</label>
+        <input type="password" id="new_password" name="new_password" class="form-control" placeholder="Nouveau mot de passe">
+        </div>
+
+        <div class="col-12 mb-3">
+        <label for="confirm_password" class="form-label p-1">Confirmer le nouveau mot de passe</label>
+        <input type="password" id="confirm_password" name="confirm_password" class="form-control" placeholder="Confirmez le mot de passe">
+        </div>
+
+        <!-- Bouton submit -->
+        <div class="col-12 d-flex gap-2 w-auto">
+        <button type="submit" class="btn btn-primary mt-3">Mettre à jour</button>
+        <button type="submit" class="btn btn-secondaire mt-3">Réinitialiser</button>
+        </div>
+                      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

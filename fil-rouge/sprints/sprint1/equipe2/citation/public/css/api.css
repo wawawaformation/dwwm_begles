@@ -16,13 +16,19 @@ h1{
     text-align: center;
 }
 
-.fil-arianne{
+.fils-arianne{
     text-decoration: none;
     color: #5B3C11 ;
-    font-size: 0.9rem;
     text-align: left;
-    margin-left:1rem ;
+    padding: 1rem;
+    font-size: 0.9rem;
 } 
+
+.fils-arianne i, .fils-arianne a {
+    padding-left: 0;
+    padding-right:0 ;
+} 
+
 .container-dark{
     background-color: hsla(35, 55%, 57%, 0.4);
     color: #5B3C11;
@@ -36,6 +42,9 @@ h2{
     font-weight: lighter;
     padding: .7rem;
 }
+.second-menu{
+    background-color: #FAF2E6;
+ }
 
 .chapo{
     margin-bottom: 0;
@@ -63,4 +72,8 @@ li{
 
 .before-br {
     color: #6622CC;
+}
+
+.no-display{
+    display: none;
 }

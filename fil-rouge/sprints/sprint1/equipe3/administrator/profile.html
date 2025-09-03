@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier utilisateur | Citation Backoffice</title>
+    <!--Bootstrap & Boostrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="m-1 mt-1" href="index.html"><img src="public/img/logo.svg" alt="logo-site" width="72px"
+                        height="61px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse main-menu m-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-2 p-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="quotes_list.html">Les citations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="authors_list.html">Les auteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="statics_list.html">Pages statiques</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav mb-lg-2 p-2 users-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="user_list.html">Les utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="profile.html">Mon profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Voir le site">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                title="Quitter">
+                                <i class="bi bi-box-arrow-right"></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Bandeau de validation-->
+    <div class="d-none alert alert-success d-flex justify-content-center" role="alert">
+        Votre profil a bien été modifié
+    </div>
+    <!--Bandeau d'erreur-->
+    <div class="d-none alert alert-danger d-flex justify-content-center" role="alert">
+        Une erreur est survenue
+    </div>
+
+    <div class="container mx-auto">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="title-page mt-3 mb-4">Mon profil</h1>
+            </div>
+            <div class="row gutters">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 p-2">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="account-settings">
+                                <div class="user-profile">
+                                    <div class="user-avatar overflow-hidden mb-3">
+                                        <img src="https://images.unsplash.com/photo-1740252117027-4275d3f84385?q=80&w=880&auto=format&fit=crop"
+                                            alt="Ursula Delamer" class="w-75 h-75 mx-auto d-block"
+                                            style="object-fit: cover; display: block;">
+                                    </div>
+                                    <div class="text-center">
+                                        <label for="photo" class="btn btn-primary mb-3 form-label">Changer la
+                                            photo</label>
+                                        <input type="file" class="form-control d-none" id="photo" accept="image/*">
+                                    </div>
+                                    <div class="mb-4">
+                                        <h2 class="user-name fs-5">Ursula Delamer</h2>
+                                        <p class="user-email mb-2">example@itineris.fr</p>
+                                        <p class="user-website"><a href="#">https://ursula.jesuisdev.fr/</a></p>
+                                    </div>
+                                </div>
+                                <div class="about">
+                                    <h2 class="fs-5">A propos</h2>
+                                    <p>Passionnée de citations, j'ai co-créé ce site avec mes amis. Quand je n'ai pas
+                                        d'heures d'intermitence, j'en profite pour m'occuper du site, alors n'hésitez
+                                        pas à
+                                        me contacter, quelque soit la raison ;)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12 p-2">
+                    <div class="card h-100 mx-1">
+                        <div class="card-body">
+                            <div class="row gutters">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-9 col-12 mb-4">
+                                    <h2 class="fs-4">Informations personnelles</h2>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="lastname">Nom</label>
+                                        <input type="text" class="form-control" id="lastname" placeholder="Delamer"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="firstname">Prénom</label>
+                                        <input type="text" class="form-control" id="firstname" placeholder="Ursula"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="eMail">Email</label>
+                                        <input type="email" class="form-control" id="eMail"
+                                            placeholder="example@itineris.fr">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12 mb-4">
+                                    <div class="form-group">
+                                        <label for="website">Site internet</label>
+                                        <input type="url" class="form-control" id="website"
+                                            placeholder="https://raoul.jesuisdev.fr/">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="about">A propos</label>
+                                        <textarea class="form-control" id="about" rows="3"
+                                            placeholder="Parlez-nous de vous..."></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Mot de passe</label>
+                                    <input type="password" id="password" class="form-control"
+                                        aria-describedby="passwordHelpInline">
+                                    <div id="passwordHelpInline" class="form-text">
+                                        <span class="text-danger"> 12 caractères minimum </span>, avec au moins <span
+                                            class="text-danger">une majuscule</span>, <span class="text-danger">un
+                                            chiffre</span> et <span class="text-danger">un caractère spécial</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmpassword" class="form-label">Confirmer le mot de passe</label>
+                                    <input type="password" id="confirmpassword" class="form-control"
+                                        aria-describedby="passwordHelpInline">
+                                </div>
+
+                                <di class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <button type="button" id="submit" name="submit"
+                                        class="btn btn-primary mt-4">Modifier</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts JS-->
+
+        <!--Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

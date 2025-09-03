@@ -1,0 +1,137 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: hsla(35, 55%, 57%, 0.4);
+  font-family: sans-serif;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 90%;
+  justify-content: center;
+}
+
+.form-container {
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: hsla(35, 55%, 57%, 0.4);
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  background: #FAF2E6;
+  box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #FAF2E6;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #FAF2E6;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #FAF2E6, -5px -5px 10px #FAF2E6;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(1px);
+  box-shadow: inset 5px 5px 10px #FAF2E6, inset -5px -5px 10px #FAF2E6;
+}
+
+.message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.password-rules {
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 14px;
+  background: #000000;
+  box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+}
+
+.password-rules h3 {
+  margin-top: 0;
+}
+
+.neumorphic {
+  background: #6622CC;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+}
+
+.neumorphic-inset {
+  background: #e0e5ec;
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+
+.neumorphic-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+@media (max-width: 700px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .password-rules,
+  .form-container {
+    width: 90%;
+  }
+}

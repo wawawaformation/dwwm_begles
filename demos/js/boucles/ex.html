@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        const animaux = [
+            {
+                prenom: 'Rex',
+                espece: 'chien',
+                race: 'berger allemand',
+                age: 5,
+                genre: 'mâle',
+                vaccinAjour: true
+            },
+            {
+                prenom: 'Mimine',
+                espece: 'chat',
+                race: 'chartreux',
+                age: 3,
+                genre: 'femelle',
+                vaccinAjour: false
+            },
+            {
+                prenom: 'Bubbles',
+                espece: 'poisson',
+                race: 'poisson rouge',
+                age: 1,
+                genre: 'mâle',
+                vaccinAjour: false
+            },
+            {
+                prenom: 'Canelle',
+                espece: 'chien',
+                race: 'cocker',
+                age: 7,
+                genre: 'femelle',
+                vaccinAjour: true
+            },
+            {
+                prenom: 'Grisette',
+                espece: 'chat',
+                race: 'européen',
+                age: 2,
+                genre: 'femelle',
+                vaccinAjour: true
+            }
+        ];
+    
+            for(let animal of animaux) {
+                for(let propriete in animal) {
+                    console.log(`${propriete} : ${animal[propriete]}`);
+                    
+                }
+                console.log("--suivant-- \n");
+            }
+        </script>
+</body>
+
+</html>

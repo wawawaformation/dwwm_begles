@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Créer un compte</title>
+  <link rel="stylesheet" href="../public/css/create_profil_F.css" />
+</head>
+<body>
+  <div class="page-container">
+    <div class="form-container neumorphic-card">
+      <h1 >Créer un compte</h1>
+      <form id="signup-form">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Brulebois" required />
+
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Katrine" required />
+
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" placeholder="Cristelle" required />
+
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo" accept="image/*" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="brulebois.katrine@gmail.com" required />
+
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" required />
+
+        <ul id="password-conditions">
+          <li id="length">12 caractères</li>
+          <li id="special">1 caractère spécial</li>
+          <li id="digit">1 chiffre</li>
+          <li id="uppercase">1 majuscule</li>
+        </ul>
+
+        <label for="confirm-password">Confirmer le mot de passe</label>
+        <input type="password" id="confirm-password" name="confirm-password" required />
+
+        <div class="checkbox">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">J'accepte les <a href="#">conditions générales</a></label>
+        </div>
+
+        <button class="neumorphic neumorphic-button" type="submit">S’enregistrer</button>
+        <div class="message" id="message"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const passwordInput = document.getElementById('password');
+    const conditions = {
+      length: document.getElementById('length'),
+      special: document.getElementById('special'),
+      digit: document.getElementById('digit'),
+      uppercase: document.getElementById('uppercase')
+    };
+
+    passwordInput.addEventListener('input', function () {
+      const pwd = passwordInput.value;
+
+      if (pwd.length >= 12) {
+        conditions.length.textContent = "12 caractères";
+        conditions.length.style.color = "green";
+      } else {
+        conditions.length.textContent = "12 caractères";
+        conditions.length.style.color = "red";
+      }
+
+      if (/[!@#$%^&*(),.?":{}|<>]/.test(pwd)) {
+        conditions.special.textContent = "1 caractère spécial";
+        conditions.special.style.color = "green";
+      } else {
+        conditions.special.textContent = "1 caractère spécial";
+        conditions.special.style.color = "red";
+      }
+
+      if (/\d/.test(pwd)) {
+        conditions.digit.textContent = "1 chiffre";
+        conditions.digit.style.color = "green";
+      } else {
+        conditions.digit.textContent = "1 chiffre";
+        conditions.digit.style.color = "red";
+      }
+
+      if (/[A-Z]/.test(pwd)) {
+        conditions.uppercase.textContent = "1 majuscule";
+        conditions.uppercase.style.color = "green";
+      } else {
+        conditions.uppercase.textContent = "1 majuscule";
+        conditions.uppercase.style.color = "red";
+      }
+    });
+
+    document.getElementById('signup-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const pwd = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm-password').value;
+      const message = document.getElementById('message');
+
+      if (pwd !== confirm) {
+        message.textContent = "Les mots de passe ne correspondent pas.";
+        message.className = "message error";
+      } else {
+        message.textContent = "Compte créé avec succès !";
+        message.className = "message success";
+      }
+    });
+  </script>
+</body>
+</html>
