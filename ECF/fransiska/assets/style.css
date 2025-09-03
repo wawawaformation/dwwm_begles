@@ -15,11 +15,11 @@ html, body {
 
 
 @font-face {
-Font-family: 'Montserrat';
+font-family: 'Montserrat';
 src: url(/ECF/fransiska/assets/fonts/Montserrat-Light.ttf);}
 
 @font-face {
-Font-family:'Open Sans';
+font-family:'Open Sans';
 src: url(/ECF/fransiska/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);}
 
 h1, h2, h3 {
