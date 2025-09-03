@@ -1,0 +1,266 @@
+/* ---------------------------- GENERAL ------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/public/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Opensans';
+    src: url(/public/fonts/OpenSans-Regular.ttf);
+}
+
+h1 {
+    padding: 16px;
+    font-family: 'Montserrat';
+    color: #202429;
+}
+
+h2 {
+    padding: 16px 0px;
+    font-family: 'Montserrat';
+    color: #282d33;
+}
+
+p {
+    font-family: 'Opensans';
+    color: #292e34;
+}
+
+a {
+    font-style: italic;
+    font-family: 'Opensans';
+}
+
+/* ------------------------------- CLASS ------------------------------- */
+.menu {
+    display: block;
+    width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.link {
+    display: block;
+    background-color: #86ba33;
+    border-bottom: 2px solid white;
+    height: 59px;
+    width: 100%;
+}
+
+.link a {
+    text-decoration: none;
+    font-style: normal;
+    color: #292e34;
+    display: flex;
+    justify-content: center;
+    padding: 17px;
+}
+
+.active {
+    background-color: #48ac3f;
+}
+
+.lightbutton {
+    display: none;
+}
+
+.cards {
+    width: 100%;
+}
+
+.card {
+    background-color: #fdfdfd;
+    padding: 0 16px;
+    margin-bottom: 8px;
+}
+
+.learner-info {
+    display: flex;
+}
+
+.learner-info img {
+    width: 40%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.learner-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: #cf004b;
+}
+
+.learner-links a {
+    text-decoration: none;
+    color: #cf004b;
+}
+
+.learner-links img {
+    text-decoration: none;
+    color: #cf004b;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.description {
+    padding-left: 8px;
+    display: flex;
+}
+
+.pre-footer a {
+    flex-shrink: 0;
+}
+
+.pre-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.pre-footer img {
+    width: 80px;
+    margin: 8px;
+}
+
+/* ------------------------------- ID ------------------------------- */
+#topheadrow {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+#logo img {
+    width: 80px;
+    height: auto;
+    margin: 16px;
+}
+
+#header {
+    background-color: #fdfdfd;
+}
+
+#burger {
+    background: none;
+    border: none;
+    position: relative;
+}
+
+#burger img {
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+}
+
+#ariane-thread {
+    padding-left: 16px;
+    padding-bottom: 8px;
+}
+
+#ariane-thread a {
+    text-decoration: none;
+    color: #cf004b;
+    font-style: normal;
+}
+
+#main {
+    background-color: #f0f0f0;
+}
+
+#intro {
+    padding: 16px;
+    font-style: italic;
+}
+
+#footer {
+    background-color: #87bb34;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+#footer img {
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+}
+
+#footer a {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: #202429;
+}
+
+/* ------------------------------ RESPONSIVE ------------------------------ */
+
+@media screen and (min-width: 700px) {
+    #main {
+        width: 100%;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .card {
+        width: 40%;
+        flex-shrink: 0;
+        margin: 8px;
+    }
+
+    #chapo {
+        padding: 32px;
+    }
+
+    h1 {
+        padding: 0px;
+    }
+
+    #intro {
+        padding: 0px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    #burger {
+        display: none;
+    }
+
+    #logo img {
+        width: 120px;
+        height: auto;
+        margin: 32px;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+    #main {
+        width: 100%;
+    }
+
+    .cards {
+        width: 100%;
+        display: flex;
+    }
+
+    .card {
+        width: 30%;
+        flex-shrink: 0;
+    }
+}
