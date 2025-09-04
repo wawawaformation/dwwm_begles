@@ -1,0 +1,53 @@
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+
+}
+
+.viewPassword{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: 1rem;
+}
+
+h1{
+ text-align: center;
+}
+
+
+[for="password"]{
+    display: flex;
+    gap: 2rem;
+}
+.criteres{
+    margin-left: 2rem;
+    display: flex;
+    gap: .6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.critere{
+   text-align: center;
+    vertical-align: middle;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgb(208, 201, 201);
+}
+
+.critere.checked{
+    background: green;
+    color: white;
+}
