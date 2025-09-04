@@ -1,0 +1,35 @@
+@use 'vars' as v;
+@use 'fonts';
+:root, html {
+    font-size: 14px;
+}
+body {
+    font-family: 'Text', sans-serif;
+    color : v.$text-color;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        font-family: 'Title', serif;
+        font-weight: normal;
+    }
+
+    .title-page {
+        font-size: 1.5rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: v.$text-color
+    }
+}
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width : 720px) {
+    :root, html {
+        font-size: 16px;
+    }
+}
