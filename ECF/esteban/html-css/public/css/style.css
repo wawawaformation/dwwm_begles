@@ -24,9 +24,15 @@ body .title {
 body .title-page {
   font-size: 1.5rem;
 }
+body ul {
+  list-style: none;
+}
 body a {
   text-decoration: none;
   color: #202429;
+}
+body a:hover {
+  color: #e2007d;
 }
 
 .hidden {
@@ -101,7 +107,7 @@ body a {
   cursor: pointer;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 620px) {
   #header {
     flex-direction: column;
     align-items: start;
@@ -143,13 +149,18 @@ body a {
 .breadcrumbs a {
   color: #e2007d;
 }
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
 
 #main {
   display: flex;
   flex-direction: column;
   background-color: #f0f0f0;
-  padding: 1rem 0;
-  width: auto;
+  padding-bottom: 2rem;
+}
+#main .wrapper {
+  margin: auto;
 }
 #main .chapo {
   display: flex;
@@ -201,6 +212,9 @@ body a {
   gap: 0.3rem;
   align-items: center;
 }
+#main .cards .card .card-icons a:hover {
+  text-decoration: underline;
+}
 #main .cards .card .card-icons img {
   width: 1rem;
   height: 1rem;
@@ -208,6 +222,72 @@ body a {
 #main .cards .card .card-icons .card-link {
   font-style: italic;
   color: #e2007d;
+}
+
+@media screen and (min-width: 600px) {
+  #main .wrapper {
+    margin: 0 2rem;
+  }
+  #main .cards .card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1080px) {
+  #main .wrapper {
+    margin: 0 5rem;
+  }
+  #main .cards .card {
+    width: 30%;
+  }
+}
+.footer-logos {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+}
+.footer-logos .footer-logo {
+  height: 60px;
+  margin: 1rem 0;
+}
+
+#footer-nav {
+  background-color: #86ba33;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+#footer-nav .page-menu {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+#footer-nav .social-menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+#footer-nav .social-menu img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media screen and (min-width: 620px) {
+  #footer {
+    background-color: #86ba33;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 2rem;
+  }
+  #footer .footer-logos {
+    background-color: #ffffff;
+  }
+  #footer #footer-nav .page-menu {
+    padding-right: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

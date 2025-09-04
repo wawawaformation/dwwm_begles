@@ -1,0 +1,67 @@
+@use 'vars' as v;
+@use 'fonts';
+
+.footer-logos {
+    display: flex;
+    justify-content: space-around;
+    background-color: v.$background-color;
+
+    .footer-logo {
+        height: 60px;
+        margin: 1rem 0;
+    }
+}
+
+#footer-nav {
+    background-color: v.$primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    .page-menu {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+    }
+
+    .social-menu {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+}
+
+@media screen and (min-width : 620px) {
+
+    #footer {
+        background-color: v.$primary-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem 0 2rem;
+
+        .footer-logos {
+            background-color: v.$header-background;
+
+        }
+
+        #footer-nav {
+
+            .page-menu {
+                padding-right: 4rem;
+            }
+        }
+
+    }
+
+}
