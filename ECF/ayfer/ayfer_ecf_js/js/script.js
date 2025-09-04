@@ -67,12 +67,12 @@ const toggleClassChecked = (node, isChecked) => {
 /**
  * Écoute des saisies dans le champ du mot de passe et modification des critères
  */
-passwordElt.addEventListener('input', (e)=> {
+passwordElt.addEventListener('input', (e) => {
   const value = passwordElt.value;
-  toggleClassChecked(lowerCaseElt,hasLowercase(value));
-  toggleClassChecked(upperCaseElt,hasUppercase(value));
-  toggleClassChecked(numberElt,hasNumber(value));
-  toggleClassChecked(eightMoreElt,hasMinLength(value,8));
+  toggleClassChecked(lowerCaseElt, hasLowercase(value));
+  toggleClassChecked(upperCaseElt, hasUppercase(value));
+  toggleClassChecked(numberElt, hasNumber(value));
+  toggleClassChecked(eightMoreElt, hasMinLength(value, 8));
 });
 
 
@@ -81,16 +81,29 @@ passwordElt.addEventListener('input', (e)=> {
  * ou si les mots de passe ne sont pas identiques
  */
 form.addEventListener('submit', (e) => {
-  
-  if(!lowerCaseElt.classList.contains("checked") 
-    || !upperCaseElt.classList.contains("checked")
-    || !numberElt.classList.contains("checked") 
-    || !eightMoreElt.classList.contains("checked")
-    || (passwordElt.value != passwordConfElt.value)) {
-      e.preventDefault()
-    alert("Le formulaire n'est pas correctement rempli")
-  } else {
-    alert("Envoi du formulaire");
+
+  if (!lowerCaseElt.classList.contains("checked")) {
+    e.preventDefault()
+     return alert("Le mot de passe ne contient pas de minuscule")
+  }
+  if (!upperCaseElt.classList.contains("checked")) {
+    e.preventDefault()
+    return alert("Le mot de passe ne contient pas de majuscule")
+  }
+  if (!numberElt.classList.contains("checked")) {
+    e.preventDefault()
+    return alert("Le mot de passe ne contient pas de chiffre")
+  }
+  if (!eightMoreElt.classList.contains("checked")) {
+    e.preventDefault()
+    return alert("Le mot de passe contient moins de 8 caractères")
+  }
+  if ((passwordElt.value != passwordConfElt.value)) {
+    e.preventDefault()
+    return alert("Les mots de passe ne sont pas identiques")
+  }
+  else {
+     return alert("Envoi du formulaire");
   }
 });
 
@@ -99,9 +112,9 @@ form.addEventListener('submit', (e) => {
  * Affiche ou masque le mot de passe
  */
 showPasswordElt.addEventListener('change', function () {
-    const type = this.checked ? 'text' : 'password';
-    passwordElt.setAttribute('type', type);
-    passwordConfElt.setAttribute('type', type);
+  const type = this.checked ? 'text' : 'password';
+  passwordElt.setAttribute('type', type);
+  passwordConfElt.setAttribute('type', type);
 });
 
 
