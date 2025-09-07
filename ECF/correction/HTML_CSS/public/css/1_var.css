@@ -1,0 +1,15 @@
+/*==========================================================
+  1.0 Variables
+  ========================================================*/
+
+:root {
+  /* Colors */
+  --color-primary: #E3007E;
+  --color-secondary: #87BB34;
+  --color-primary-hover: #b2005f;
+  --color-secondary-hover: #578319;
+  --color-background: #F3F3F3;
+  --color-text: #5A545A;
+  --color-card-background: #FBFBFB;
+
+}

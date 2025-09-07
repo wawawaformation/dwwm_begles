@@ -1,0 +1,30 @@
+/*=============================================================================
+Mise en page général + classe de mise en page
+==============================================================================*/
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    width: auto;
+    
+}
+
+.row{
+    display: flex;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1140px;
+        margin: auto;
+    }
+}
