@@ -1,0 +1,126 @@
+/*=============================================================================
+Styles des blocs, des éléments et des modificateurs
+=============================================================================*/
+
+/*========= HEADER ======================*/
+
+
+#icon-burger{
+    width: 2.28rem;
+    height: 2.28rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    fill: var(--color-secondary);
+}
+#header{
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: .4rem;
+}
+
+#header .logo{
+    margin-left: 1rem;
+    width: 9.64rem;
+    height: 5rem;
+}
+
+.menu-principal a{
+display: block;
+padding: .8rem;
+text-align: center;
+background-color: var(--color-secondary);
+color: var(--color-text);
+}
+
+
+.menu-principal li.active a, .menu-principal li:hover a {
+    background-color: var(--color-secondary-hover);
+}
+
+.ariane{
+    display: flex;
+    padding:0;
+    margin: 1rem;
+    list-style-type: none;
+}
+
+.ariane li:not(:last-child)::after{
+    content: '>';
+    display: inline-block;
+    margin: 0 .4rem;
+}
+
+
+/*========= MAIN ======================*/
+.chapo{
+    padding: 0 1rem;
+}
+
+.cartes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content:center;
+    gap: 1.2rem;
+
+}
+.carte{
+    box-sizing: border-box;
+    max-width: 100vw;
+    background-color: var(--color-card-background);
+    padding: 1.2rem;
+}
+
+
+.titre-carte{
+    margin-top: 0;
+}
+
+.carte-contenu{
+    align-items: flex-start;
+    gap: .4rem;
+    margin-bottom: 1rem;
+}
+
+.carte-contenu p{
+    margin-top: 0;
+}
+
+
+.carte-actions{
+    justify-content: space-between;
+}
+.carte-actions svg{
+    width: 1rem;
+}
+
+.carte-actions .action{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+@media screen and (max-width: 680px) {
+    nav.hidden{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 681px) {
+    #icon-burger{
+        display: none;
+    }
+    .menu{
+        gap: unset;
+    }
+    .menu-principal{
+        flex-direction: row;
+        background-color: var(--color-secondary);
+    }
+
+    .carte{
+        width: 320px;
+    }
+}
