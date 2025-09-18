@@ -36,18 +36,17 @@ $animals = findAllAnimals($pdo);
     </header>
     <main>
         <h1>Liste des animaux</h1>
-        <?php
-        foreach ($animals as $animal) {
-            echo '<div class="animal">';
-            echo '<h2>' . htmlspecialchars($animal['name']) . '</h2>';
-            echo '<p>Espèce: ' . htmlspecialchars($animal['species']) . '</p>';
-            echo '<p>Date de naissance: ' . htmlspecialchars($animal['birthday']) . '</p>';
-            echo '<p>Vacciné: ' . ($animal['is_vaccinated'] ? 'Oui' : 'Non') . '</p>';
-            echo '</div>';
-        }
-
-
-        ?>
+        <div class="animaux">
+        <?php foreach ($animals as $animal) : ?>
+            <div class="animal">
+                <h2><?= htmlspecialchars($animal['name']) ?></h2>
+                <p>Espèce: <?= htmlspecialchars($animal['species']) ?></p>
+                <p>Date de naissance: <?= htmlspecialchars($animal['birthday']) ?></p>
+                <p>Vacciné: <?= $animal['is_vaccinated'] ? 'Oui' : 'Non' ?></p>
+            </div>
+        <?php endforeach; ?>
+        </div>
+        
     </main>
     <footer id="footer">
     </footer>
