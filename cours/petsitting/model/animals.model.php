@@ -10,7 +10,6 @@ require_once __DIR__ . '/pdo.php';
 /**
  * Renvoie la liste de tous les animaux
  */
-
 function findAllAnimals(PDO $pdo): array {
     $sql = 'SELECT animal.id, animal.name, animal.is_vaccinated,
     DATE_FORMAT(animal.birthday,"%d/%m/%Y") AS birthday, species.id AS species_id, species.species FROM animal
