@@ -8,6 +8,10 @@ error_reporting(E_ALL);
 
 require_once __DIR__ . '/utils.php';
 
+
+require_once __DIR__ . '/model/animals.model.php';
+$animals = findAllAnimals($pdo);
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,16 +37,6 @@ require_once __DIR__ . '/utils.php';
     <main>
         <h1>Liste des animaux</h1>
         <?php
-        // on recurere les animaux
-        require_once __DIR__ . '/model/pdo.php';
-
-        $sql = 'SELECT animal.id, animal.name, animal.is_vaccinated,
-DATE_FORMAT(animal.birthday,"%d/%m/%Y") AS birthday, species.id AS species_id, species.species FROM animal
-LEFT JOIN species ON species.id = animal.species_id';
-        $q = $pdo->query($sql);
-
-        $animals = $q->fetchAll();
-
         foreach ($animals as $animal) {
             echo '<div class="animal">';
             echo '<h2>' . htmlspecialchars($animal['name']) . '</h2>';
