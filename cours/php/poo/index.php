@@ -21,6 +21,7 @@ $ayfer = new Compte();
 $ayfer->solde = 100000;
 
 
+$khalil->deposer(-1);
 
 echo '<pre>';
 var_dump($khalil, $ayfer);
