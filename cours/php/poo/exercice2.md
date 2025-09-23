@@ -9,4 +9,4 @@ $nom
 -> regenrer de la vie (revient à 100)
 -> Taper un autre Personnage (l'autre peutr)
 -> pousser un cri de guerre
--> xp augement à chaque combat
+-> xp augment à chaque combat
