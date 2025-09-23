@@ -21,56 +21,64 @@ class Voiture{
     {
         return $this->modele;
     }
-    public function setModele(string $modele): void
+    public function setModele(string $modele): self
     {
         if(strlen($modele) < 1){
             throw new Exception("Le modèle est obligatoire");
         }
         $this->modele = $modele;
+        return $this;
     }
     public function getCouleur(): string
     {
         return $this->couleur;
     }
-    public function setCouleur(string $couleur): void
+    public function setCouleur(string $couleur): self
     {
         $this->couleur = $couleur;
+        return $this;
     }
     public function getVitesse(): int
     {
         return $this->vitesse;
     }
-    public function setVitesse(int $vitesse): void
+    public function setVitesse(int $vitesse): self
     {
         if($vitesse < 0){
             $vitesse = 0;
         }
         $this->vitesse = $vitesse;
+        return $this;
     }
 
     public function getDegat(): int
     {
         return $this->degat;
     }
-    public function setDegat(int $degat): void
+    public function setDegat(int $degat): self
     {
         if($degat < 0){
             $degat = 0;
         }
         $this->degat = $degat;
+        return $this;
     }
-    public function accelerer(): void
+    public function accelerer(): self
     {
         $this->setVitesse($this->vitesse + 5);
+        return $this;
     }
 
-    public function freiner(): void
+    public function freiner(): self
     {
         $this->setVitesse(0);
+        return $this;
     }
 
-    public function ralentir(): void{
+    public function ralentir(): self
+    {
         $this->setVitesse($this->vitesse - 5);
+        return $this;
     }
 
     public function emboutir(Voiture $voiture): void

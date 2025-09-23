@@ -19,14 +19,16 @@ require_once __DIR__ .'/class/Voiture.php';
 $benjamin = new Voiture(modele: 'porshe', couleur: 'rouge');
 $roxana =  new Voiture(modele: 'ami', couleur: 'jaune');
 
-$roxana->accelerer();
-$roxana->freiner();
-$roxana->accelerer();
-$roxana->accelerer();
-$roxana->accelerer();
-$roxana->accelerer();
-$roxana->ralentir();
-$roxana->emboutir($benjamin);
+$roxana
+    ->accelerer()
+    ->freiner()
+    ->accelerer()
+    ->accelerer()
+    ->accelerer()
+    ->accelerer()
+    ->ralentir()
+    ->emboutir($benjamin);
+
 echo $roxana->insulter($benjamin, 'aveugle, passe ton permis!');
 
 
