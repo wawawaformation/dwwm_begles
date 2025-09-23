@@ -10,15 +10,25 @@ error_reporting(E_ALL);
 
 
 
-require_once __DIR__ . '/class/Compte.php';
+require_once __DIR__ . '/class/CompteBancaire.php';
 
-$khalil = new Compte('FR001',1000);
 
-echo 'Le solde de khalil est de ' . $khalil->getSolde() . ' euros <br>';
+$region = new CompteBancaire(solde: 10000000, titulaire: 'region');
+$apprenant = new CompteBancaire(titulaire: 'apprenant');
+
+
+$apprenant->deposer(20);
+
+$apprenant->retirer(40);
+
+$region->faireVirement(compte: $apprenant, virement: 400);
+
 
 echo '<pre>';
-var_dump($khalil);
+var_dump($region,$apprenant);
 echo '</pre>';
+
+
 
 
 
