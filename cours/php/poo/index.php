@@ -14,10 +14,10 @@ require_once __DIR__ . '/class/CompteBancaire.php';
 
 
 $region = new CompteBancaire(solde: 10000000, titulaire: 'region');
-$apprenant = new CompteBancaire(titulaire: 'apprenant');
+$apprenant = new CompteBancaire(titulaire: 'apprenant', solde: -500);
 
 
-$apprenant->deposer(20);
+$apprenant->deposer(-20);
 
 $apprenant->retirer(40);
 
