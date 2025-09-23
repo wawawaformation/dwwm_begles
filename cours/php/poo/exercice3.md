@@ -10,4 +10,5 @@ accelerer : +5
 ralentir -5 
 freiner 0
 
-emboutir // la voiture qui a causé l'accident gange autant de point  de degat que ca vitesse, l'autre le double
+emboutir // la voiture qui a causé l'accident gange autant de points  de degat que sa vitesse, l'autre le double
+insulter
