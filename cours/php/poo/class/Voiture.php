@@ -5,6 +5,9 @@ class Voiture{
     private string $couleur;
     private int $vitesse = 0;
     private int $degat = 0;
+
+
+    public static $nombre = 0;
     
 
 
@@ -16,6 +19,8 @@ class Voiture{
     {
         $this->setModele($modele);
         $this->setCouleur($couleur);
+
+        self::$nombre++;
     }
     public function getModele(): string
     {
@@ -92,5 +97,10 @@ class Voiture{
     {
         return 'toi' . $voiture->getModele() .', '. $insulte;  
     }
+
+    public static function nombreDeVoiture(): int
+    {
+        return self::$nombre;
+    } 
 
 }

@@ -34,3 +34,7 @@ echo $roxana->insulter($benjamin, 'aveugle, passe ton permis!');
 
 echo '<pre>';
 var_dump($benjamin, $roxana);
+echo '<pre>';
+
+
+echo Voiture::nombreDeVoiture();
