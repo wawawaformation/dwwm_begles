@@ -13,24 +13,15 @@ error_reporting(E_ALL);
 require_once __DIR__ . '/class/Compte.php';
 
 $khalil = new Compte();
-$khalil->numero = "FR001";
-$khalil->solde = 500;
-
-
-$ayfer = new Compte();
-$ayfer->solde = 100000;
-
-
-$odin = new Compte();
-$odin->solde = -200;
-$odin->deposer(1000);
+$khalil->setNumero('FR001');
+$khalil->setSolde(1);
 
 $khalil->deposer(1);
 
 echo '<pre>';
-var_dump($khalil, $ayfer, $odin);
+var_dump($khalil);
 echo '</pre>';
 
-echo $ayfer->solde . ' euros';
+
 
 
