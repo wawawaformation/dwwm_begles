@@ -21,10 +21,14 @@ $ayfer = new Compte();
 $ayfer->solde = 100000;
 
 
-$khalil->deposer(-1);
+$odin = new Compte();
+$odin->solde = -200;
+$odin->deposer(1000);
+
+$khalil->deposer(1);
 
 echo '<pre>';
-var_dump($khalil, $ayfer);
+var_dump($khalil, $ayfer, $odin);
 echo '</pre>';
 
 echo $ayfer->solde . ' euros';
