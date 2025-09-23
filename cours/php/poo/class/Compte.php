@@ -18,8 +18,19 @@ class Compte
      */
     private int $solde;
 
-    
 
+
+
+    /**
+     * Constructeur
+     * @param string $numero le numero de compte
+     * @param int $solde le solde initial
+     */
+    public function __construct(string $numero, int $solde)
+    {
+        $this->setNumero($numero);
+        $this->setSolde($solde);
+    }
 
     /**
      * REtourne le solde
@@ -28,7 +39,6 @@ class Compte
     public function getSolde(): int{
         return $this->solde;
     }
-
 
     /**
      * Modifie le solde
@@ -39,8 +49,6 @@ class Compte
     {
         $this->solde = $nouveauSolde;
     }
-
-
 
     /**
      * retourne le numero de compte
@@ -59,7 +67,6 @@ class Compte
 
         $this->numero = $nouveauNumero;
     }
-
 
     /**
      * Deposer de l'argent sur le Compte

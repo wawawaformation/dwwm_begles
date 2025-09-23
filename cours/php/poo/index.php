@@ -12,11 +12,9 @@ error_reporting(E_ALL);
 
 require_once __DIR__ . '/class/Compte.php';
 
-$khalil = new Compte();
-$khalil->setNumero('FR001');
-$khalil->setSolde(1);
+$khalil = new Compte('FR001',1000);
 
-$khalil->deposer(1);
+echo 'Le solde de khalil est de ' . $khalil->getSolde() . ' euros <br>';
 
 echo '<pre>';
 var_dump($khalil);
