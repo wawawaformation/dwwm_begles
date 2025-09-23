@@ -61,9 +61,6 @@ class Compte
     }
 
 
-
-
-
     /**
      * Deposer de l'argent sur le Compte
      * @param int $montant montant à déposer
