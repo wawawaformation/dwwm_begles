@@ -7,6 +7,6 @@ $nom
 -> creer un personnage
 -> gagner de l'experience (a chaque fin de combat)
 -> regenrer de la vie (revient à 100)
--> Taper un autre Personnage (l'autre peutr)
+-> Taper un autre Personnage (l'autre peut)
 -> pousser un cri de guerre
 -> xp augment à chaque combat
