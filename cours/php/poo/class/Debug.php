@@ -40,13 +40,3 @@ class Debug
     }
 }
 
-
-//test
-
-$array = ['sylvie', 'bertrand', 'jean-michou'];
-
-Debug::print_r($array);
-
-Debug::dd('pissenli');
-
-echo 'bleblzedfez';
