@@ -1,10 +1,10 @@
 <?php
-namespace Banque;
+namespace App\Banque;
 
 require_once __DIR__ . '/Compte.php';
 
 
-class CompteEpargne extends Compte
+final class CompteEpargne extends Compte
 {
     protected static $tauxInteret = 1.03;
 

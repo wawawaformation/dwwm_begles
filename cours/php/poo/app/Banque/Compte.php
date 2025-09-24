@@ -1,6 +1,6 @@
 <?php
 
-namespace Banque;
+namespace App\Banque;
 
 
 use Exception;
@@ -9,7 +9,7 @@ use Exception;
 /**
  * Représente un compte bancaire
  */
-class Compte
+abstract class Compte
 {
     /**
      * Le solde du compte

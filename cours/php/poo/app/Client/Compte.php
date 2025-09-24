@@ -1,6 +1,6 @@
 <?php
 
-namespace Client;
+namespace App\Client;
 
 /**
  * Représente un compte client

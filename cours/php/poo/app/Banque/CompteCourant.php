@@ -1,10 +1,10 @@
 <?php
-namespace Banque;
+namespace App\Banque;
 
 
 require_once __DIR__ . '/Compte.php';
 
-class CompteCourant extends Compte
+final class CompteCourant extends Compte
 {
     private int $decouvertAutorise = 0;
 
@@ -37,7 +37,7 @@ class CompteCourant extends Compte
     public function setSolde(int $montant): self
     {
         if( $montant < -1 * $this->decouvertAutorise){ 
-            throw new Exception('Pas le droit de dépense plus');
+            throw new \Exception('Pas le droit de dépense plus');
         } 
         $this->solde = $montant;
         return $this;
