@@ -1,4 +1,6 @@
 <?php
+namespace Banque;
+
 
 require_once __DIR__ . '/Compte.php';
 

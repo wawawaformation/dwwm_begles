@@ -1,5 +1,11 @@
 <?php
 
+namespace Banque;
+
+
+use Exception;
+
+
 /**
  * Représente un compte bancaire
  */

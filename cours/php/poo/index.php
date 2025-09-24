@@ -4,27 +4,17 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+use Banque\CompteEpargne; // il a mis le use
 
-require_once __DIR__ . '/class/CompteCourant.php';
-require_once __DIR__ . '/class/CompteEpargne.php';
+use Client\Compte as CompteClient; //on peut renommer une classe importée avec 'as'
+
+require_once __DIR__ . '/class/Banque/CompteEpargne.php';
+require_once __DIR__ . '/class/Client/Compte.php';
 require_once __DIR__ . '/class/Debug.php';
 
-$maryonCourant = new CompteCourant('maryonCourant', 1200, 600);
 
+$compteClient = new CompteClient('Maryon', 'Mouhel');
+$compteEpargne = new CompteEpargne('DWWM', 1000);
 
-$maryonCourant->setSolde(300);
-
-
-$meganeEpargne = new CompteEpargne('Meganne', 2000);
-$meganeEpargne->verserTaux();
-$maryonCourant->effectuerVirement($meganeEpargne, 300);
-CompteEpargne::changerTaux(2);
-$meganeEpargne->verserTaux();
-$meganeEpargne->effectuerVirement($maryonCourant, 1000);
-
-
-
-
-Debug::dump($meganeEpargne);
-Debug::dd($maryonCourant);
-
+Debug::dump($compteClient);
+Debug::dump($compteEpargne);
