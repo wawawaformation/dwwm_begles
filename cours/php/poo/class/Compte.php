@@ -9,13 +9,13 @@ class Compte
      * Le solde du compte
      * @var int
      */
-    private int $solde;
+    protected int $solde;
 
     /**
      * Le nom du titulaire
      * @var string
      */
-    private string $titulaire;
+    protected string $titulaire;
 
     
     public function __construct(string $titulaire, int $solde)

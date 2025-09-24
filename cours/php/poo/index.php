@@ -1,20 +1,21 @@
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-echo 'on test';
 
-require_once __DIR__ . '/class/Compte.php';
+require_once __DIR__ . '/class/CompteCourant.php';
 require_once __DIR__ . '/class/Debug.php';
 
+$maryonCourant = new CompteCourant('maryonCourant', 1200);
+$maryonCourant->setDecouvertAutorise(600);
+echo $maryonCourant->getDecouvertAutorise();
 
-$maryon = new Compte('Maryon', 300);
-
-$region = new Compte('region', 10000000);
-
-
-$region->effectuerVirement($maryon, 3000);
+$maryonCourant->setSolde(300);
 
 
-Debug::dump($region);
-Debug::dump($maryon);
+
+
+Debug::dd($maryonCourant);
 
