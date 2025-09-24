@@ -7,6 +7,18 @@ class CompteCourant extends Compte
     private int $decouvertAutorise = 0;
 
 
+    /**
+     * Summary of __construct
+     * @param string $titulaire le titulaire du compte
+     * @param int $solde le solde initial
+     * @param int $decouvert le découvert autorisé
+     */
+    public function __construct(string $titulaire, int $solde, int $decouvert)
+    {
+        parent::__construct($titulaire, $solde);
+        $this->setDecouvertAutorise($decouvert);
+    }
+
     public function getDecouvertAutorise(): int
     {
         return $this->decouvertAutorise;
@@ -22,12 +34,10 @@ class CompteCourant extends Compte
 
     public function setSolde(int $montant): self
     {
-        if( $montant < $this->decouvertAutorise){ // Ca s'est faux !!!!!!!!!!!!!!
+        if( $montant < -1 * $this->decouvertAutorise){ 
             throw new Exception('Pas le droit de dépense plus');
         } 
         $this->solde = $montant;
         return $this;
     }
-
-
 }
