@@ -5,79 +5,45 @@
  */
 class Compte
 {
-
-    /**
-     * Numéro de Compte
-     * @var string
-     */
-    private ?string $numero =null;
-
     /**
      * Le solde du compte
      * @var int
      */
     private int $solde;
 
-
-
-
     /**
-     * Constructeur
-     * @param string $numero le numero de compte
-     * @param int $solde le solde initial
+     * Le nom du titulaire
+     * @var string
      */
-    public function __construct(string $numero, int $solde)
+    private string $titulaire;
+
+
+
+    public function getSolde(): int
     {
-        $this->setNumero($numero);
-        $this->setSolde($solde);
-    }
-
-    /**
-     * REtourne le solde
-     * @return void
-     */
-    public function getSolde(): int{
         return $this->solde;
     }
 
-    /**
-     * Modifie le solde
-     * @param int $solde le nouveau solde
-     * @return void
-     */
-    public function setSolde(int $nouveauSolde): void
-    {
-        $this->solde = $nouveauSolde;
-    }
-
-    /**
-     * retourne le numero de compte
-     * @return void
-     */
-    public function getNumero(): string
-    {
-        return $this->numero;
-    }
-
-    /**
-     * Initialise le numero de compte. Ne peut etre initialisé qu'une fois
-     * @return void
-     */
-    public function setNumero(string $nouveauNumero): void{
-
-        $this->numero = $nouveauNumero;
-    }
-
-    /**
-     * Deposer de l'argent sur le Compte
-     * @param int $montant montant à déposer
-     * @return void
-     */
-    public function deposer(int $montant): void
-    {
+    public function setSolde(int $montant): self{
         if($montant <= 0){
-            trigger_error("Doit être strictement positif",E_USER_WARNING);
+            throw new Exception('le montant doit strictement être positif');
         }
-        $this->solde += $montant;
+        $this->solde = $montant;
+        return $this;
     }
+
+    public function getTitulaire(): string
+    {
+        return $this->titulaire;
+    }
+
+    public function setTitulaire(string $titulaire): self
+    {
+        if(strlen($titulaire) <= 0){
+            throw new Exception('Le nom du titulaire ne peut pas être vide');
+        }
+        $this->titulaire = $titulaire;
+        return $this;
+    }
+
 }
