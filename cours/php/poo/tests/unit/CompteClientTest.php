@@ -7,7 +7,7 @@ class CompteClientTest extends TestCase
 {
     function testObjectHasAttributes()
     {
-        $compteClient = new Compte('Jean', 'Dupont');
+        $compteClient = new Compte('David', 'Legrand');
 
         $this->assertObjectHasProperty('nom', $compteClient);
         $this->assertObjectHasProperty('prenom',$compteClient);
@@ -15,7 +15,7 @@ class CompteClientTest extends TestCase
 
     function testSetterAndGetterOk()
     {
-        $compteClient = new Compte('Jean', 'Dupont');
+        $compteClient = new Compte('David', 'Legrand');
 
          $this->assertIsString($compteClient->getNom());
         $compteClient->setNom('Legrand');
@@ -47,5 +47,12 @@ class CompteClientTest extends TestCase
         $this->expectException(\InvalidArgumentException::class);
         $compteClient = new Compte('', '');
     }
-       
+
+   
+    function testToString()
+    {
+        $compteClient = new Compte('David', 'Legrand');
+        $this->assertEquals('David Legrand', $compteClient->__toString());
+
+    }
 }
