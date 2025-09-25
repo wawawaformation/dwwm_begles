@@ -18,6 +18,32 @@ class CompteBancaireTest extends TestCase
         $this->assertIsInt($compteBancaire->getSolde());
         
     }
+
+
+    function testDeposer()
+    {
+        
+
+
+
+        $compteClient = new CompteClient('David', 'Legrand');
+        $compteBancaire = new Compte($compteClient, 1000);
+
+        $this->assertEquals(
+            1500, 
+            $compteBancaire
+                ->deposer(500)
+                ->getSolde());
+
+
+
+        $this->expectException(\LogicException::class);
+        $this->expectExceptionMessage('Esteban');
+        $compteBancaire->deposer(0);
+       
+
+        
+    }
        
 
 }
