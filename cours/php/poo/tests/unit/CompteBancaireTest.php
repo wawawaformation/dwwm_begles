@@ -7,7 +7,7 @@ use App\Client\Compte as CompteClient;
 
 class CompteBancaireTest extends TestCase
 {
-    function testConstructorWithDependencyInjection()
+    function testConstructorWithDependencyInjection ()
     {
         $compteClient = new CompteClient('David', 'Legrand');
         $compteBancaire = new Compte($compteClient, 1000);

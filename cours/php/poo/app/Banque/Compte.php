@@ -1,24 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Banque;
 
 use App\Client\Compte as CompteClient;
 use LogicException;
-
-
 
 /**
  * Représente un compte bancaire
  */
 class Compte
 {
-
     /**
      * Titulaire du compte
      * @var CompteClient
      */
     protected CompteClient $titulaire;
-    
+
 
     /**
      * Solde du compte
@@ -38,10 +37,10 @@ class Compte
     public function deposer(int $montant): self
     {
 
-        if($montant <= 0){
+        if ($montant <= 0) {
             throw new LogicException('Esteban');
         }
-        $this->setSolde($this->solde+$montant);
+        $this->setSolde($this->solde + $montant);
         return $this;
     }
 
