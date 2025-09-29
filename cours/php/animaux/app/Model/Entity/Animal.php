@@ -2,31 +2,21 @@
 
 namespace App\Model\Entity;
 
-class Animal
+class Animal extends AbstractEntity
 {
-    private ?int $id = null;
+
     private ?string $nom = null;
 
+    private ?int $espece_id = null;
 
-
-
-
-    /**
-     * retourne l'id de l'animal
-     * @return int|null
-     */
-    public function getId(): ?int
+    public function getEspece_id(): ?int
     {
-        return $this->id;
+        return $this->espece_id;
     }
 
-    public function setId(int $id): self
+    public function setEspece_id(?int $espece_id = null): self
     {
-        if($this->id !== null){
-            throw new \LogicException('L\'id est en lecture seule');
-        }
-       
-        $this->id = $id;
+        $this->espece_id = $espece_id;
         return $this;
     }
 
@@ -41,19 +31,6 @@ class Animal
         return $this;
     }
 
-    public function hydrate(array $data): self
-    {
-        foreach($data as $key=>$value){
-            $method = 'set' . ucfirst($key);
-
-            if(method_exists($this, $method)){
-                $this->$method($value);
-            }else{
-                throw new \InvalidArgumentException('La propriété ' . $key . ' n\'existe pas');
-            }
-        }
-
-        return $this;
-    }
+   
 
 }

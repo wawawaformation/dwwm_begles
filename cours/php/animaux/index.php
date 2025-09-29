@@ -6,15 +6,21 @@ error_reporting(E_ALL);
 
 require_once 'vendor/autoload.php';
 
-use App\Model\Entity\Espece;
+use App\Model\Entity\Animal;
 
-$chien  = new Espece();
-$chien->hydrate([
-    'id' => 20,
-    'espece' => 'humain',
-    'pates'=>4
-]);
+
+$entity = new Animal();
+
+$entity->hydrate([
+    'id' => 1, 
+    'nom' => 'Rex', 
+    'espece_id' => 1]);
+
+
+
 
 echo '<pre>';
-var_dump($chien);
+var_dump($entity);
 echo '</pre>';
+
+
