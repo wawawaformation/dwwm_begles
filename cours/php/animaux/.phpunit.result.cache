@@ -1,1 +1,1 @@
-{"version":2,"defects":{"EspeceTest::testEspeceRetourneIdEtEspece":8,"EspeceTest::testIdEnLectureSeule":7},"times":{"EspeceTest::testEspeceRetourneIdEtEspece":0,"EspeceTest::testIdEnLectureSeule":0}}
+{"version":2,"defects":{"EspeceTest::testEspeceRetourneIdEtEspece":8,"EspeceTest::testIdEnLectureSeule":7,"EspeceTest::testHydrateAvecAttributInconnu":7},"times":{"EspeceTest::testEspeceRetourneIdEtEspece":0,"EspeceTest::testIdEnLectureSeule":0,"EspeceTest::testHydrateAvecAttributInconnu":0}}

@@ -22,6 +22,30 @@ class Espece{
     private ?string $espece = null; 
 
 
+
+
+    /**
+     * Hydrate un objet de type Espece
+     * @param array $data un tableau assiociatif
+     * @return self
+     */
+    public function hydrate(array $data): self
+    {
+        foreach($data as $key=>$value){
+            $method = 'set' . ucfirst($key);
+
+            if(method_exists($this, $method)){
+                $this->$method($value);
+            }else{
+                throw new \InvalidArgumentException('La propriété ' . $key . ' n\'existe pas');
+            }
+        }
+
+        return $this;
+    }
+
+
+
     /**
      * Retourne l'id de l'espèce
      * @return int|null

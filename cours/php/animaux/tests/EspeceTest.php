@@ -25,4 +25,19 @@ class EspeceTest extends TestCase
         $chien->setId(3); // on essaye de modifier l'id
 
     }
+
+
+    function testHydrateAvecAttributInconnu()
+    {
+        $chat = new Espece();
+
+        $chat->hydrate(['espece'=>'chat']);
+
+        $this->assertSame('chat', $chat->getEspece());
+
+       
+
+        $this->expectException(InvalidArgumentException::class);
+        $chat->hydrate(['crie', 'miaou']);
+    }
 }

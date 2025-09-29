@@ -9,9 +9,11 @@ require_once 'vendor/autoload.php';
 use App\Model\Entity\Espece;
 
 $chien  = new Espece();
-$chien->setId(2);
-$chien->setEspece('chien'); 
-$chien->setId(3);
+$chien->hydrate([
+    'id' => 20,
+    'espece' => 'humain',
+    'pates'=>4
+]);
 
 echo '<pre>';
 var_dump($chien);
