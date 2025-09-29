@@ -14,4 +14,15 @@ class EspeceTest extends TestCase
         $this->assertSame(2, $chien->getId());
         $this->assertSame('chien', $chien->getEspece());
     }
+
+    function testIdEnLectureSeule(){
+        $chien  = new Espece();
+        $chien->setId(2);
+
+
+        $this->expectException(LogicException::class);
+    
+        $chien->setId(3); // on essaye de modifier l'id
+
+    }
 }
