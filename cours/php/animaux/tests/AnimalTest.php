@@ -12,7 +12,7 @@ class AnimalTest extends TestCase
         $animal->setNom('David');
 
         $this->assertSame(2, $animal->getId());
-        $this->assertSame('david', $animal->getNom());
+        $this->assertSame('David', $animal->getNom());
     }
 
     function testIdEnLectureSeule(){
