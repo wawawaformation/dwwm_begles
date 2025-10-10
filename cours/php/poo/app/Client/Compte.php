@@ -1,10 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Client;
 
 class Compte
 {
-
     /**
      * Le nom du client
      * @var string
@@ -21,7 +22,7 @@ class Compte
 
     public function __construct(string $prenom, string $nom)
     {
-        if(strlen($nom) <= 0 || strlen($prenom) <= 0) {
+        if (strlen($nom) <= 0 || strlen($prenom) <= 0) {
             throw new \InvalidArgumentException('Le nom et le prénom ne peuvent pas être vides');
         }
         $this->setNom($nom);
@@ -56,7 +57,7 @@ class Compte
     public function setNom(string $nom): self
     {
 
-        if(strlen($nom) <= 0) {
+        if (strlen($nom) <= 0) {
             throw new \InvalidArgumentException('Le nom ne peut pas être vide');
         }
         $this->nom = $nom;
@@ -71,7 +72,7 @@ class Compte
      */
     public function setPrenom(string $prenom): self
     {
-        if(strlen($prenom) <= 0) {
+        if (strlen($prenom) <= 0) {
             throw new \InvalidArgumentException('Le prénom ne peut pas être vide');
         }
 
