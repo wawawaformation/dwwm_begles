@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <ul>
+        <li>array.map()</li>
+        <li>array.filter()</li>
+        <li>array.reduce()</li>
+    </ul>
+</body>
+
+<script>
+    notes = [40, 5, 6, 8, 12]
+
+    // notes = notes.map(note=>note+1)
+    // console.log(notes)
+
+
+    nombres = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    nombres = nombres.filter(nombre => nombre % 2 === 0)
+
+
+    init = 40
+    addition = notes.reduce((acc, curent) => acc + curent, init)
+    moyenne = addition / notes.length
+
+
+    const plusGrand = notes.reduce((acc, note) => {
+        if (acc === null) return note;
+        return note > acc ? note : acc;
+    }, null)
+
+    console.log(plusGrand)
+
+
+</script>
+
+</html>

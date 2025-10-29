@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRop la classe</title>
+</head>
+<body>
+
+
+    <script>
+        class Produits 
+        {
+            constructor(nom, prix){
+                this.nom = nom
+                this.prix = prix
+
+               
+            }
+
+            set modifierPrix(prix){
+                this.prix = prix
+            }
+
+            get retournerPrix(){
+                return this.prix
+            }
+
+            afficherTout(){
+                console.log(`produit: ${this.nom}; prix: ${this.prix} euro${this.prix>=2?'s':''}`)
+            }
+        }
+
+
+        class ProduitLaitier extends Produits
+        {
+            constructor(nom, prix, tauxCalcium){
+                super(nom, prix)
+                this.tauxCalcium = tauxCalcium
+            }
+
+             afficherTout(){
+                console.log(`produit: ${this.nom}; 
+                prix: ${this.prix} euro${this.prix>=2?'s':''}; 
+                taux de calcium: ${this.tauxCalcium}`)
+            }
+        }
+
+        crayon = new Produits('crayon magique',12)
+        crayon.nom = 'crayon pas magique'
+        
+
+        crayon.afficherTout()
+
+        lait = new ProduitLaitier('lait', 1.12, .06)
+        console.log(lait.afficherTout())
+
+
+    </script>
+    
+</body>
+</html>
