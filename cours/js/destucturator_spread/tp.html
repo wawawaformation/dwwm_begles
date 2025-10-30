@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Soit le tableau :
+
+const notes = [12, 15, 18, 10, 14];
+Extraire les deux premières notes avec déstructuration.
+Créer un nouveau tableau notesAvecBonus avec toutes les notes +2 (utiliser map et le spread).
+Soit l’objet :
+
+const utilisateur = { prenom: "Alice", age: 25, ville: "Lyon" };
+Extraire prenom et ville.
+Créer un nouvel objet profil en copiant utilisateur et en ajoutant role: "admin".
+Supprimer ville via déstructuration inverse : const { ville, ...profilSansVille } = profil;
+Bonus : fusionner deux objets produit et infosStock pour créer ficheProduit.
+        */
+
+        const notes = [12, 15, 18, 10, 14];
+        const [note1, note2] = notes;
+
+
+        const notesAvecBonus = notes.map(note => note + 2);
+        const utilisateur = { prenom: "Alice", age: 25, ville: "Lyon" };
+
+        const { prenom, ville } = utilisateur;
+        const profil = { ...utilisateur, role: "admin" };
+
+        const { ville: villeSupprimee, ...profilSansVille } = profil;
+        console.log(profilSansVille);
+       
+
+    </script>
+</body>
+</html>
